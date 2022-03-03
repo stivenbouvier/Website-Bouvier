@@ -5,9 +5,10 @@
 }
 
 body {
-    background-color: #010003;
+    background-color: black;
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
+    
 }  
 
 
@@ -180,7 +181,7 @@ margin-top: 200px;
 .model_content {
 width:  1200px;
 height: 600px;
-background: url(/Imagenes/showcaseprincipal.jpg);
+background: url(/Imagenes/kelvin-moquete-LOV7Gbmgm30-unsplash.jpg);
 border-radius:4px;
 text-align: center;
 padding: 20px;
@@ -189,36 +190,54 @@ box-shadow: 5px 5px 40px;
 
 }
 .model_content h1{
-    color: #FFFFFF;
+    color: black;
 }
-.model_content input {
-    width:70%;
-    height:500%;
+
+#send {
+    cursor: pointer;
+    padding: 10px;
+    color:#010003;
+    background-color: violet;
+    width: 100px;
+    height: 10px;
+    font-size: 23px;
+
+
+    box-shadow: 5px 5px 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: solid;
+    
+}
+#send {
+    width:10%;
+    height:50%;
     text-align: center;
     display: flex;
     margin: 15px;
     margin-left: 15.3%;
-    border-color: aqua;
-    margin-bottom: 50px;
+    border-color:#FFFFFF;
+    margin-bottom: 0px;
+    justify-content: center;
+    position: relative;
+    left: 30%;
+    top: 5px;
 }
+    .model_content  input {
+        width:70%;
+        height:50%;
+        text-align: center;
+        display: flex;
+        margin: 15px;
+        margin-left: 15.3%;
+        border-color:violet;
+        margin-bottom: 0px;
+    }
 
-.button {
-    padding: 10px;
-    color:#010003;
-    background-color :violet;
-    border: solid;
-    width: 10px;
-    height: 100px;
-    font-size: 23px;
-    align-items: center;
-    box-shadow: 5px 5px 0px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    
-    
-}
+
+
 .close {
     position:absolute;
-    color: #ffffff;
+    color: black;
     top:0;
     right: 14px;
     font-size: 42px;
@@ -235,4 +254,18 @@ box-shadow: 5px 5px 40px;
     
 }
 
-
+.github-btn {
+    position: absolute;
+    right: 40px;
+    bottom: 50px;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
+    background: red;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }

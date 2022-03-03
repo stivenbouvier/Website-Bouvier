@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +14,7 @@
     <!--Add Css-->
     <link rel="stylesheet" href="/stylesindex.css">
     <link rel="stylesheet" href="/normalize.css">
+    
     <!--Font Oswalds-->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap" rel="stylesheet">
 
@@ -25,10 +28,10 @@
                 <img id="logomenu" src="/Imagenes/LOGOWEB-PhotoRoom.png" alt="Bouviernews logo" class="nav-brand">
                 <ul class="nav-menu">
                     <li><small></small>
-                        <a href="#"> News </a>
+                        <a href="/news.html"> News </a>
                     </li>
                     <li>
-                        <a href="#"> Music </a>
+                        <a href="/music.html"> Music </a>
                     </li>
                     <li>
                         <a href="#"> Store </a>
@@ -69,12 +72,16 @@
         <div class="model_content">
             <div class="close">+</div>
             <img class="logopop" src="/Imagenes/LOGOWEB-PhotoRoom.png" alt="">
-            <h1>To suscribe and receive news in your mail.</h1>
-            <form action="">
-                
-                <input type="text" placeholder="Your E-mail">
-                <a href="#" class="button">Submit</a>
+            <h1>To suscribe and receive news in your E-mail.</h1>
+            
+            <!--Formulario oculto con base de datos PHP-->
+
+            <form action="/register.php" name="" method="POST">
+                <input type="text" name="name" placeholder ="name">
+                <input type="email" name="email" placeholder ="email">
+                <button id="send" type="submit" name="send">send</button>
             </form>
+            
         </div>
     </div>
     
@@ -88,10 +95,17 @@
     
     <img class="mtv" src="/Imagenes/Green Black Friday Instagram Post (1).png">
     </div> 
-    
-    
+    <div v-cloak></div>
+</div>
+<a href="https://www.youtube.com/channel/UC-DihFjlogk-dlhJ3kqKVNw" target="_blank" class="github-btn">
+    Youtube channel
+</a>
+</div>
+            
         
         <script src="/Popup.js"></script>
         
 </body>
 </html>
+
+
