@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Showcase */
+.Showcase {
+  width: 100%;
+  height: 30px;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 100%;
+  height: 700px;
+  top: 200px;
+  background-color: black;
+}
+
+/* Navegacion */
+.nav-main {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-brand {
+  width: 50px;
+}
+
+/* nav left */
+.nav-main ul {
+  display: flex;
+  font-size: 25px;
+  justify-content: center;
+}
+
+.nav-main ul li {
+  padding: 10px;
+  margin: 10px;
+}
+
+.nav-main ul li a {
+  padding: 4px;
+  color: #FFFFFF;
+}
+
+.nav-main ul li a:hover {
+  border-bottom: solid #ffffff;
+}
+
+.nav-main ul.nav-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.nav-main img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 50px;
+}
+
+.parrafosus {
+  color: #FFFFFF;
+  width: 1200px;
+  height: 100px;
+  margin-left: 150px;
+  font-size: large;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-top: 50px;
+}
+
+.newsday {
+  height: 200px;
+  color: #ffffff;
+  position: relative;
+  top: 300px;
+  font-size: small;
+  font-size: 15px;
+  background-color: black;
+  align-items: center;
+}
+
+.titlebouvier {
+  font-size: large;
+  font-size: 50px;
+  color: pink;
+  position: relative;
+  text-shadow: #FFFFFF;
+  margin-left: 180px;
+}
+
+#present {
+  font-size: 20px;
+  left: 40px;
+  color: #FFFFFF;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.github-btn {
+  position: absolute;
+  right: 40px;
+  bottom: 50px;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
+  background: #190d44;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (min-width: 500px) {
+  .github-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
+  }
+}
+@media screen and (max-width: 700px) {
+  .github-btn {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 20px;
+  }
+  .github-btn:active {
+    transform: scale(1.1);
+    box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
+  }
+}
+
+.main {
+  position: relative;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to rigth, #5D6D7E, #566575);
+}
+
+/*# sourceMappingURL=style.css.map */

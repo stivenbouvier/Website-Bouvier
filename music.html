@@ -33,7 +33,7 @@
                         <a href="/news.html"> News </a>
                     </li>
                     <li>
-                        <a href="#"> Music </a>
+                        <a href="/music.html"> Music </a>
                     </li>
                     <li>
                         <a href="#"> Store </a>
@@ -45,7 +45,7 @@
                         <a href="#"> Socialmedia </a>
                     </li>
                     <li>
-                        <a href="#"> Sign Up </a>
+                        <a href="/singup.html"> Sign Up </a>
                     </li>
                     <li>
                         <a href="#"> Videos </a>
@@ -62,18 +62,18 @@
                 
             </nav>
             
-                <div v-cloak></div>
-                </div>
+                <div v-cloak>
+                
                 <a href="https://www.youtube.com/channel/UC-DihFjlogk-dlhJ3kqKVNw" target="_blank" class="github-btn">
                 Youtube channel
                 </a>
             </div>
             <div class="main">
-                <p id="logo"><i class="fa fa-music" aria-hidden="true"></i></p>
+                <p id="logo">Youtube music <i class="fa fa-music" aria-hidden="true"></i></p>
                 
                 
                 <!--left part-->
-
+               
                 <div class="left">
 
                     <!--Song Image-->
@@ -90,18 +90,22 @@
                     <div class="right">
                         <div class="show_song_no">
                             <p id="presents">1</p>
-                            <p></p>
-                            <p id="total">6</p>
+                            <p>/</p>
+                            <p id="total">8</p>
                         </div>
-                        <p id="title">Title.mp3</p>
-                        <p id="artist">Artist name</p>
+                        <!--song title-->
+                        <div class="titulosmp3">
+                            <p id="artist">artist</p>
+                            <p id="title">Title.mp3</p>
+                        </div>
+                        
                         
                         <!--Middle Part-->
                         
                         <div class="middle">
-                            <button onclick="previous_song()" id="pre" ><i class="fa fa-step-backward" aria-hidden="true"></i></button>
-                            <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
-                            <button onabort="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+                            <button onclick="previous_song()" id="pre" ><span class="fa fa-step-backward" aria-hidden="true"></span></button>
+                            <button onclick="justplay()" id="play"><span class="fa fa-play" aria-hidden="true"></span></button>
+                            <button onabort="next_song()" id="next"><span class="fa fa-step-forward" aria-hidden="true"></span></button>
                         </div>
                         
                         
@@ -110,7 +114,7 @@
                             <div class="duration">
                                 <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
                             </div>
-                            <button id="auto" onclick="autoplay_switch()">Auto Play <i class="fa fa-repeat" aria-hidden="true"></i></button>
+                            <button id="audio" onclick="autoplay_switch()">Auto Play <i class="fa fa-repeat" aria-hidden="true"></i></button>
                     </div>
 
             </div>
@@ -122,6 +126,6 @@
                         
                     </article>
                     
-            <script src="/news.js"></script>
+            <script src="/Javascript/player.js"></script>
 </body>
 </html>

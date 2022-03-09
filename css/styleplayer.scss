@@ -1,16 +1,22 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Oswald', sans-serif;
+
+  /*box-sizing: border-box;
+  margin: 0;
+  padding: 0;*/
 }
 
 body {
+  height: 100vh;
+  width: 100%;
   background-color: black;
-  font-size: 16px;
   font-family: 'Oswald', sans-serif;
   color: #ffffff;
-  
-}  
+
+
+}
 
 
 a {
@@ -20,13 +26,14 @@ a {
 ul {
   list-style: none;
 }
+
 /* Showcase */
 
 .Showcase {
   width: 100%;
   height: 30px;
   background-color: #ffffff;
-  
+
 }
 
 .container {
@@ -57,11 +64,12 @@ ul {
 
 }
 
-.nav-main ul li{
+.nav-main ul li {
   padding: 10px;
   margin: 10px;
 
 }
+
 .nav-main ul li a {
   padding: 4px;
   color: #FFFFFF;
@@ -70,10 +78,12 @@ ul {
 .nav-main ul li a:hover {
   border-bottom: solid #ffffff;
 }
+
 .nav-main ul.nav-menu {
   flex: 1;
   margin-left: 20px;
 }
+
 .nav-main img {
   width: 200px;
   height: 200px;
@@ -90,7 +100,7 @@ ul {
   font-size: 50px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin-top: 50px;
-}   
+}
 
 .newsday {
   height: 200px;
@@ -100,7 +110,7 @@ ul {
   font-size: small;
   font-size: 15px;
   background-color: black;
-  
+
   align-items: center;
 }
 
@@ -112,10 +122,11 @@ ul {
   position: relative;
   text-shadow: #FFFFFF;
   margin-left: 180px;
-  
+
 }
+
 #present {
-  
+
   font-size: 20px;
   left: 40px;
   color: #FFFFFF;
@@ -123,41 +134,343 @@ ul {
   margin-right: 15px;
 
 }
-  
-  
-  .github-btn {
-    position: absolute;
-    right: 40px;
-    bottom: 50px;
-    text-decoration: none;
-    padding: 15px 25px;
-    border-radius: 4px;
-    box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
-    background: rgb(236, 23, 23);
-    color: #fff;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 16px;
-    transition: all .3s ease-in-out;
-  
-    @media screen and (min-width: 500px) {
-      &:hover {
-        transform: scale(1.1);
-        box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
-      }
-    }
-  
-    @media screen and (max-width: 700px) {
-      position: relative;
-      bottom: auto;
-      right: auto;
-      margin-top: 20px;
-  
-      &:active {
-        transform: scale(1.1);
-        box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
-      }
+
+
+.github-btn {
+  position: absolute;
+  right: 40px;
+  bottom: 50px;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
+  background: rgb(255, 10, 10);
+  ;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 16px;
+  transition: all .3s ease-in-out;
+
+  @media screen and (min-width: 500px) {
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
     }
   }
+
+  @media screen and (max-width: 700px) {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 20px;
+
+    &:active {
+      transform: scale(1.1);
+      box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
+    }
+  }
+}
+
+.main {
+  background-color: black;
+  position: relative;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+
+}
+
+.main button {
+  cursor: pointer;
+  padding: 10px 12px;
+  margin: 0 10px;
+}
+
+.main #logo {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  font-size: 25px;
+  color: #FFFFFF;
+  font-family: 'Oswald', sans-serif;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+main #logo i {
+  margin-right: 15px;
+  color: red;
+  font-size: 5px;
+}
+
+/*left and right part */
+
+.right,
+.left {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.left img {
+  border:solid;
+  margin-left: 220px;
+  width: 55%;
   
+  /*box-shadow: 1px 0px 20px 12px rgba(240, 240, 240, 0.2);*/
+}
+
+/* both range slider*/
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 50%;
+  outline: none;
+  height: 2px;
+  margin: 0 15px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(255, 10, 10);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.right input[type="range"] {
+  width: 40%;
+}
+
+.left .volume {
+  position: absolute;
+  bottom: 80px;
+  margin-left: 100px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.left .volume p {
+  font-size: 15px;
+
+}
+
+.left .volume i {
+  cursor: pointer;
+  padding: 8px 12px;
+
+}
+
+.left .volume i:hover {
+  background-color: rgb(255, 10, 10);
+}
+
+.volume #volume_show {
+  padding: 8px 12px;
+  margin: 0 5px 0 0;
+  background-color: rgb(255, 10, 10);
+}
+
+;
+
+
+/* rigth part*/
+
+.rigth .middle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.right .middle button {
+  border: solid;
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  /*display: flex;*/
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  transition: 0.5s;
+  background: rgba(249, 253, 255, 0.959);
+  box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
+  opacity: 80%;
+}
+
+.right .middle :hover {
+  width: 55px;
+  height: 55px;
+  position: inherit;
+
+}
+
+.right .middle button span {
+  cursor: pointer;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+}
+
+.right .middle button span :hover {}
+
+
+.youtube-btn {
+  position: absolute;
+  right: 195px;
+  bottom: 50px;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
+  background: rgb(240, 4, 4);
+  ;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 12px;
+  transition: all .3s ease-in-out;
+
+  @media screen and (min-width: 500px) {
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 20px;
+
+    &:active {
+      transform: scale(1.1);
+      box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
+    }
+  }
+}
+
+.titulosmp3 {
+
+  color: #fff;
+  width: 150px;
+  height: 80px;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 30px;
+}
+
+.rigth #title {
+  color: #fff;
+  position: relative;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: capitalize;
+  color: #FFFFFF;
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 200px;
+
+
+}
+
+.right #artist {
+  position: relative;
+  bottom: 1px;
+  margin-right: 6px;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 20px;
   
+}
+
+.right .duration {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20px;
+  margin-top: 40px;
+}
+
+.right .duration p {
+  color: #FFFFFF;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 20px;
+
+}
+
+.right #audio {
+  border: solid;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+  border: none;
+  padding: 10px 14px;
+  color: #FFFFFF;
+  background: rgba(245, 245, 245, 0.103);
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
+}
+
+.right #audio i {
+  margin-left: 8px;
+}
+
+#play {
+  background-color: red;
+
+}
+
+.right button :hover {
+  background-color: red;
+}
+
+.right i ::before {
+  color: #FFFFFF
+}
+
+.right .show_song_no {
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  color: #FFFFFF;
+  border-radius: 5px;
+  
+}
+
+.right .show_song_no p :nth-child(2) {
+  margin: 0 5px;
+}
