@@ -80,7 +80,7 @@ let All_song =[
     name:"Pandemic Love (Himno)",
     path:"Nonstop/Track8.mp3",
     img: "imgnonstop/nonstopimg.png",
-    artist:"Bouvier"
+    singer:"Bouvier"
 
 }
 ];
