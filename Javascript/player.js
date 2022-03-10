@@ -7,9 +7,9 @@ let volume_show = document.querySelector('#volume_show');
 let slider = document.querySelector('#duration_slider');
 let show_duration = document.querySelector('#volume_show');
 let track_image = document.querySelector('#track_image');
-let auto_play = document.querySelector('#track_image');
-let present = document.querySelector('#track_image');
-let total = document.querySelector('#track_image');
+let auto_play = document.querySelector('#audio');
+let presents = document.querySelector('#presents');
+let total = document.querySelector('#total');
 let artist = document.querySelector('#artist');
 
 
@@ -30,59 +30,59 @@ let All_song =[
 {
     name:"She Needs Flowers",
     path:"Nonstop/Track1.mp3",
-    img: "imgnonstop/nonstopimg.jpeg",
+    img: "imgnonstop/nonstopimg.png",
     singer:"Bouvier"
 
 },
 {
     name:"feel It Tonight",
     path:"Nonstop/Track2.mp3",
-    img: "imgnonstop/nonstopimg.jpeg",
+    img: "imgnonstop/nonstopimg.png",
     singer:"Bouvier"
 
 },
 {
     name:"Nonstop",
     path:"Nonstop/Track3.mp3",
-    img: "imgnonstop/nonstopimg.jpeg",
+    img: "imgnonstop/nonstopimg.png",
     singer:"Bouvier"
 
 },
 {
     name:"Everybody Are Summer",
     path:"Nonstop/Track4.mp3",
-    img: "imgnonstop/nonstopimg.jpeg",
+    img: "imgnonstop/nonstopimg.png",
     singer:"Bouvier"
 
 },
 {
     name:"She Wasnt",
     path:"Nonstop/Track5.mp3",
-    img: "imgnonstop/nonstopimg.jpeg",
+    img: "imgnonstop/nonstopimg.png",
     singer:"Bouvier"
 
 },
 {
     name:"Lovesick",
     path:"Nonstop/Track6.mp3",
-    img: "imgnonstop/nonstopimg.jpeg",
+    img: "imgnonstop/nonstopimg.png",
     singer:"Bouvier"
 
 },
 {
     name:"lovehurts",
     path:"Nonstop/Track7.mp3",
-    img: "imgnonstop/nonstopimg.jpeg",
+    img: "imgnonstop/nonstopimg.png",
     singer:"Bouvier"
 
 },
 {
     name:"Pandemic Love (Himno)",
-    path:"Nonstop/Track7.mp3",
-    img: "imgnonstop/nonstopimg.jpeg",
+    path:"Nonstop/Track8.mp3",
+    img: "imgnonstop/nonstopimg.png",
     artist:"Bouvier"
 
-},
+}
 ];
 
 //All Function
@@ -113,7 +113,7 @@ function justplay(){
 function playsong(){
     track.play();
     playing_song = true;
-    play.innerHTML = '<i class="fa fa-pause"></i>';
+    play.innerHTML = '<span class="fa fa-pause"></span>';
 }
 
 //Pause song
@@ -121,7 +121,7 @@ function playsong(){
 function pausesong(){
     track.pause();
     playing_song =false;
-    play.innerHTML = '<i class="fa fa-play"></i>';
+    play.innerHTML = '<span class="fa fa-play"></span>';
 }
 
 //Next song
@@ -134,5 +134,16 @@ function next_song(){
     }else{
         index_no = 0;
         load_track(index_no);
+        playsong();
+    }
+}
+
+//previous song
+
+function previous_song(){
+    if(index_no > 0){
+        index_no -= 1;
+        load_track(index_no);
+        playsong();
     }
 }
