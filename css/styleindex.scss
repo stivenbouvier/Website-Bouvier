@@ -29,24 +29,25 @@ ul {
 }
 
 .container {
-    position: relative;
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 700px;
     background: url(/Imagenes/Diseño\ sin\ título\ \(7\).png);
     background-position: center;
     background-size: cover;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column-reverse;
+
 }
 
 /* Navegacion */
 
 .nav-main {
+    margin: 50px;
     font-size: 25px;
-    display: flex;
-    align-items: center;
+    position: relative;
+    height: 200px;
     width: 100%;
+    left: 7%;
 }
 
 .nav-brand {
@@ -58,6 +59,8 @@ ul {
     display: flex;
     font-size: 25px;
     justify-content: center;
+    position: relative;
+    bottom: 180px;
 
 }
 
@@ -72,7 +75,8 @@ ul {
 }
 
 .nav-main ul li a:hover {
-    border-bottom: solid #ffffff;
+    font-size: 30px;
+    border-bottom: solid #000000;
 }
 .nav-main ul.nav-menu {
     flex: 1;
@@ -82,7 +86,28 @@ ul {
     width: 200px;
     height: 200px;
     position: relative;
-    left: 30px;
+    bottom: 40px;
+}
+
+.nav-menurigth {
+
+width: 200px;
+height: 150px;
+position: relative;
+right: 8%;
+top: 7%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.nav-menurigth a ion-icon {
+    color: #000000;
+    width: 50px;
+    height: 50px;
+}
+.nav-menurigth :hover {
+    font-size: 70px;
+    text-transform: uppercase;
 }
 
 .parrafosus {
@@ -96,87 +121,93 @@ ul {
     margin-top: 50px;
 }  
 
-.tosuscribe {
-    display: flex;
-    border-bottom: solid white;
-    height: 200px;
-    width: 100%;
-}
+
 .parrafosus {
-    text-align: center;
-    position: relative;
-    left: 200px;
+    margin: 0;
+    display: flexbox;
+    width: 100%;
+    height: 300px;
+    border-bottom: solid white;
 }
-.tosuscribe button {
-    position: relative;
-    left: 300px;
+.parrafosus p {
+    text-align: center;
+    margin-top: 70px;
+}
+.parrafosus button {
+    width: 10px;
+    height: 100px;
 }
 
 #open {
+    border: solid white;
     color:black;
     width: 200px;
     height: 50px;
-    margin-top:50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     cursor: pointer;
     font-size: 20px;
-    align-items: center;
-    margin-left:570px;
     border: #FFFFFF;
     box-shadow: 5px 5px 0px; 
 }
 
-
-.infolanzamiento {
-  
+/*Seccion 2*/
+.info {
+display: flex;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 color: #FFFFFF;
 font-size: 60px;
-margin-top: 50px;
 height: 500px;
-
 }
-#present {
-    width: 60%;
-    font-size: 35px;
-    left: 40px;
+.infolanzamiento {
+    width: 50%;
+    border: solid white;
+    display: flexbox;
+    text-align: center;
 }
 .infolanzamiento h2 {
-    margin-left: 200px;
+    border: solid white;
+    padding: 20px;
 }
 .infolanzamiento p {
-    margin-left: 200px;
+    width: 80%;
+    margin-top: 40px;
+    margin-left: 80px;
+    font-size: 40px;
+    text-align: center;
+    border: solid white;
 }
-
-.infolanzamiento img {
-    width: 400px;
-    height: 380px;
-    position: relative;
-    margin-top: 10px;
-    margin-left: 100px;
-    bottom: 280px;
-    left: 650px;
+.boton {
+    border: solid white;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
-
-
-.infolanzamiento button {
+.boton button {
     cursor: pointer;
     color:black;
     width: 200px;
     height: 50px;
-    margin-top:60px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     cursor: pointer;
     font-size: 20px;
-    align-items: center;
-    margin-left:340px;
-    border: #FFFFFF;
+    border: solid #FFFFFF;
     box-shadow: 5px 5px 0px;
-    position: relative;
-    bottom: 300px;
-    right: -100px;
 }
 
+.img1 {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+.img1 img {
+    width: 60%;
+    height: 100%;
+}
+
+
+
+/* seccion oculta*/
 .bg-model {
     width:100%;
     height: 100%;
