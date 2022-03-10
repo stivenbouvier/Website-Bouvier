@@ -65,8 +65,8 @@ ul {
 }
 
 .nav-main ul li{
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: 5px;
 
 }
 .nav-main ul li a {
@@ -86,29 +86,72 @@ ul {
     width: 200px;
     height: 200px;
     position: relative;
+    right: 50px;
     bottom: 40px;
 }
 
 .nav-menurigth {
-
-width: 200px;
-height: 150px;
+width: 80px;
+height: 80px;
 position: relative;
-right: 8%;
-top: 7%;
+left: 90%;
+bottom: 122%;
 display: flex;
 align-items: center;
 justify-content: center;
 }
 .nav-menurigth a ion-icon {
     color: #000000;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 .nav-menurigth :hover {
     font-size: 70px;
     text-transform: uppercase;
 }
+.botony {
+    position: relative;
+    top: 650px;
+    right: 200px;
+    width: 300px;
+    height: 50px;
+
+}
+.github-btn {
+    position: absolute;
+    right: 40px;
+    bottom: 50px;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
+    background: rgb(236, 23, 23);
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 16px;
+    transition: all .3s ease-in-out;
+  
+    @media screen and (min-width: 500px) {
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
+      }
+    }
+  
+    @media screen and (max-width: 700px) {
+      position: relative;
+      bottom: auto;
+      right: auto;
+      margin-top: 20px;
+  
+      &:active {
+        transform: scale(1.1);
+        box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
+      }
+    }
+  }
+  
 
 .parrafosus {
     color: #FFFFFF;
@@ -167,12 +210,13 @@ height: 500px;
 .infolanzamiento h2 {
     border: solid white;
     padding: 20px;
+    font-size: 70px;
 }
 .infolanzamiento p {
     width: 80%;
     margin-top: 40px;
     margin-left: 80px;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     border: solid white;
 }
@@ -297,41 +341,8 @@ box-shadow: 5px 5px 40px;
     margin-top:  -90px;
     
 }
+/*Boton youtube*/
 
-.github-btn {
-    position: absolute;
-    right: 40px;
-    bottom: 50px;
-    text-decoration: none;
-    padding: 15px 25px;
-    border-radius: 4px;
-    box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
-    background: rgb(236, 23, 23);
-    color: #fff;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 16px;
-    transition: all .3s ease-in-out;
-  
-    @media screen and (min-width: 500px) {
-      &:hover {
-        transform: scale(1.1);
-        box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
-      }
-    }
-  
-    @media screen and (max-width: 700px) {
-      position: relative;
-      bottom: auto;
-      right: auto;
-      margin-top: 20px;
-  
-      &:active {
-        transform: scale(1.1);
-        box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
-      }
-    }
-  }
   
   /* Footer */
 
