@@ -21,106 +21,137 @@ ul {
 /* Showcase */
 
 .Showcase {
+    display: flex;
     width: 100%;
-    height: 30px;
+    height: 70px;
     background-color: #000000;
     opacity: 80%;
     
 }
+.nav-toggle {
+    color: rgb(255, 255, 255);
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
 
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     height: 700px;
     background: url(/Imagenes/Diseño\ sin\ título\ \(7\).png);
     background-position: center;
     background-size: cover;
-
 }
 
 /* Navegacion */
 
 .nav-main {
-    margin: 50px;
-    font-size: 25px;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    font-size: 30px;
     height: 200px;
-    width: 100%;
-    left: 7%;
-}
 
-.nav-brand {
-    width: 50px;
+
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-menu1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 /* nav left */
-.nav-main ul {
+.nav-main {
+    width: 100%;
     display: flex;
-    font-size: 25px;
+    align-items: center;
     justify-content: center;
-    position: relative;
-    bottom: 180px;
-
 }
-
-.nav-main ul li{
-    padding: 5px;
-    margin: 5px;
+.nav-main  li{
+    padding: 10px;
+    margin: 10px;
 
 }
 .nav-main ul li a {
     padding: 4px;
-    color: #010003;
+    color: #000000;
 }
 
-.nav-main ul li a:hover {
+.nav-main li a:hover {
     font-size: 30px;
     border-bottom: solid #000000;
 }
-.nav-main ul.nav-menu {
-    flex: 1;
-    margin-left: 20px;
+
+
+.nav-main1 li{
+    padding: 10px;
+    margin: 10px;
+
 }
-.nav-main img {
-    width: 200px;
-    height: 200px;
+.nav-main1 li a {
+    padding: 4px;
+    color: #ffffff;
+}
+
+.nav-main1 li a:hover {
+    font-size: 30px;
+    border-bottom: solid #000000;
+}
+
+.container img {
+    width: 250px;
+    height: 250px;
     position: relative;
-    right: 50px;
-    bottom: 40px;
+    bottom: 10%;
+
 }
 
 .nav-menurigth {
-width: 80px;
-height: 80px;
-position: relative;
-left: 90%;
-bottom: 122%;
+cursor: pointer;
+width: 70px;
+height: 70px;
 display: flex;
 align-items: center;
 justify-content: center;
+position: relative;
+left: 85%;
+}
+.nav-menurigth ion-icon:hover {
+    color: rgb(255, 255, 134);
+    width: 60px;
+    height: 60px;
+
 }
 .nav-menurigth a ion-icon {
-    color: #000000;
+    color: #ffffff;
     width: 40px;
     height: 40px;
+    border-radius: 50%;
 }
-.nav-menurigth :hover {
-    font-size: 70px;
-    text-transform: uppercase;
-}
+
 .botony {
-    position: relative;
-    top: 650px;
-    right: 200px;
-    width: 300px;
+    display: flex;
+    position: fixed;
+    width: 100%;
     height: 50px;
+    left: 45.5%;
 
 }
 .github-btn {
     position: absolute;
-    right: 40px;
-    bottom: 50px;
+    bottom: 100px;
     text-decoration: none;
     padding: 15px 25px;
     border-radius: 4px;
@@ -195,6 +226,8 @@ justify-content: center;
 
 /*Seccion 2*/
 .info {
+margin-top: 20px;
+margin-bottom: 20px;
 display: flex;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 color: #FFFFFF;
@@ -203,14 +236,12 @@ height: 500px;
 }
 .infolanzamiento {
     width: 50%;
-    border: solid white;
     display: flexbox;
     text-align: center;
 }
 .infolanzamiento h2 {
-    border: solid white;
     padding: 20px;
-    font-size: 70px;
+    font-size: 60px;
 }
 .infolanzamiento p {
     width: 80%;
@@ -218,13 +249,11 @@ height: 500px;
     margin-left: 80px;
     font-size: 30px;
     text-align: center;
-    border: solid white;
 }
 .boton {
-    border: solid white;
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 .boton button {
     cursor: pointer;
@@ -234,7 +263,6 @@ height: 500px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     cursor: pointer;
     font-size: 20px;
-    border: solid #FFFFFF;
     box-shadow: 5px 5px 0px;
 }
 
@@ -257,11 +285,13 @@ height: 500px;
     height: 100%;
     background-color : rgb(0,0,0,0.7);
     position: absolute;
-    top: 600px;
+    top: 50px;
     display: flex;
     justify-content: center;
     align-items:  center;
     display: none;
+    position: fixed;
+    bottom: 300px;
         
 } 
 /*display: none;*/
@@ -451,19 +481,103 @@ box-shadow: 5px 5px 40px;
     top: 60px;
     right: 90px;
 }
-@media (max-width:780px){
-    body {
-        background-color: #fff;
 
+/*---------------RESPONSIVE NAV -------------*/
+@media (max-width:1364px){
+    .nav-main {
+        font-size: 20px;
     }
+    .nav-main li a:hover {
+        font-size: 25px;
+        border-bottom: none;
+    }
+}
+@media (max-width:1116px){
     .nav-main img {
-        width: 100px;
-        height: 100px;
+        visibility: collapse;
     }
-    .nav-menu li {
+    .container {
+        display: inline-block;
+        height: 400px;
+    }
+    .nav-main {
+        position: relative;
+        bottom: 17%;
+        height: 70px;
         font-size: 15px;
-        display: flex;
-        
-   
+    }
+    .nav-menu1 {
+        position: relative;
+        right: 25%;
+    }
+    .nav-main ul li a {
+        color: #ffffff;
+    }
+    .nav-main1 ul li a {
+        color: #ffffff;
+    }
+    .nav-main li a:hover {
+        font-size: 20px;
+        border-bottom: none;
+    }
+}
+@media (max-width: 768px) {
+    .nav-main {
+        flex-direction: column;
+       justify-content: center;
+        margin: 0;
+        background-color: #5e5e5e;
+        color: #000000;
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+    
+        height: calc(100% - 60px);
+        overflow-y: auto;
+    
+        left: 0;
+        transition: left 0.3s;
+      }
+      .nav-menu {
+          width: 200px;
+          border: solid white;
+          flex-direction: column;
+          position: fixed;
+          top: 100px;
+      }
+      .nav-menu1 {
+        width: 200px;
+        border: solid white;
+        flex-direction: column;
+        position: fixed;
+        bottom: 150px;
+        right: 253px;
+    }
+    .nav-main li {
+        font-size: 25px;
+    }
+    .nav-main li a:hover {
+        font-size: 30px;
+        border-bottom: solid #000000;
+    }
+
+    .nav-toggle {
+        display: block;
+        position: relative;
+        buttom: 300px;
+      }
+    
+      .nav-menu_visible {
+        left: 0;
+      }
+    
+      .nav-toggle:focus:not(:focus-visible) {
+        outline: none;
+      }
+      .botony {
+          position: block;
+          bottom: -100px;
+          right: 50px;
     }
 }
