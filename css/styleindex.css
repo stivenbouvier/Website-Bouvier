@@ -11,7 +11,7 @@ body {
 }
 
 a {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 ul {
@@ -57,6 +57,7 @@ ul {
   font-size: 30px;
   height: 200px;
 }
+
 .nav-main2 {
   display: flex;
   justify-content: center;
@@ -65,7 +66,6 @@ ul {
   font-size: 30px;
   height: 200px;
 }
-
 
 .nav-menu {
   display: flex;
@@ -80,8 +80,6 @@ ul {
 }
 
 /* nav left */
-
-
 .nav-main li {
   padding: 10px;
   margin: 10px;
@@ -165,6 +163,7 @@ ul {
   font-size: 16px;
   transition: all 0.3s ease-in-out;
 }
+
 @media screen and (min-width: 500px) {
   .github-btn:hover {
     transform: scale(1.1);
@@ -178,12 +177,12 @@ ul {
     right: auto;
     margin-top: 20px;
   }
+
   .github-btn:active {
     transform: scale(1.1);
     box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
   }
 }
-
 .parrafosus {
   color: #FFFFFF;
   width: 1200px;
@@ -501,6 +500,7 @@ ul {
     font-size: 25px;
     border-bottom: none;
   }
+
   .nav-main2 {
     font-size: 20px;
   }
@@ -532,6 +532,7 @@ ul {
     height: 70px;
     font-size: 15px;
   }
+
   .nav-main2 {
     position: relative;
     bottom: 17%;
@@ -557,10 +558,12 @@ ul {
     font-size: 20px;
     border-bottom: none;
   }
+
   .nav-main2 li a:hover {
     font-size: 20px;
     border-bottom: none;
   }
+
   .nav-menurigth {
     left: 88%;
   }
@@ -569,10 +572,12 @@ ul {
   .showcase {
     height: 60px;
   }
+
   .container img {
     bottom: 25%;
     left: 1%;
   }
+
   .nav-menu {
     flex-direction: column;
     align-items: center;
@@ -583,17 +588,18 @@ ul {
     left: 0px;
     top: 70px;
   }
+
   .nav-menu2 {
     flex-direction: column;
     align-items: center;
     width: 100%;
     padding: 0;
-    background-color: rgb(138, 99, 99);
+    background-color: #8a6363;
     position: fixed;
     left: 0px;
-    bottom:300px;
+    bottom: 300px;
   }
-
 }
+/*# sourceMappingURL=styleindex.css.map */
 
 /*# sourceMappingURL=styleindex.css.map */
