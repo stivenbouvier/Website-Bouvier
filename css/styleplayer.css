@@ -157,6 +157,7 @@ ul {
   font-size: 16px;
   transition: all 0.3s ease-in-out;
 }
+
 @media screen and (min-width: 500px) {
   .github-btn:hover {
     transform: scale(1.1);
@@ -170,12 +171,12 @@ ul {
     right: auto;
     margin-top: 20px;
   }
+
   .github-btn:active {
     transform: scale(1.1);
     box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
   }
 }
-
 .main {
   background-attachment: transparent;
   position: relative;
@@ -338,6 +339,7 @@ input[type=range]::-webkit-slider-thumb {
   font-size: 12px;
   transition: all 0.3s ease-in-out;
 }
+
 @media screen and (min-width: 500px) {
   .youtube-btn:hover {
     transform: scale(1.1);
@@ -351,12 +353,12 @@ input[type=range]::-webkit-slider-thumb {
     right: auto;
     margin-top: 20px;
   }
+
   .youtube-btn:active {
     transform: scale(1.1);
     box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
   }
 }
-
 .titulosmp3 {
   color: #fff;
   width: 150px;
@@ -645,5 +647,6 @@ input[type=range]::-webkit-slider-thumb {
     display: flex;
   }
 }
+/*# sourceMappingURL=styleplayer.css.map */
 
 /*# sourceMappingURL=styleplayer.css.map */
