@@ -23,7 +23,7 @@ ul {
 .Showcase {
   width: 100%;
   height: 30px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 .container {
@@ -32,7 +32,6 @@ ul {
   top: 200px;
   background: url(/Imagenes/pexels-mathias-pr-reding-11077611.jpg);
   background-size: 1000px;
-  border: solid;
 }
 
 /* Navegacion */
@@ -41,6 +40,8 @@ ul {
   display: flex;
   align-items: center;
   width: 100%;
+  background-color: black;
+  height: 80px;
 }
 
 .nav-brand {
@@ -50,8 +51,9 @@ ul {
 /* nav left */
 .nav-main ul {
   display: flex;
-  font-size: 25px;
+  font-size: 20px;
   justify-content: center;
+  background: black;
 }
 
 .nav-main ul li {
@@ -66,35 +68,38 @@ ul {
 
 .nav-main ul li a:hover {
   border-bottom: solid #FFFFFF;
+  background: black;
 }
 
 .nav-main ul.nav-menu {
   flex: 1;
-  margin-left: 20px;
+  margin-left: 0px;
+  margin-right: 100px;
 }
 
 .nav-main img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   position: relative;
   left: 30px;
 }
 
 .nav-menurigth {
   position: relative;
-  right: 20%;
+  display: flex;
 }
 
 .newsday {
-  height: 200px;
+  height: 300px;
   color: #ffffff;
   position: relative;
-  top: 300px;
+  top: 400px;
   font-size: small;
   font-size: 15px;
+  display: flex;
+  justify-content: center;
   background-color: black;
   align-items: center;
-  border: solid;
 }
 
 .titlebouvier {
@@ -102,44 +107,46 @@ ul {
   font-size: 50px;
   color: pink;
   text-shadow: #FFFFFF;
-  margin-left: 250px;
-  border: solid;
+  margin-bottom: 100px;
+  margin-right: 60px;
+  margin-bottom: 200px;
 }
 
-#present {
-  font-size: 30px;
-  left: 40px;
-  color: #FFFFFF;
-  margin-left: 15px;
-  margin-right: 15px;
-  color: #FFFFFF;
-  width: 90%;
-  border: solid;
+.notice {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  position: relative;
+  width: 90%;
+  top: 150px;
+  font-size: 30px;
+  margin-left: 65px;
+  margin-top: 40px;
 }
 
 .medium {
-  margin-top: 80px;
   width: 95%;
   height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 80px;
-  box-shadow: #ffffff;
+  box-shadow: #FFFFFF;
   color: pink;
   right: 10%;
   left: 40px;
   margin-left: 25px;
+  bottom: 100px;
 }
 
 .medium p {
-  border: solid;
   margin-bottom: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 15px;
+  margin-left: 5px;
+  margin-bottom: 100px;
 }
 
 .inforevista {
@@ -151,7 +158,7 @@ ul {
   align-items: center;
   justify-content: center;
   margin-top: 60px;
-  margin-left: 25px;
+  margin-left: 30px;
 }
 
 .newsletterrevista {
@@ -160,7 +167,8 @@ ul {
   justify-content: center;
   color: pink;
   font-size: 50px;
-  font-weight: 40px;
+  position: relative;
+  right: 7%;
 }
 
 .revista {
@@ -171,6 +179,8 @@ ul {
   margin-bottom: 100px;
   top: 20px;
   display: flex;
+  right: 7%;
+  position: relative;
 }
 
 .github-btn {
@@ -388,6 +398,7 @@ ul {
 }
 
 /*---------------RESPONSIVE NAV -------------*/
+/*
 @media (max-width: 1364px) {
   .nav-main {
     font-size: 20px;
@@ -409,7 +420,7 @@ ul {
 }
 @media (max-width: 1116px) {
   .container img {
-    /*visibility: collapse;*/
+
     width: 100px;
     height: 100px;
     position: relative;
@@ -496,7 +507,8 @@ ul {
     left: 0px;
     bottom: 300px;
   }
-}
+}*/
 /*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=stylenews.css.map */
 
 /*# sourceMappingURL=stylenews.css.map */
