@@ -20,11 +20,37 @@ ul {
 
 /* Showcase */
 .Showcase {
-  display: flex;
+  display:flex;
+  align-items: center;
   width: 100%;
   height: 70px;
   background-color: #000000;
   opacity: 80%;
+}
+
+.nav-menurigth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  left: 90%;
+
+}
+
+.nav-menurigth ion-icon:hover {
+  color: #ffff86;
+  width: 60px;
+  height: 60px;
+}
+
+.nav-menurigth a ion-icon {
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .nav-toggle {
@@ -40,7 +66,6 @@ ul {
 
 .container {
   display: flex;
-  justify-content: center;
   width: 100%;
   height: 700px;
   background: url(/Imagenes/Diseño\ sin\ título\ \(7\).png);
@@ -57,7 +82,9 @@ ul {
   font-size: 30px;
   height: 200px;
 }
-
+.covermenu {
+  display: none;
+}
 .nav-main2 {
   display: flex;
   justify-content: center;
@@ -117,52 +144,9 @@ ul {
   bottom: 5%;
 }
 
-.nav-menurigth {
-  cursor: pointer;
-  width: 70px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  left: 85%;
-}
 
-.nav-menurigth ion-icon:hover {
-  color: #ffff86;
-  width: 60px;
-  height: 60px;
-}
 
-.nav-menurigth a ion-icon {
-  color: #ffffff;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
 
-.botony {
-  display: flex;
-  position: fixed;
-  width: 100%;
-  height: 50px;
-  left: 45.5%;
-}
-
-.github-btn {
-  position: absolute;
-  bottom: 100px;
-  text-decoration: none;
-  padding: 15px 25px;
-  border-radius: 4px;
-  box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
-  background: #ec1717;
-  color: #fff;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 16px;
-  transition: all 0.3s ease-in-out;
-}
 
 @media screen and (min-width: 500px) {
   .github-btn:hover {
@@ -509,6 +493,12 @@ ul {
     font-size: 25px;
     border-bottom: none;
   }
+  .nav-menurigth {
+    position: relative;
+    right: 50%;
+
+
+  }
 }
 @media (max-width: 1116px) {
   .container img {
@@ -540,6 +530,12 @@ ul {
     height: 70px;
     font-size: 15px;
   }
+  .nav-menu li {
+    margin: 0;
+  }
+  .nav-menu2 li {
+    margin: 0;
+  }
 
   .nav-menu2 {
     position: relative;
@@ -555,7 +551,7 @@ ul {
   }
 
   .nav-main li a:hover {
-    font-size: 20px;
+    font-size: 30px;
     border-bottom: none;
   }
 
@@ -565,40 +561,92 @@ ul {
   }
 
   .nav-menurigth {
-    left: 88%;
+    left: 78%;
   }
 }
 @media (max-width: 768px) {
   .showcase {
     height: 60px;
   }
-
-  .container img {
-    bottom: 25%;
-    left: 1%;
+  .container {
+    height: 300px;
   }
+.showcase {
+  display: flex;
+}
+.logomenu {
+  display: none;
+}
+.logomenu2 {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border: solid white;
+}
+  .container img {
+    bottom: 28%;
+    left: 0%;
+  }
+  .nav-menurigth a ion-icon  {
+    width: 30px;
+    height: 30px;
 
+  }
   .nav-menu {
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-    background-color: gray;
+    margin: 0;
+    background-color: #000000;
     position: fixed;
-    left: 0px;
     top: 70px;
+    width: 100%;
+    padding: 20px 0;
+
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+  }
+  .nav-main li a{
+    position: relative;
+    right: 10px;
+    font-size: 35px; 
+    margin: 5px;
+  }
+  .nav-main li{
+    font-size: 50px;
+    margin-top: 0;
+  }
+  .nav-main :hover {
+    background-color: rgb(255, 0, 0);
+  }
+  .covermenu {
+  display: flex;
   }
 
+
   .nav-menu2 {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-    background-color: #8a6363;
-    position: fixed;
-    left: 0px;
-    bottom: 300px;
+    display: none;
+
   }
+  .nav-toggle  {
+    display: flex;
+    position: relative;
+    right: 50px;
+    color: white;
+  }
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+
 }
 /*# sourceMappingURL=styleindex.css.map */
 
