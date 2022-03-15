@@ -68,11 +68,12 @@ ul {
 
 .nav-main ul li a {
   padding: 4px;
-  color: #FFFFFF;
+  color: #04ff04;
 }
 
 .nav-main ul li a:hover {
   border-bottom: solid #FFFFFF;
+  background-color: black;
 }
 
 .nav-main ul.nav-menu {
