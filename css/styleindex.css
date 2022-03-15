@@ -19,13 +19,12 @@ ul {
 }
 
 /* Showcase */
-.Showcase {
+.showcase {
   display: flex;
   align-items: center;
   width: 100%;
   height: 70px;
   background-color: #000000;
-  opacity: 80%;
 }
 
 .nav-menurigth {
@@ -166,73 +165,85 @@ ul {
 }
 .parrafosus {
   color: #FFFFFF;
-  width: 1200px;
-  height: 100px;
-  margin-left: 150px;
-  font-size: large;
   font-size: 50px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  margin-top: 50px;
+
 }
 
 .parrafosus {
-  margin: 0;
-  display: flexbox;
+  display: inline-block;
   width: 100%;
-  height: 300px;
+  height: 400px;
   border-bottom: solid white;
+  padding: 0;
 }
 
 .parrafosus p {
   text-align: center;
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 .parrafosus button {
-  width: 10px;
-  height: 100px;
-}
-
-#open {
-  border: solid white;
-  color: black;
+  cursor: pointer;
+  color: rgb(111, 112, 182);
+  background-color: #0c0b0b;
   width: 200px;
   height: 50px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   cursor: pointer;
-  font-size: 20px;
-  border: #FFFFFF;
-  box-shadow: 5px 5px 0px;
+  font-size: 25px;
+  box-shadow: 2px 0px 2px 0px;
+}
+.open2:hover {
+  color: rgb(111, 112, 182);
+  background-color: black;
+  font-size: 23px;
+  transition: all 3ms;
 }
 
 /*Seccion 2*/
 .info {
   margin-top: 20px;
   margin-bottom: 20px;
-  display: flex;
+  display:flex;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: #FFFFFF;
-  font-size: 60px;
+  font-size: 50px;
   height: 500px;
 }
-
 .infolanzamiento {
+
   width: 50%;
-  display: flexbox;
-  text-align: center;
+  height: 500px;
 }
-
 .infolanzamiento h2 {
-  padding: 20px;
-  font-size: 60px;
-}
-
-.infolanzamiento p {
-  width: 80%;
-  margin-top: 40px;
-  margin-left: 80px;
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
+
+}
+.infolanzamiento p {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 50px;
+
+}
+.info button {
+  cursor: pointer;
+  color: rgb(111, 112, 182);
+  background-color: #0c0b0b;
+  width: 200px;
+  height: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 2px 0px 2px 0px;
+  margin-top: 40px;
+}
+.info button :hover {
+  color: rgb(111, 112, 182);
+  background-color: black;
+  font-size: 23px;
+  transition: all 3ms;
 }
 
 .boton {
@@ -243,13 +254,23 @@ ul {
 
 .boton button {
   cursor: pointer;
-  color: black;
+  color: rgb(111, 112, 182);
+  background-color: #0c0b0b;
   width: 200px;
   height: 50px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   cursor: pointer;
   font-size: 20px;
-  box-shadow: 5px 5px 0px;
+  box-shadow: 2px 0px 2px 0px;
+  position: relative;
+  top: 30px;
+  right: 30px;
+}
+.boton :hover {
+  color: rgb(111, 112, 182);
+  background-color: black;
+  font-size: 23px;
+  transition: all 3ms;
 }
 
 .img1 {
@@ -262,6 +283,8 @@ ul {
 .img1 img {
   width: 60%;
   height: 100%;
+  position: relative;
+  bottom: 20px;
 }
 
 /* seccion oculta*/
@@ -370,7 +393,7 @@ ul {
 .bg-model {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(247, 247, 247, 0.7);
   position: absolute;
   top: 50px;
   display: flex;
@@ -383,13 +406,12 @@ ul {
 
 /*display: none;*/
 .model_content {
-  width: 70%;
-  height: 450px;
-  background-color: #FFFFFF;
-  border-radius: 5px;
+
+  width: 60%;
+  height: 600px;
+  border-radius: 4px;
   text-align: center;
   padding: 20px;
-  position: relative;
   box-shadow: 5px 5px 40px;
 }
 
@@ -423,6 +445,7 @@ ul {
   position: relative;
   left: 30%;
   top: 5px;
+  z-index: 10;
 }
 
 .model_content input {
@@ -457,7 +480,7 @@ ul {
 /*Boton youtube*/
 /* Footer */
 .footer {
-  background-color: #414141;
+  background-color: #141313;
   width: 100%;
   height: 300px;
   display: flex;
@@ -675,6 +698,9 @@ ul {
 
   .showcase {
     display: flex;
+    position: fixed;
+    height: 70px;
+    z-index: 10;
   }
 
   .logomenu {
@@ -694,10 +720,10 @@ ul {
   }
 
   .nav-menurigth a ion-icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    
   }
-
   .nav-menu {
     flex-direction: column;
     margin: 0;
@@ -710,6 +736,7 @@ ul {
     overflow-y: auto;
     left: 100%;
     transition: left 0.3s;
+    z-index: 10;
   }
 
   .nav-main li a {
@@ -726,6 +753,7 @@ ul {
 
   .nav-main :hover {
     background-color: red;
+    color: black;
   }
 
   .covermenu {
@@ -743,16 +771,158 @@ ul {
     color: white;
   }
 
-  .nav-toggle {
-    display: block;
-  }
-
   .nav-menu_visible {
     left: 0;
   }
 
   .nav-toggle:focus:not(:focus-visible) {
     outline: none;
+  }
+  .nav-toggle :hover{
+    border: solid white;
+    border-radius: 5px 
+  }
+
+  .nav-toggle :active {
+    color: red;
+  }
+  .parrafosus p {
+    font-size: 30px;
+  }
+  .parrafosus {
+    padding: 0;
+    margin-bottom: 0;
+    height: 300px;
+  }
+  .info {
+    display: block;
+    align-items: center;
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .infolanzamiento {
+    width: 100%;
+    height: 250px;
+
+  }
+  .infolanzamiento h2 {
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
+    padding: 0%;
+  }
+  .infolanzamiento p {
+    font-size: 20px;
+  }
+  .boton {
+    width: 50%;
+    margin: 0;
+    position: relative;
+    left: 32%;
+    top: 50px;
+  }
+  .boton button {
+    margin: 0;
+    top: 0;
+  }
+  .img1 img {
+    width: 300px;
+    height: 300px;
+  }
+  .img1 {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .footer {
+
+    position: relative;
+    top: 230px;
+    height: 100px;
+    padding-top: 10px;
+  }
+  .redes {
+
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .redes h4 {
+    font-size: 15px;
+  }
+  .redes button {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+  }
+  .redes ion-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .redes1 {
+
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .redes1 h4 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .redes1 button {
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+  }
+  .redes1 ion-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .redes2 {
+
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .redes2 h4 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .redes2 button {
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+  }
+  .redes2 ion-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .piepag {
+    height: 200px;
+    display: block;
+    position: relative;
+    top: 230px;
+    justify-content: center;
+    align-items: center;
+  }
+  .piepag img {
+    top: 8%;
+    left: 37%;
+    width: 120px;
+    height: 120px;
+  }
+  .piepag h5 {
+    text-align: center;
+    top: 0;
+    right: 0;
   }
 }
 /*# sourceMappingURL=styleindex.css.map */
