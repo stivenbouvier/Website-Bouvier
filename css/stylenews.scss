@@ -1,43 +1,37 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: black;
-    font-size: 16px;
-    font-family: 'Oswald', sans-serif;
-    color: #ffffff;
-    
-}  
-
+  background-color: black;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+}
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
-/* Showcase */
 
+/* Showcase */
 .Showcase {
-    width: 100%;
-    height: 30px;
-    background-color: #ffffff;
-    
+  width: 100%;
+  height: 30px;
+  background-color: #FFFFFF;
 }
 
 .container {
-    max-width: 100%;
-    height: 700px;
-    top: 200px;
-    background: url(/Imagenes/pexels-mathias-pr-reding-11077611.jpg);
-    background-size: 1000px;
-    border: solid;
-    
-    
+  max-width: 100%;
+  height: 600px;
+  top: 200px;
+  background: url(/Imagenes/pexels-mathias-pr-reding-11077611.jpg);
+  background-size: 1000px;
 }
 
 /* Navegacion */
@@ -46,6 +40,8 @@ ul {
   display: flex;
   align-items: center;
   width: 100%;
+  background-color: black;
+  height: 80px;
 }
 
 .nav-brand {
@@ -55,8 +51,9 @@ ul {
 /* nav left */
 .nav-main ul {
   display: flex;
-  font-size: 25px;
+  font-size: 20px;
   justify-content: center;
+  background: black;
 }
 
 .nav-main ul li {
@@ -71,214 +68,278 @@ ul {
 
 .nav-main ul li a:hover {
   border-bottom: solid #FFFFFF;
+  background: black;
 }
 
 .nav-main ul.nav-menu {
   flex: 1;
-  margin-left: 20px;
+  margin-left: 0px;
+  margin-right: 100px;
 }
 
 .nav-main img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   position: relative;
   left: 30px;
 }
 
 .nav-menurigth {
   position: relative;
-  right: 20%;
+  display: flex;
 }
-
-.newsday {
-    height: 200px;
-    color: #ffffff;
-    position: relative;
-    top: 300px;
-    font-size: small;
-    font-size: 15px;
-    background-color: black;
-    align-items: center;
-    border: solid;
+.section{
+  border: solid;
+  color: blanchedalmond;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 200px;
 }
 
 
-.titlebouvier {
-    font-size: large;
-    font-size: 50px;
-    color: pink;
-    text-shadow: #FFFFFF;
-    margin-left:250px;
-    border: solid;
-    
+.titulo {
+  margin-top: 70px;
+  color: rgba(128, 153, 255, 0.705);
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
 }
-#present {
-    
-    font-size: 30px;
-    left: 40px;
-    color: #FFFFFF;
-    margin-left: 15px;
-    margin-right: 15px;
-    color: #FFFFFF;
-    width: 90%;
-    border: solid;
-    display: flex;
-}
-    
-    .medium {
-      margin-top: 80px;
-      width: 95%;
-      height: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 80px;
-      box-shadow: #ffffff;
-      color: pink;
-      right: 10%;
-      left: 40px;
-      margin-left: 25px;
-    }
-    
-    .medium p {
-      border: solid;
-      margin-bottom: 8px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 15px;
-    }
-    
-    .inforevista {
-      width: 95%;
-      height: 1000px;
-      margin-top: 20px;
-      border: solid;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 60px;
-      margin-left: 25px;
-    }
-    
-    .newsletterrevista {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: pink;
-      font-size: 50px;
-      font-weight: 40px;
-    }
-    
-    .revista {
-      display: flex;
-      align-items: flex-start;
-      width: 100px;
-      height: 80px;
-      margin-bottom: 100px;
-      top: 20px;
-      display: flex;
-    }
-
+.parrafo {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
   
+  font-size: 30px;
 
+}
+
+.notice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  position: relative;
+  width: 90%;
+  top: 150px;
+  font-size: 30px;
+  margin-left: 65px;
+  margin-top: 40px;
+}
+
+.medium {
+  width: 95%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  box-shadow: #FFFFFF;
+  color: pink;
+  right: 10%;
+  left: 40px;
+  margin-left: 25px;
+  bottom: 100px;
+}
+
+.medium p {
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  margin-bottom: 100px;
+}
+
+.inforevista {
+  width: 95%;
+  height: 1000px;
+  margin-top: 20px;
+  border: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  margin-left: 30px;
+}
+
+.newsletterrevista {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: pink;
+  font-size: 50px;
+  position: relative;
+  right: 7%;
+}
+
+.revista {
+  display: flex;
+  align-items: flex-start;
+  width: 100px;
+  height: 80px;
+  margin-bottom: 100px;
+  top: 20px;
+  display: flex;
+  right: 7%;
+  position: relative;
+}
+
+.github-btn {
+  position: absolute;
+  right: 40px;
+  bottom: 50px;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
+  background: red;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+}
+
+@media screen and (min-width: 500px) {
+  .github-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
+  }
+}
+@media screen and (max-width: 700px) {
   .github-btn {
-    position: absolute;
-    right: 40px;
-    bottom: 50px;
-    text-decoration: none;
-    padding: 15px 25px;
-    border-radius: 4px;
-    box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
-    background: red;
-    color: #fff;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 16px;
-    transition: all 0.3s ease-in-out;
-    display: flex;
-  }
-  @media screen and (min-width: 500px) {
-    .github-btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
-    }
-  }
-  @media screen and (max-width: 700px) {
-    .github-btn {
-      position: relative;
-      bottom: auto;
-      right: auto;
-      margin-top: 20px;
-    }
-    .github-btn:active {
-      transform: scale(1.1);
-      box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
-    }
-  }
-  
-  .medium {
-    margin-top: 80px;
-    width: 95%;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 80px;
-    box-shadow: #ffffff;
-    color: pink;
-    right: 10%;
-    left: 40px;
-    margin-left: 25px;
-  }
-  
-  .medium p {
-    border: solid;
-    margin-bottom: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 15px;
-  }
-  
-  .inforevista {
-    width: 95%;
-    height: 1000px;
+    position: relative;
+    bottom: auto;
+    right: auto;
     margin-top: 20px;
-    border: solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 60px;
-    margin-right: 1000px;
-  }
-  .news{
-     display: flex;
-     border: solid;
-  }
-  .newsletterrevista {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: pink;
-    font-size: 50px;
-    font-weight: 40px;
-    border: solid;
-  }
-  
-  .revista {
-    display: flex;
-    align-items: flex-start;
-    width: 650px;
-    height: 800px;
-    margin-bottom: 100px;
-    top: 20px;
   }
 
+  .github-btn:active {
+    transform: scale(1.1);
+    box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
+  }
+}
+.medium {
+  margin-top: 80px;
+  width: 95%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  box-shadow: #ffffff;
+  color: pink;
+  right: 10%;
+  left: 40px;
+  margin-left: 25px;
+}
 
-  /* Footer */
+.medium p {
+  border: solid;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.inforevista {
+
+  width: 95%;
+  height: 1200px;
+  margin-top: 20px;
+  border: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  margin-right: 1000px;
+  display: flexbox;
+}
+
+.news {
+  display: flex;
+  color: #ffffff;
+  position: absolute;
+  right: 43%;
+  bottom: 188px;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
+  background: rgba(128, 153, 255, 0.705);
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+
+}
+
+@media screen and (min-width: 500px) {
+  .news:hover {
+    background-color: rgb(99, 5, 63);;
+    transform: scale(1.1);
+    box-shadow: 0px 5px 10px rgb(99, 5, 63);
+  }
+}
+@media screen and (max-width: 700px) {
+  .news {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 20px;
+  }
+
+  .news:active {
+    transform: scale(1.1);
+    box-shadow: 0px 17px 20px -6px rgb(255, 255, 255);
+  }
+}
+
+.newsletterrevista {
+  display: flex;
+  color: pink;
+  font-size: 50px;
+  font-weight: 40px;
+  border: solid;
+  width: 100%;
+  left: 30px;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  margin-right: 20%;
+  margin-top: 50px;
+
+}
+
+.revista {
+  position: relative;
+  display: flex;
+  width: 610px;
+  height: 800px;
+  border: solid;
+  color: pink;
+  justify-content: center;
+  margin-left: 150px;
+  margin-top: 150px;
+}
+
+
+/* Footer */
 .footer {
-  background-color: #414141;
+  background-color: #0c0b0be8;
   width: 100%;
   height: 300px;
   display: flex;
@@ -293,6 +354,7 @@ ul {
   width: 20%;
   height: 150px;
   margin: 10px;
+  
 }
 
 .redes button {
@@ -300,12 +362,14 @@ ul {
   height: 100px;
   border-radius: 20%;
   background-color: black;
+  cursor: pointer;
 }
 
 .redes ion-icon {
   color: #a0eef8;
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
+  
 }
 
 .redes h4 {
@@ -328,12 +392,13 @@ ul {
   height: 100px;
   border-radius: 20%;
   background-color: black;
+  cursor: pointer;
 }
 
 .redes1 ion-icon {
   color: #a0eef8;
-  width: 70px;
-  height: 70px;
+  width: 30px;
+  height: 30px;
 }
 
 .redes1 h4 {
@@ -356,12 +421,13 @@ ul {
   height: 100px;
   border-radius: 20%;
   background-color: black;
+  cursor: pointer;
 }
 
 .redes2 ion-icon {
   color: #a0eef8;
-  width: 70px;
-  height: 70px;
+  width: 30px;
+  height: 30px;
 }
 
 .redes2 h4 {
@@ -382,7 +448,7 @@ ul {
   width: 180px;
   height: 180px;
   position: relative;
-  left: 90px;
+  left: 180px;
   bottom: 20px;
 }
 
@@ -391,15 +457,15 @@ ul {
   color: white;
   position: relative;
   top: 60px;
-  right: 90px;
+  right: 70px;
 }
 
 /*---------------RESPONSIVE NAV -------------*/
+/*
 @media (max-width: 1364px) {
   .nav-main {
     font-size: 20px;
   }
-
   .nav-main li a:hover {
     font-size: 25px;
     border-bottom: none;
@@ -407,7 +473,6 @@ ul {
   .nav-main2 {
     font-size: 20px;
   }
-
   .nav-main2 li a:hover {
     font-size: 25px;
     border-bottom: none;
@@ -415,19 +480,16 @@ ul {
 }
 @media (max-width: 1116px) {
   .container img {
-    /*visibility: collapse;*/
     width: 100px;
     height: 100px;
     position: relative;
     bottom: 20%;
     right: 6%;
   }
-
   .container {
     display: flex;
     height: 400px;
   }
-
   .nav-main {
     position: relative;
     right: 2%;
@@ -442,20 +504,16 @@ ul {
     height: 70px;
     font-size: 15px;
   }
-
   .nav-menu2 {
     position: relative;
     right: 25%;
   }
-
   .nav-main ul li a {
     color: #ffffff;
   }
-
   .nav-main2 ul li a {
     color: #ffffff;
   }
-
   .nav-main li a:hover {
     font-size: 20px;
     border-bottom: none;
@@ -491,12 +549,13 @@ ul {
     align-items: center;
     width: 100%;
     padding: 0;
-    background-color: rgb(138, 99, 99);
+    background-color: #8a6363;
     position: fixed;
     left: 0px;
-    bottom:300px;
+    bottom: 300px;
   }
+}*/
+/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=stylenews.css.map */
 
-}
-  
-  /*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=stylenews.css.map */
