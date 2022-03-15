@@ -104,6 +104,7 @@ ul {
   margin-top: 70px;
   color: rgba(128, 153, 255, 0.705);
   font-size: 50px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -472,6 +473,7 @@ ul {
 }
 @media (max-width: 1116px) {
   .container img {
+
     width: 100px;
     height: 100px;
     position: relative;
@@ -549,6 +551,6 @@ ul {
 }*/
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=stylenews.css.map */
-/*# sourceMappingURL=stylenews.css.map */
+
 
 /*# sourceMappingURL=stylenews.css.map */

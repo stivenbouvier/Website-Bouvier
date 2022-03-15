@@ -54,11 +54,13 @@ ul {
   font-size: 20px;
   justify-content: center;
   background: black;
+
 }
 
 .nav-main ul li {
   padding: 10px;
   margin: 10px;
+  
 }
 
 .nav-main ul li a {
@@ -74,6 +76,7 @@ ul {
 .nav-main ul.nav-menu {
   flex: 1;
   margin-left: 0px;
+
   margin-right: 100px;
 }
 
@@ -133,6 +136,51 @@ ul {
   margin-top: 40px;
 }
 
+  
+}
+
+.newsday {
+  
+  height: 300px;
+  color: #ffffff;
+  position: relative;
+  top: 400px;
+  font-size: small;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  align-items: center;
+  
+}
+
+.titlebouvier {
+  font-size: large;
+  font-size: 50px;
+  color: pink;
+  text-shadow: #FFFFFF;
+  margin-bottom: 100px;
+  margin-right: 60px;
+  margin-bottom: 200px;
+  
+
+}
+.notice{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  position: relative;
+  width: 90%;
+  top: 150px;
+  font-size: 30px;
+  margin-left: 65px;
+  margin-top: 40px;
+  
+}
+
+
 .medium {
   width: 95%;
   height: 200px;
@@ -149,12 +197,15 @@ ul {
 }
 
 .medium p {
+
   margin-bottom: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 5px;
   margin-bottom: 100px;
+  
+
 }
 
 .inforevista {
@@ -310,10 +361,66 @@ ul {
 
 .newsletterrevista {
   display: flex;
+  }
+}
+@media screen and (max-width: 700px) {
+  .github-btn {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 20px;
+  }
+
+  .github-btn:active {
+    transform: scale(1.1);
+    box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
+  }
+}
+.medium {
+  margin-top: 80px;
+  width: 95%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  box-shadow: #ffffff;
   color: pink;
-  font-size: 50px;
-  font-weight: 40px;
+  right: 10%;
+  left: 40px;
+  margin-left: 25px;
+}
+
+.medium p {
   border: solid;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.inforevista {
+  width: 95%;
+  height: 1000px;
+  margin-top: 20px;
+  border: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  margin-right: 1000px;
+}
+
+.news {
+  display: flex;
+  border: solid;
+}
+
+.newsletterrevista {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   left: 30px;
   text-align: center;
@@ -335,6 +442,7 @@ ul {
   margin-left: 150px;
   margin-top: 150px;
 }
+
 
 
 /* Footer */
@@ -470,6 +578,7 @@ ul {
     font-size: 25px;
     border-bottom: none;
   }
+
   .nav-main2 {
     font-size: 20px;
   }
@@ -497,6 +606,7 @@ ul {
     height: 70px;
     font-size: 15px;
   }
+
   .nav-main2 {
     position: relative;
     bottom: 17%;
@@ -518,10 +628,12 @@ ul {
     font-size: 20px;
     border-bottom: none;
   }
+
   .nav-main2 li a:hover {
     font-size: 20px;
     border-bottom: none;
   }
+
   .nav-menurigth {
     left: 88%;
   }
@@ -530,10 +642,12 @@ ul {
   .showcase {
     height: 60px;
   }
+
   .container img {
     bottom: 25%;
     left: 1%;
   }
+
   .nav-menu {
     flex-direction: column;
     align-items: center;
@@ -544,6 +658,7 @@ ul {
     left: 0px;
     top: 70px;
   }
+
   .nav-menu2 {
     flex-direction: column;
     align-items: center;
