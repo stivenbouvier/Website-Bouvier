@@ -174,19 +174,21 @@ ul {
 .bg-model {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #fff;
   position: absolute;
   top: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: solid;
+  color: #000000;
 }
 
 /*display: none;*/
 .model_content {
   width: 1200px;
   height: 600px;
-  background-color: black;
+  background-color: transparent;
   border-radius: 4px;
   text-align: center;
   padding: 20px;
@@ -244,6 +246,107 @@ ul {
   margin-top: -90px;
 }
 
+.toast {
+  position: absolute;
+  top: 250px;
+  right: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  height: 70px;
+  width: 300px;
+  position: fixed;
+  overflow: hidden;
+  border: solid;
+}
+
+.toast-content {
+  display: flex;
+  align-items: center;
+}
+
+.toast-content .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  background-color: #1b9e0f;
+  color: #FFFFFF;
+  font-size: 20px;
+  border-radius: 50%;
+  margin-top: 7px;
+}
+
+.toast-content .message {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  width: 200px;
+  position: relative;
+}
+
+.message .text {
+  font-weight: 400;
+  color: violet;
+  align-items: center;
+}
+
+.message .text.text-1 {
+  font-weight: 600;
+  color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+}
+
+.message .text.text-2 {
+  font-weight: 600;
+  color: #FFFFFF;
+  font-size: 15px;
+}
+
+.toast .closer {
+  position: absolute;
+  top: 0.9px;
+  right: 5px;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.7%;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.toast .closer:hover {
+  opacity: 1;
+}
+
+.toast .progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  border-radius: 80%;
+}
+
+.toast .progress::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+}
+
 .github-btn {
   position: absolute;
   right: 40px;
@@ -259,46 +362,5 @@ ul {
   font-size: 16px;
   transition: all 0.3s ease-in-out;
 }
-
-.spotify-btn {
-  position: absolute;
-  right: 40px;
-  bottom: 140px;
-  text-decoration: none;
-  padding: 15px 25px;
-  border-radius: 4px;
-  box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
-  background: #046414;
-  color: #fff;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 16px;
-  transition: all 0.3s ease-in-out;
-}
-
-@media screen and (min-width: 500px) {
-  .spotify-btn:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
-    box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
-  }
-}
-@media screen and (max-width: 700px) {
-  .spotify-btn {
-    position: relative;
-    bottom: auto;
-    right: auto;
-    margin-top: 20px;
-  }
-
-  .spotify-btn:active {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
-    box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
-  }
-}
-/*# sourceMappingURL=styleplayer.css.map */
 
 /*# sourceMappingURL=signup.css.map */
