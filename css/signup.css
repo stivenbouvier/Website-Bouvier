@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -68,8 +69,8 @@ ul {
   display: flex;
   width: 100%;
   height: 700px;
-  background: url(/Imagenes/pexels-isaac-garcia-9567687.jpg);
-  background-size: 600px;
+  background: url(/imgnonstop/04\ \(1\).png);
+  background-size: 100%;
 }
 
 /* Navegacion */
@@ -115,7 +116,7 @@ ul {
 
 .nav-main ul li a {
   padding: 4px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .nav-main li a:hover {
@@ -130,7 +131,7 @@ ul {
 
 .nav-main2 li a {
   padding: 4px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .nav-main2 li a:hover {
@@ -163,257 +164,270 @@ ul {
     box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
   }
 }
-.titlebouvier {
-  font-size: large;
-  font-size: 50px;
-  color: pink;
-  position: relative;
-  text-shadow: #FFFFFF;
-  margin-left: 180px;
-}
 
-#present {
-  font-size: 20px;
-  left: 40px;
-  color: #FFFFFF;
-  margin-left: 15px;
-  margin-right: 15px;
+.titlebouvier {
+    font-size: large;
+    font-size: 50px;
+    color: pink;
+    position: relative;
+    text-shadow: #FFFFFF;
+    margin-left: 180px;
+}
+  
+  #present {
+    font-size: 20px;
+    left: 40px;
+    color: #FFFFFF;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .github-btn {
-  position: absolute;
-  right: 40px;
-  bottom: 50px;
-  text-decoration: none;
-  padding: 15px 25px;
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
-  box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
-  background: #ec1717;
-  color: #fff;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 16px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+    position: absolute;
+    right: 40px;
+    bottom: 50px;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
+            box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
+    background: #ec1717;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 16px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 @media screen and (min-width: 500px) {
-  .github-btn:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
-    box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
-  }
+    .github-btn:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            -webkit-box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
+            box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
+    }
 }
+
 @media screen and (max-width: 700px) {
-  .github-btn {
+    .github-btn {
     position: relative;
     bottom: auto;
     right: auto;
     margin-top: 20px;
-  }
-
-  .github-btn:active {
+    }
+    .github-btn:active {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     -webkit-box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
     box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
-  }
+    }
 }
+
 .bg-model {
-  width: 100%;
-  height: 100%;
-  background-image: url(/imgnonstop/Suscribete\ a\ nuestras\ newsletter\ \(3\).png);
-  position: absolute;
-  top: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: solid;
-  color: #000000;
-}
-
+    width:100%;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    color: #000000;
+    
+    
+        
+} 
 /*display: none;*/
+
 .model_content {
-  width: 1200px;
-  height: 600px;
-  background-color: transparent;
-  border-radius: 4px;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-}
+width:  1200px;
+height: 600px;
+background-color:transparent;
+border-radius:4px;
+text-align: center;
+padding: 20px;
+position: relative;
 
-.model_content h1 {
-  color: black;
 }
-
-#send {
-  cursor: pointer;
-  padding: 10px;
-  color: #010003;
-  background-color: violet;
-  width: 100px;
-  height: 10px;
-  font-size: 23px;
-  box-shadow: 5px 5px 0px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  border: solid;
+.model_content h1{
+    color: rgb(255, 251, 251);
 }
 
 #send {
-  width: 10%;
-  height: 50%;
-  text-align: center;
-  display: flex;
-  margin: 15px;
-  margin-left: 15.3%;
-  margin-bottom: 0px;
-  justify-content: center;
-  position: relative;
-  left: 30%;
-  top: 5px;
+    cursor: pointer;
+    padding: 10px;
+    color:#010003;
+    background-color: violet;
+    width: 100px;
+    height: 10px;
+    font-size: 23px;
+
+
+    box-shadow: 5px 5px 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: solid;
+    
 }
-
-.model_content input {
-  width: 70%;
-  height: 50%;
-  text-align: center;
-  display: flex;
-  margin: 25px;
-  margin-left: 15.3%;
-  border-color: violet;
-  margin-bottom: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+#send {
+    width:10%;
+    height:50%;
+    text-align: center;
+    display: flex;
+    margin: 15px;
+    margin-left: 15.3%;
+    margin-bottom: 0px;
+    justify-content: center;
+    position: relative;
+    left: 30%;
+    top: 5px;
 }
+    .model_content  input {
+        width:70%;
+        height:50%;
+        text-align: center;
+        display: flex;
+        margin: 25px;
+        margin-left: 15.3%;
+        border-color:violet;
+        margin-bottom: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-.logopop {
-  width: 350px;
-  height: 350px;
-  margin: 0;
-  display: inline-flex;
-  margin-top: -90px;
-  border: solid;
-  opacity: 1%;
+
+.logopop{
+    width: 350px;
+    height: 350px;
+    margin :0;
+    display :inline-flex;
+    margin-top:  -90px;
+    border: solid;
+    opacity: 1%;
+    
 }
-
-.toast {
-  position: absolute;
-  top: 250px;
-  right: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #000000;
-  border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: none;
-  height: 70px;
-  width: 300px;
-  position: fixed;
-  overflow: hidden;
-  border: solid;
-}
-
-.toast-content {
-  display: flex;
-  align-items: center;
-}
-
-.toast-content .check {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 25px;
-  width: 25px;
-  background-color: #1b9e0f;
-  color: #FFFFFF;
-  font-size: 20px;
-  border-radius: 50%;
-  margin-top: 7px;
-}
-
-.toast-content .message {
-  display: flex;
-  flex-direction: column;
-  margin: 0 20px;
-  width: 200px;
-  position: relative;
-}
-
-.message .text {
-  font-weight: 400;
-  color: violet;
-  align-items: center;
-}
-
-.message .text.text-1 {
-  font-weight: 600;
-  color: #FFFFFF;
-  justify-content: center;
-  align-items: center;
-}
-
-.message .text.text-2 {
-  font-weight: 600;
-  color: #FFFFFF;
-  font-size: 15px;
-}
-
-.toast .closer {
-  position: absolute;
-  top: 0.9px;
-  right: 5px;
-  padding: 5px;
-  cursor: pointer;
-  opacity: 0.7%;
-  font-size: 20px;
-  color: #FFFFFF;
-
-}
-
-.toast .closer:hover {
-  opacity: 1;
-}
-
-.toast .progress {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  width: 100%;
-  border-radius: 80%;
-}
-
-.toast .progress::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 50px;
-  height: 100%;
-  width: 100%;
-  background-color: #000000;
-}
-
+.toast{
+    position: absolute;
+    top: 250px;
+    right: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    height: 70px;
+    width: 300px;
+    position: fixed;
+    overflow: hidden;
+    border:solid;
+  }
+  
+  .toast-content{
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .toast-content .check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    background-color: #1b9e0f;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-radius: 50%;
+    margin-top: 7px;
+    
+  }
+  
+  .toast-content .message{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    width: 200px;
+    position: relative;
+  }
+  
+  .message .text{
+    
+    font-weight: 400;
+    color: violet;
+    align-items: center;
+  
+  }
+  
+  .message .text.text-1{
+    font-weight: 600;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .message .text.text-2{
+    font-weight: 600;
+    color: #FFFFFF;
+    font-size: 15px;
+  
+  }
+  
+  .toast .closer{
+    position: absolute;
+    top: 0.9px;
+    right: 5px;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.7%;
+    font-size: 20px;
+    color: #FFFFFF;
+  }
+  
+  .toast .closer:hover{
+    opacity: 1;
+  }
+  
+  .toast .progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    
+    border-radius: 80%;
+  }
+  
+  .toast .progress::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+  
+  
+  }
+  
 .github-btn {
-  position: absolute;
-  right: 40px;
-  bottom: 50px;
-  text-decoration: none;
-  padding: 15px 25px;
-  border-radius: 4px;
-  box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
-  background: red;
-  color: #fff;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 16px;
-  transition: all 0.3s ease-in-out;
-}
+    position: absolute;
+    right: 40px;
+    bottom: 50px;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
+    background: red;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    }
 
-/*# sourceMappingURL=signup.css.map */
+    
