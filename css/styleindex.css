@@ -70,6 +70,7 @@ ul {
   width: 100%;
   height: 700px;
   background: url(/Imagenes/Diseño\ sin\ título\ \(7\).png);
+  background-position: center;
   background-size: cover;
 }
 
@@ -168,6 +169,7 @@ ul {
   color: #FFFFFF;
   font-size: 50px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
 }
 
 .parrafosus {
@@ -185,7 +187,7 @@ ul {
 
 .parrafosus button {
   cursor: pointer;
-  color: #6f70b6;
+  color: rgb(111, 112, 182);
   background-color: #0c0b0b;
   width: 200px;
   height: 50px;
@@ -194,9 +196,8 @@ ul {
   font-size: 25px;
   box-shadow: 2px 0px 2px 0px;
 }
-
 .open2:hover {
-  color: #6f70b6;
+  color: rgb(111, 112, 182);
   background-color: black;
   font-size: 23px;
   transition: all 3ms;
@@ -206,36 +207,34 @@ ul {
 .info {
   margin-top: 20px;
   margin-bottom: 20px;
-  display: flex;
+  display:flex;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: #FFFFFF;
   font-size: 50px;
   height: 500px;
 }
-
 .infolanzamiento {
-  background-color: white;
+background-color: white;
   width: 50%;
   height: 500px;
   color: #000000;
 }
-
 .infolanzamiento h2 {
   font-size: 50px;
   text-align: center;
   position: relative;
   top: 20px;
-}
 
+}
 .infolanzamiento p {
   font-size: 35px;
   text-align: center;
   margin-top: 50px;
-}
 
+}
 .info button {
   cursor: pointer;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: #0c0b0b;
   width: 200px;
   height: 50px;
@@ -245,9 +244,8 @@ ul {
   box-shadow: 2px 0px 2px 0px;
   margin-top: 40px;
 }
-
 .info button :hover {
-  color: #949494;
+  color: rgb(148, 148, 148);
   background-color: black;
   font-size: 23px;
   transition: all 3ms;
@@ -261,7 +259,7 @@ ul {
 
 .boton button {
   cursor: pointer;
-  color: #ffd900;
+  color: rgb(255, 217, 0);
   background-color: #000000;
   width: 200px;
   height: 50px;
@@ -273,9 +271,8 @@ ul {
   top: 30px;
   right: 30px;
 }
-
 .boton :hover {
-  color: #6f70b6;
+  color: rgb(111, 112, 182);
   background-color: black;
   font-size: 23px;
   transition: all 3ms;
@@ -402,8 +399,7 @@ ul {
   margin-top: 10px;
   width: 100%;
   height: 100%;
-  background-image: url(/imgnonstop/Suscribete\ a\ nuestras\ newsletter\ \(3\).png);
-  background-size: 1400px;
+  background-color: #ff8aef;
   top: 50px;
   display: flex;
   justify-content: center;
@@ -413,49 +409,87 @@ ul {
   z-index: 10;
 }
 
-.send {
+
+/*display: none;*/
+.bg-model {
   width: 100%;
-  height: 100px;
+  height: 100%;
+  background-image: url(/imgnonstop/Suscribete\ a\ nuestras\ newsletter\ \(3\).png); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  top: 50px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 300px;
+  z-index: 10;
 }
 
 /*display: none;*/
 .model_content {
-  width: 60%;
   height: 600px;
   border-radius: 4px;
   text-align: center;
   padding: 20px;
   box-shadow: 5px 5px 40px;
 }
-
+.tosuscribe {
+  position: relative;
+  bottom: 5%;
+  margin: 10px;
+  margin-left: 30%;
+  width:40% ;
+  background-color: #000000;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
 .model_content h1 {
-  color: #07ff5a;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.model_content {
+  width: 60%;
+  height: 600px;
+  border-radius: 4px;
+  display: block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 5px 5px 40px;
+}
+.model_content button {
+  width: 130px;
+}
+.botons input {
+  width: 100%;
+  height: 100%;
 }
 
 #send {
   cursor: pointer;
   padding: 10px;
   color: #010003;
-  background-color: rgba(233, 89, 233, 0.863);
-  width: 100px;
+  background-color:rgba(233, 89, 233, 0.863);
+  width: 130px;
   height: 10px;
   font-size: 23px;
   box-shadow: 5px 5px 0px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin-bottom: 20px;
+  border: solid white;
 }
 
 #send {
-  width: 10%;
+  width: 20%;
   height: 50%;
   text-align: center;
-  display: flex;
   margin-top: 20px;
   border-color: #FFFFFF;
-  margin-bottom: 0px;
-  justify-content: center;
   z-index: 10;
 }
 
@@ -468,6 +502,11 @@ ul {
   margin-left: 15.3%;
   border-color: violet;
   margin-bottom: 0px;
+}
+.botons {
+  display: block;
+  align-items: center;
+  justify-content: center;
 }
 
 .close {
@@ -590,7 +629,6 @@ ul {
   align-items: center;
   justify-content: center;
 }
-
 .piepag div {
   display: flex;
   justify-content: center;
@@ -604,7 +642,7 @@ ul {
 
 .piepag h5 {
   font-size: 15px;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 
@@ -734,8 +772,8 @@ ul {
   .nav-menurigth a ion-icon {
     width: 40px;
     height: 40px;
+    
   }
-
   .nav-menu {
     flex-direction: column;
     margin: 0;
@@ -779,7 +817,7 @@ ul {
   .nav-toggle {
     display: flex;
     position: relative;
-    right: 50px;
+    right: 80px;
     color: white;
   }
 
@@ -790,27 +828,23 @@ ul {
   .nav-toggle:focus:not(:focus-visible) {
     outline: none;
   }
-
-  .nav-toggle :hover {
+  .nav-toggle :hover{
     border: solid white;
-    border-radius: 5px;
+    border-radius: 5px 
   }
 
   .nav-toggle :active {
     color: red;
   }
-
   .parrafosus p {
     font-size: 30px;
   }
-
   .parrafosus {
     padding: 0;
     margin-bottom: 0;
     height: 300px;
     border: none;
   }
-
   .info {
     display: block;
     align-items: center;
@@ -818,48 +852,35 @@ ul {
     padding: 0;
     width: 100%;
   }
-
   .bg-model {
     margin-top: 10px;
     z-index: 10;
   }
-
   .model_content img {
     width: 200px;
     height: 200px;
     position: relative;
     top: 50px;
   }
-
-  .send {
-    display: flex;
-    justify-content: center;
-    margin-left: 10px;
-  }
-
   #send {
-    position: relative;
-    right: 16.5%;
-    width: 200px;
+    width: 120px;
     margin-left: auto;
   }
 
   .infolanzamiento {
     width: 100%;
     height: 250px;
-  }
 
+  }
   .infolanzamiento h2 {
     font-size: 28px;
     width: 100%;
     text-align: center;
     padding: 0%;
   }
-
   .infolanzamiento p {
     font-size: 20px;
   }
-
   .boton {
     width: 50%;
     margin: 0;
@@ -867,100 +888,85 @@ ul {
     left: 32%;
     top: 50px;
   }
-
   .boton button {
     margin: 0;
     top: 0;
   }
-
   .img1 img {
     width: 300px;
     height: 300px;
   }
-
   .img1 {
     width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
   }
-
   .footer {
+
     position: relative;
     top: 230px;
     height: 100px;
     padding-top: 10px;
   }
-
   .redes {
-    display: block;
+    height: 80px;
+    display:grid;
     align-items: center;
     justify-content: center;
-    padding-top: 50px;
   }
-
   .redes h4 {
     font-size: 15px;
   }
-
   .redes button {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-left: 20px;
   }
-
   .redes ion-icon {
-    width: 30px;
+    width: 20px;
     height: 30px;
   }
-
   .redes1 {
-    display: block;
+    height: 80px;
+    display:grid;
     align-items: center;
     justify-content: center;
-    padding-top: 50px;
   }
-
   .redes1 h4 {
     font-size: 15px;
     text-align: center;
   }
-
   .redes1 button {
-    width: 50px;
-    height: 50px;
-    margin-left: 25px;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
   }
-
   .redes1 ion-icon {
-    width: 30px;
+    width: 20px;
     height: 30px;
   }
-
   .redes2 {
-    display: block;
+    height: 80px;
+    display:grid;
     align-items: center;
     justify-content: center;
-    padding-top: 50px;
   }
-
   .redes2 h4 {
     font-size: 15px;
     text-align: center;
   }
-
   .redes2 button {
-    width: 50px;
-    height: 50px;
-    margin-left: 25px;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
   }
-
   .redes2 ion-icon {
-    width: 30px;
+    width: 25px;
     height: 30px;
   }
-
   .piepag {
     height: 200px;
     display: block;
@@ -969,21 +975,18 @@ ul {
     justify-content: center;
     align-items: center;
   }
-
   .piepag img {
     top: 8%;
     left: 37%;
     width: 120px;
     height: 120px;
   }
-
   .piepag h5 {
     text-align: center;
     top: 0;
     right: 0;
   }
 }
-/*# sourceMappingURL=styleindex.css.map */
 /*# sourceMappingURL=styleindex.css.map */
 /*# sourceMappingURL=styleindex.css.map */
 
