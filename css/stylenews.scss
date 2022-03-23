@@ -126,6 +126,7 @@ ul {
   border-bottom: solid #000000;
 }
 
+
 .nav-main2 li {
   padding: 10px;
   margin: 10px;
@@ -139,6 +140,7 @@ ul {
 .nav-main2 li a:hover {
   font-size: 30px;
   border-bottom: solid #000000;
+
 }
 
 .container img {
@@ -264,7 +266,7 @@ ul {
   color: pink;
   font-size: 50px;
   position: relative;
-  
+
 }
 
 .revista {
@@ -275,6 +277,7 @@ ul {
   margin-bottom: 100px;
   display: flex;
   right: 10%;
+
   position: relative;
 }
 
@@ -402,6 +405,7 @@ ul {
   display: flex;
   }
 
+
 @media screen and (max-width: 700px) {
   .github-btn {
     position: relative;
@@ -453,7 +457,44 @@ ul {
 
 .suscribenews {
   display: flex;
+
   border: solid;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.inforevista {
+  width: 95%;
+  height: 1000px;
+  margin-top: 20px;
+  border: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  margin-right: 1000px;
+}
+
+.news {
+  display: flex;
+  border: solid;
+}
+
+.newsletterrevista {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  left: 30px;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  margin-right: 20%;
+  margin-top: 50px;
+
 }
 
 .newsletterrevista {
@@ -604,7 +645,7 @@ ul {
   color: white;
   position: relative;
   top: 60px;
-  right: 90px;
+  right: 70px;
 }
 
 /*---------------RESPONSIVE NAV -------------*/

@@ -8,6 +8,7 @@ body {
   background-color: black;
   font-size: 16px;
   font-family: "Oswald", sans-serif;
+  
 }
 
 a {
@@ -293,6 +294,7 @@ background-color: white;
 
 /* seccion oculta*/
 /*mensaje de cambios hechos ventana*/
+
 .toast {
   position: absolute;
   top: 400px;
@@ -313,6 +315,7 @@ background-color: white;
   overflow: hidden;
 }
 
+
 .toast-content {
   display: flex;
   align-items: center;
@@ -329,6 +332,7 @@ background-color: white;
   font-size: 20px;
   border-radius: 50%;
   margin-top: 7px;
+
 }
 
 .toast-content .message {
@@ -339,6 +343,7 @@ background-color: white;
   position: relative;
 }
 
+
 .message .text {
   font-weight: 400;
   color: violet;
@@ -346,6 +351,7 @@ background-color: white;
 }
 
 .message .text.text-1 {
+
   font-weight: 600;
   color: #000000;
   justify-content: center;
@@ -353,6 +359,7 @@ background-color: white;
   font-size: 18px;
   font-family: "Oswald", sans-serif;
 }
+
 
 .message .text.text-2 {
   font-weight: 600;
@@ -368,6 +375,7 @@ background-color: white;
   cursor: pointer;
   font-size: 20px;
   color: transparent;
+
 }
 
 .toast .closer:hover {
@@ -385,15 +393,18 @@ background-color: white;
 
 .toast .progress::before {
   content: "";
+
   position: absolute;
   bottom: -1;
   right: 50px;
   height: 100%;
   width: 100%;
   background-color: #05eb37;
+
 }
 
 /*Ventana de registro*/
+
 .bg-model {
   margin-top: 10px;
   width: 100%;
@@ -417,6 +428,7 @@ background-color: white;
 
 /*display: none;*/
 .model_content {
+
   width: 60%;
   height: 600px;
   border-radius: 4px;
@@ -953,6 +965,7 @@ background-color: white;
     top: 0;
     right: 0;
   }
+
 }
 /*# sourceMappingURL=styleindex.css.map */
 /*# sourceMappingURL=styleindex.css.map */
