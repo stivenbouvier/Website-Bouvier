@@ -108,14 +108,16 @@
         <div class="model_content">
             <div class="close">+</div>
             <img class="logopop" src="/Imagenes/LOGOWEB-PhotoRoom.png" alt="">
-            <h1>To suscribe and receive news in your E-mail.</h1>
+            <div class="tosuscribe">
+                <h1>To suscribe and receive news in your E-mail.</h1>
+            </div>
             
             <!--Formulario oculto con base de datos PHP-->
 
-            <form action="/register.php" name="" method="POST">
-                <input type="text" name="name" placeholder ="name">
-                <input type="email" name="email" placeholder ="email">
-                <button id="send" type="submit" name="send">send</button>
+            <form class="botons" action="/register.php" name="" method="POST" >
+                <input class="input" type="text" name="name" placeholder ="name">
+                <input class="input" type="email" name="email" placeholder ="email">
+                    <button id="send" type="submit" name="send">send</button>
             </form>
 </article>
 <!--Ventana success-->
@@ -157,7 +159,7 @@
     </div>
     <div class="redes1">
         <button><ion-icon name="logo-tiktok"></ion-icon></button>
-        <h4>Tik Tok</h4>
+        <h4>TikTok</h4>
     </div>
     <div class="redes2">
         <button><ion-icon name="logo-twitter"></ion-icon></button>
@@ -165,7 +167,9 @@
     </div>
 </footer>
 <aside class="piepag">
+ <div>
     <img src="/Imagenes/LOGOWEB-PhotoRoom.png" alt="">
+</div> 
     <h5>
         <ion-icon name="lock-closed-outline"></ion-icon>
         -copyright - Bouvier - all rights reserved © 2022 -

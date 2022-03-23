@@ -1,28 +1,45 @@
-<?php
-    include("con_db.php");
+<?php 
 
-    if (isset($_POST['register'])){
-        if (strlen($_POST['name']) >=1 && strlen($_POST['email']) >= 1){
-            $name = trim ($_POST['name']);
-            $email = trim($_POST['email']);
-            $fecha_registro = date("d /m /y");                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-            $consulta ="INSERT INTO base de datos bouvier(name, email, fecha_registro) VALUES ('$name','$email','$fecha_registro')";
-            $resultado = mysqli_query($conex,$consulta);
-            
-            if ($resultado){
-                ?>
-                <h2 class="ok"> ¡ Te has suscrito correctamente !</h2>
-                <?php
-            } else {
-                ?>
-                <h2 class="bad"> ¡ Ups ha ocurrido un error !</h2>
-                <?php
-            } else {
-                ?>
-                <h2 class="bad"> ¡ Por favor completa los campos !</h2>
-                <?php
-            }
-        }
+//conexion al servidor localhost xampp.
+
+$conexion = mysqli_connect('localhost','root','','registro website bouvier')
+or die(mysqli_error($mysqli)); //or die nos sirve para identificar si la conexion presenta algun error.
+
+
+// se inserta codigo en la base de datos de phpadmyn de la variable $conexion.
+insertar($conexion);
+
+// Llamamos los inputs de html para agregar los datos.
+
+function insertar($conexion){
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+
+// se agrega $consulta para insertar la tabla dirigida a la base de datos registro website bouvier
+    
+    $consulta = "INSERT INTO datosweb (name,email)
+    VALUES ('$name','$email')";
+
+// se genera la variable envio para hacer el if y ejecutar respuesta de javascript, mysqli_query une la variable $conexion (registro website bouvier) 
+//con la variable $consulta (tabla datosweb)
+
+
+    $envio = mysqli_query($conexion,$consulta);
+    mysqli_close($conexion);
+
+
+// se genera el if para que desde $envio referente a los datos envios exitosos envio mensaje prompt de suscripcion y dirije a la pagona principal.
+    if($envio){
+    echo "<script> alert('Se ha enviado tu suscripcion satisfactoriamente')
+    ;window.location='/Registros Website Bouvier/Pagina Web Bouvier/index.html'</script>";
     }
+
+}
+
+
+
+
+
+
 ?>
 

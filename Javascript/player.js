@@ -7,7 +7,7 @@ let volume_show = document.querySelector('#volume_show');
 let slider = document.querySelector('#duration_slider');
 let show_duration = document.querySelector('#volume_show');
 let track_image = document.querySelector('#track_image');
-let auto_play = document.querySelector('#audio');
+let auto_play = document.querySelector('#auto');
 let presents = document.querySelector('#presents');
 let total = document.querySelector('#total');
 let artist = document.querySelector('#artist');
@@ -183,15 +183,15 @@ function change_duration(){
     track.currentTime = slider_position;
 }
 
-//autoplay fuction
+//autoplay function
 
 function autoplay_switch(){
-    if(autoplay==1){
-        autoplay=0;
-        auto_play.style.background = "rbga(255,255,255,0.2)";
+    if (autoplay == 1){
+        autoplay =0;
+        auto_play.style.background = "rgba(255,255,255,0.2)";
     }else{
         autoplay = 1;
-        auto_play.style.background = "#FF8A65";
+        auto_play.style.background = "#ff0a0a";
     }
 }
 
@@ -203,15 +203,30 @@ if (!isNaN(track.duration)){
     position = track.currentTime * (100 / track.duration);
     slider.value = position;
 }
-}
 
 // fuction will run when the song is over
 
 if (track.ended){
     play.innerHTML = '<i class="fa fa-play"></i>';
-    if(auto_play==1){
+    if(autoplay == 1){
     index_no += 1;
     load_track(index_no);
     playsong();
     }
+} 
+
 }
+
+const navToggle = document.querySelector(".nav-toggle");
+const navMenu = document.querySelector(".nav-menu");
+
+
+navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("nav-menu_visible");
+
+    if (navMenu.classList.contains("nav-main_visible")) {
+    navToggle.setAttribute("aria-label", "Cerrar menú");
+    } else {
+    navToggle.setAttribute("aria-label", "Abrir menú");
+    }
+});

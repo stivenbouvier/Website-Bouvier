@@ -1,5 +1,5 @@
+@charset "UTF-8";
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -8,7 +8,6 @@ body {
   background-color: black;
   font-size: 16px;
   font-family: "Oswald", sans-serif;
-  color: #ffffff;
 }
 
 a {
@@ -20,84 +19,173 @@ ul {
 }
 
 /* Showcase */
-.Showcase {
+.showcase {
+  display: flex;
+  align-items: center;
   width: 100%;
-  height: 30px;
-  background-color: #FFFFFF;
+  height: 70px;
+  background-color: #000000;
+  position: fixed;
+  z-index: 10;
+}
+
+.nav-menurigth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  left: 90%;
+  padding: 10px;
+}
+
+.nav-menurigth ion-icon:hover {
+  color: #ffff86;
+  width: 60px;
+  height: 60px;
+}
+
+.nav-menurigth a ion-icon {
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 40px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none;
 }
 
 .container {
-  max-width: 100%;
-  height: 600px;
-  top: 200px;
-  background: url(/Imagenes/pexels-mathias-pr-reding-11077611.jpg);
-  background-size: 1000px;
+
+  display: flex;
+  width: 100%;
+  height: 700px;
+  background: url(/Imagenes/Diseño\ sin\ título\ \(10\).png);
+  background-size: 800px;
+  background-position: center;
+  background-size: cover;
 }
 
 /* Navegacion */
 .nav-main {
-  font-size: 25px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 100%;
-  background-color: black;
-  height: 80px;
+  width: 40%;
+  font-size: 25px;
+  height: 200px;
 }
 
-.nav-brand {
-  width: 50px;
+.covermenu {
+  display: none;
+}
+
+.nav-main2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  font-size: 25px;
+  height: 200px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-menu2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* nav left */
-.nav-main ul {
-  display: flex;
-  font-size: 20px;
-  justify-content: center;
-  background: black;
-}
-
-.nav-main ul li {
+.nav-main li {
   padding: 10px;
   margin: 10px;
 }
 
 .nav-main ul li a {
   padding: 4px;
-  color: #FFFFFF;
+  color: #000000;
 }
 
-.nav-main ul li a:hover {
-  border-bottom: solid #FFFFFF;
-  background: black;
+.nav-main li a:hover {
+  font-size: 30px;
+  border-bottom: solid #000000;
 }
 
-.nav-main ul.nav-menu {
-  flex: 1;
-  margin-left: 0px;
-  margin-right: 100px;
+.nav-main2 li {
+  padding: 10px;
+  margin: 10px;
 }
 
-.nav-main img {
-  width: 180px;
-  height: 180px;
+.nav-main2 li a {
+  padding: 4px;
+  color: #000000;
+}
+
+.nav-main2 li a:hover {
+  font-size: 30px;
+  border-bottom: solid #000000;
+}
+
+
+.container img {
+  width: 250px;
+  height: 250px;
   position: relative;
-  left: 30px;
 }
 
-.nav-menurigth {
-  position: relative;
-  display: flex;
+@media screen and (min-width: 500px) {
+  .github-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
+  }
 }
+@media screen and (max-width: 700px) {
+  .github-btn {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 20px;
+  }
 
-.section {
-  border: solid;
-  color: blanchedalmond;
-  width: 100%;
-  height: 400px;
+  .github-btn:active {
+    transform: scale(1.1);
+    box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
+  }
+}
+.titulo {
+  margin-top: 70px;
+  color: rgba(128, 153, 255, 0.705);
+  font-size: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 200px;
+  margin-right: 5px;
+}
+
+.parrafo {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+  font-size: 30px;
+
 }
 
 .titulo {
@@ -158,6 +246,7 @@ ul {
 }
 
 .inforevista {
+  top: 566px;
   width: 95%;
   height: 1000px;
   margin-top: 20px;
@@ -169,14 +258,14 @@ ul {
   margin-left: 30px;
 }
 
-.newsletterrevista {
+.nsletterrevista {
+  top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: pink;
   font-size: 50px;
   position: relative;
-  right: 7%;
 }
 
 .revista {
@@ -185,9 +274,8 @@ ul {
   width: 100px;
   height: 80px;
   margin-bottom: 100px;
-  top: 20px;
   display: flex;
-  right: 7%;
+  right: 10%;
   position: relative;
 }
 
@@ -206,6 +294,7 @@ ul {
   font-size: 16px;
   transition: all 0.3s ease-in-out;
   display: flex;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 500px) {
@@ -264,17 +353,19 @@ ul {
   display: flexbox;
 }
 
-.news {
+.suscribenews {
   display: flex;
-  color: #ffffff;
+
+  color: #000000;
   position: absolute;
-  right: 43%;
+  right: 43.8%;
   bottom: 188px;
   text-decoration: none;
   padding: 15px 25px;
-  border-radius: 4px;
+  border-radius: 10px;
   box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
-  background: rgba(128, 153, 255, 0.705);
+  background-color: #07ff45;
+
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 16px;
@@ -283,34 +374,97 @@ ul {
   overflow: hidden;
   align-items: center;
   justify-content: center;
+
+  z-index: 10;
 }
 
 @media screen and (min-width: 500px) {
-  .news:hover {
-    background-color: #63053f;
+  .suscribenews:hover {
+    background: pink;
     transform: scale(1.1);
-    box-shadow: 0px 5px 10px #63053f;
+    box-shadow: 0px 5px 10px black;
+    color: #000000;
   }
 }
 @media screen and (max-width: 700px) {
-  .news {
+  .suscribenews {
+
     position: relative;
     bottom: auto;
     right: auto;
     margin-top: 20px;
   }
 
-  .news:active {
+
+  .suscribenewss:active {
+
     transform: scale(1.1);
     box-shadow: 0px 17px 20px -6px white;
   }
 }
 .newsletterrevista {
   display: flex;
+}
+
+@media screen and (max-width: 700px) {
+  .github-btn {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 20px;
+  }
+
+  .github-btn:active {
+    transform: scale(1.1);
+    box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
+  }
+}
+.medium {
+  margin-top: 80px;
+  width: 95%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  box-shadow: #ffffff;
   color: pink;
-  font-size: 50px;
-  font-weight: 40px;
+  right: 10%;
+  left: 40px;
+  margin-left: 25px;
+}
+
+.medium p {
   border: solid;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.inforevista {
+  width: 95%;
+  height: 1000px;
+  margin-top: 20px;
+  border: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  margin-right: 1000px;
+}
+
+.suscribenews {
+  display: flex;
+  border: solid;
+}
+
+.newsletterrevista {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 100%;
   left: 30px;
   text-align: center;
@@ -441,7 +595,7 @@ ul {
   width: 180px;
   height: 180px;
   position: relative;
-  left: 180px;
+  left: 170px;
   bottom: 20px;
 }
 
@@ -473,7 +627,6 @@ ul {
 }
 @media (max-width: 1116px) {
   .container img {
-
     width: 100px;
     height: 100px;
     position: relative;
@@ -550,6 +703,7 @@ ul {
   }
 }*/
 /*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=stylenews.css.map */
 /*# sourceMappingURL=stylenews.css.map */
 
 
