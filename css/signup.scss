@@ -1,116 +1,168 @@
+@charset "UTF-8";
 * {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: black;
-    font-size: 16px;
-    font-family: 'Oswald', sans-serif;
-    color: #ffffff;
+  background-color: black;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
-  /* Showcase */
-.Showcase {
-    width: 100%;
-    height: 30px;
-    background-color: #ffffff;
+/* Showcase */
+.showcase {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: #000000;
+  position: fixed;
+  z-index: 10;
+}
+
+.nav-menurigth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  left: 90%;
+  padding: 10px;
+}
+
+.nav-menurigth ion-icon:hover {
+  color: #ffff86;
+  width: 60px;
+  height: 60px;
+}
+
+.nav-menurigth a ion-icon {
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 40px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none;
 }
 
 .container {
-    max-width: 100%;
-    height: 700px;
-    top: 200px;
-    background-color: black;
+  display: flex;
+  width: 100%;
+  height: 700px;
+  background: url(/Imagenes/pexels-isaac-garcia-9567687.jpg);
+  background-size: 600px;
 }
 
-  /* Navegacion */
+/* Navegacion */
 .nav-main {
-    font-size: 25px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  font-size: 25px;
+  height: 200px;
 }
 
-.nav-brand {
-    width: 50px;
+.covermenu {
+  display: none;
 }
 
-  /* nav left */
-.nav-main ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 25px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+.nav-main2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  font-size: 25px;
+  height: 200px;
 }
 
-.nav-main ul li {
-    padding: 10px;
-    margin: 10px;
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-menu2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* nav left */
+.nav-main li {
+  padding: 10px;
+  margin: 10px;
 }
 
 .nav-main ul li a {
-    padding: 4px;
-    color: #FFFFFF;
+  padding: 4px;
+  color: #000000;
 }
 
-.nav-main ul li a:hover {
-    border-bottom: solid #ffffff;
+.nav-main li a:hover {
+  font-size: 30px;
+  border-bottom: solid #000000;
 }
 
-.nav-main ul.nav-menu {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    margin-left: 20px;
+.nav-main2 li {
+  padding: 10px;
+  margin: 10px;
 }
 
-.nav-main img {
-    width: 200px;
-    height: 200px;
+.nav-main2 li a {
+  padding: 4px;
+  color: #000000;
+}
+
+.nav-main2 li a:hover {
+  font-size: 30px;
+  border-bottom: solid #000000;
+}
+
+.container img {
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+
+@media screen and (min-width: 500px) {
+  .github-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
+  }
+}
+@media screen and (max-width: 700px) {
+  .github-btn {
     position: relative;
-    left: 50px;
-}
+    bottom: auto;
+    right: auto;
+    margin-top: 20px;
+  }
 
-.parrafosus {
-    color: #FFFFFF;
-    width: 1200px;
-    height: 100px;
-    margin-left: 150px;
-    font-size: large;
-    font-size: 50px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-top: 50px;
-}
-
-.newsday {
-    height: 200px;
-    color: #ffffff;
-    position: relative;
-    top: 300px;
-    font-size: small;
-    font-size: 15px;
-    background-color: black;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .github-btn:active {
+    transform: scale(1.1);
+    box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
+  }
 }
 
 .titlebouvier {
@@ -175,12 +227,14 @@ ul {
 .bg-model {
     width:100%;
     height: 100%;
-    background-color : rgb(0,0,0,0.7);
+    background-image: url(/imgnonstop/Suscribete\ a\ nuestras\ newsletter\ \(3\).png);
     position: absolute;
-    top: 200px;
+    top: 300px;
     display: flex;
     justify-content: center;
     align-items:  center;
+    border: solid;
+    color: #000000;
     
         
 } 
@@ -189,7 +243,7 @@ ul {
 .model_content {
 width:  1200px;
 height: 600px;
-background-color:black;
+background-color:transparent;
 border-radius:4px;
 text-align: center;
 padding: 20px;
@@ -247,9 +301,119 @@ position: relative;
     margin :0;
     display :inline-flex;
     margin-top:  -90px;
+    border: solid;
+    opacity: 1%;
     
 }
-
+.toast{
+    position: absolute;
+    top: 250px;
+    right: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    height: 70px;
+    width: 300px;
+    position: fixed;
+    overflow: hidden;
+    border:solid;
+  }
+  
+  .toast-content{
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .toast-content .check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    background-color: #1b9e0f;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-radius: 50%;
+    margin-top: 7px;
+    
+  }
+  
+  .toast-content .message{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    width: 200px;
+    position: relative;
+  }
+  
+  .message .text{
+    
+    font-weight: 400;
+    color: violet;
+    align-items: center;
+  
+  }
+  
+  .message .text.text-1{
+    font-weight: 600;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .message .text.text-2{
+    font-weight: 600;
+    color: #FFFFFF;
+    font-size: 15px;
+  
+  }
+  
+  .toast .closer{
+    position: absolute;
+    top: 0.9px;
+    right: 5px;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.7%;
+    font-size: 20px;
+    color: #FFFFFF;
+  }
+  
+  .toast .closer:hover{
+    opacity: 1;
+  }
+  
+  .toast .progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    
+    border-radius: 80%;
+  }
+  
+  .toast .progress::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+  
+  
+  }
+  
 .github-btn {
     position: absolute;
     right: 40px;
@@ -266,44 +430,4 @@ position: relative;
     transition: all 0.3s ease-in-out;
     }
 
-    .spotify-btn
-    {
-        position: absolute;
-        right: 40px;
-        bottom: 140px;
-        text-decoration: none;
-        padding: 15px 25px;
-        border-radius: 4px;
-        box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
-        background: rgb(4, 100, 20);
-        color: #fff;
-        font-weight: bold;
-        letter-spacing: 1px;
-        font-size: 16px;
-        
-        transition: all 0.3s ease-in-out;
-        }
-        @media screen and (min-width: 500px) {
-            .spotify-btn:hover {
-                    -webkit-transform: scale(1.1);
-                    transform: scale(1.1);
-                    -webkit-box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
-                    box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
-            }
-        }
-        
-        @media screen and (max-width: 700px) {
-            .spotify-btn {
-            position: relative;
-            bottom: auto;
-            right: auto;
-            margin-top: 20px;
-            }
-            .spotify-btn:active {
-            -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-            -webkit-box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
-            box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
-            }
-        }
-  /*# sourceMappingURL=styleplayer.css.map */
+    

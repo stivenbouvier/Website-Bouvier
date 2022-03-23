@@ -19,7 +19,7 @@
 </head>
 <body>
         <!--Showcase-->
-    <header class="Showcase">
+    <header class="showcase">
         <div class="nav-menurigth">
             <a href="#">
                 <ion-icon name="search-outline"></ion-icon>
@@ -89,8 +89,7 @@
     <p>
         Suscribe right now and receive news in your E-mail.
     <p>
-    <button id="open">
-            Suscribe
+    <button class="open2" id="open">Suscribe
     </button>
 </article>
 <div class="toast">
@@ -104,6 +103,7 @@
     <i class="fa solid fa-xmark"></i>
     <div class="progress"></div>
 </div>
+
 <article class="bg-model">
         <div class="model_content">
             <div class="close">+</div>
@@ -115,10 +115,24 @@
             <form action="/register.php" name="" method="POST">
                 <input type="text" name="name" placeholder ="name">
                 <input type="email" name="email" placeholder ="email">
-                <button id="send" type="submit" name="send">send</button>
+                <div class="send">
+                    <button id="send" type="submit" name="send">send</button>
+                </div>
             </form>
-            
-        </div>
+</article>
+<!--Ventana success-->
+            <article>
+                <div class="toast">
+                    <div class="toast-content">
+                        <i class="fas fa-solid fa-check check"></i>
+                <div class="message">
+                <span class="text text-1">Success</span>
+                <span class="text text-2">Your changes  has been Saved</span>
+                </div>
+                    </div>
+                            <i class="fa-solid fa-xmark closer"></i>
+                <div class="progress"></div>
+                </div>
 </article>
 <article class="info">
     <div class="infolanzamiento">
@@ -152,14 +166,16 @@
     </div>
 </footer>
 <aside class="piepag">
+ <div>
     <img src="/Imagenes/LOGOWEB-PhotoRoom.png" alt="">
+</div> 
     <h5>
         <ion-icon name="lock-closed-outline"></ion-icon>
         -copyright - Bouvier - all rights reserved © 2022 -
     </h5>
 </aside>
             
-        
+        <script src="/Javascript/success.js"></script>
         <script src="/Javascript/Popup.js"></script>
         <!--Iconos Footer-->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

@@ -17,47 +17,73 @@
 
 </head>
 <body>
-        <!--Showcase-->
-        <header class="Showcase">
-    </header>
-        <div class="container">
-            <nav class="nav-main">
-                <img id="logomenu" src="/Imagenes/LOGOWEB-PhotoRoom.png" alt="Bouviernews logo" class="nav-brand">
-                <ul class="nav-menu">
-                    <li><small></small>
-                        <a href="/index.html"> Home </a>
-                    </li>
-                    <li><small></small>
-                        <a class="news" href="/news.html"> News </a>
-                    </li>
-                    <li>
-                        <a href="/music.html"> Music </a>
-                    </li>
-                    <li>
-                        <a href="#"> Store </a>
-                    </li>
-                    <li>
-                        <a href="#"> New Album </a>
-                    </li>
-                    <li>
-                        <a href="#"> Socialmedia </a>
-                    </li>
-                    <li>
-                        <a href="/singup.html"> Sign Up </a>
-                    </li>
-                    <li>
-                        <a href="#"> Videos </a>
-                    </li>
-                    
-                </ul>
-                <ul class="nav-menurigth">
-                    <li> 
-                        <a href="#">
-                            <i class="fas fa-search"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+<!--Showcase-->
+<header class="Showcase">
+    <div class="nav-menurigth">
+        <a href="#">
+            <ion-icon name="search-outline"></ion-icon>
+        </a>
+    </div> 
+    <div>
+        <button class="nav-toggle"  aria-label="abrirmenú"><ion-icon name="reorder-four-outline"></ion-icon></button> 
+    </div>
+</header>
+
+<section class="container">
+    <nav class="nav-main">
+        
+        <ul class="nav-menu">
+            <li>
+                <a href="/index.html"> Home </a>
+            </li>
+            <li>
+                <a class="news" href="/news.html"> News </a>
+            </li>
+            <li>
+                <a href="/music.html"> Music </a>
+            </li>
+            <li>
+                <a href="#"> Socialmedia </a>
+            </li>
+
+            <li class="covermenu">
+                <a href="#"> NewAlbum </a>
+            </li>
+            <li class="covermenu">
+                <a href="#"> Store </a>
+            </li class="covermenu">
+
+            <li class="covermenu">
+                <a href="/singup.html"> SignUp </a>
+            </li >
+            <li class="covermenu">
+                <a href="#"> Videos </a>
+            </li>
+
+        </ul>
+    </nav>
+
+            <img class="logomenu" src="/Imagenes/LOGOWEB-PhotoRoom.png" alt="Bouviernews logo" class="nav-brand">
+            
+    <nav class="nav-main2">
+        <ul class="nav-menu2">
+            <li>
+                <a href="#"> NewAlbum </a>
+            </li>
+            <li>
+                <a href="#"> Store </a>
+            </li>
+
+            <li>
+                <a href="/singup.html"> SignUp </a>
+            </li>
+            <li>
+                <a href="#"> Videos </a>
+            </li>
+        </ul>
+    </nav>
+</section>
+</section>
             <div class="bg-model">
                 <div class="model_content">
                     
@@ -71,21 +97,27 @@
                         <input type="email" name="email" placeholder ="email">
                         <button id="send" type="submit" name="send">send</button>
                     </form>
-                    
+                        <!--Ventana success-->
+    <div class="toast">
+        <div class="toast-content">
+            <i class="fas fa-solid fa-check check"></i>
+            <div class="message">
+                <span class="text text-1">Success</span>
+                <span class="text text-2">Your changes  has been Saved</span>
+            </div>
+        </div>
+        <i class="fa-solid fa-xmark closer"></i>
+        <div class="progress"></div>
+    </div>
                 </div>
             </div>
             <div v-cloak></div>
         </div>
         <a href="https://www.youtube.com/channel/UC-DihFjlogk-dlhJ3kqKVNw" target="_blank" class="github-btn">
-            Youtube
+            Youtube Music
         </a>
-        </div>
-        <div v-cloak></div>
-    </div>
-    <a href="https://www.youtube.com/channel/UC-DihFjlogk-dlhJ3kqKVNw" target="_blank" class="spotify-btn">
-        Spotify
-    </a>
-    </div>
+        
             </div>
+            <script src="Javascript/successsignup.js"></script>
 </body>
 </html>

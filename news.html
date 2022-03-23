@@ -20,54 +20,71 @@
 <body> 
 <!--Showcase-->
 <header class="Showcase">
+    <div class="nav-menurigth">
+        <a href="#">
+            <ion-icon name="search-outline"></ion-icon>
+        </a>
+    </div> 
+    <div>
+        <button class="nav-toggle"  aria-label="abrirmenú"><ion-icon name="reorder-four-outline"></ion-icon></button> 
+    </div>
 </header>
-<div class="container">
+
+<section class="container">
     <nav class="nav-main">
-        <img id="logomenu" src="/Imagenes/LOGOWEB-PhotoRoom.png"  href="/index.html"alt="Bouviernews logo" class="nav-brand" >
+        
         <ul class="nav-menu">
-            <li><small></small>
+            <li>
                 <a href="/index.html"> Home </a>
             </li>
-            <li><small></small>
-                <a href="/news.html"> News </a>
+            <li>
+                <a class="news" href="/news.html"> News </a>
             </li>
             <li>
                 <a href="/music.html"> Music </a>
             </li>
             <li>
-                <a href="#"> Store </a>
-            </li>
-            <li>
-                <a href="#"> New Album </a>
-            </li>
-            <li>
                 <a href="#"> Socialmedia </a>
             </li>
+
+            <li class="covermenu">
+                <a href="#"> NewAlbum </a>
+            </li>
+            <li class="covermenu">
+                <a href="#"> Store </a>
+            </li class="covermenu">
+
+            <li class="covermenu">
+                <a href="/singup.html"> SignUp </a>
+            </li >
+            <li class="covermenu">
+                <a href="#"> Videos </a>
+            </li>
+
+        </ul>
+    </nav>
+
+            <img class="logomenu" src="/Imagenes/LOGOWEB-PhotoRoom.png" alt="Bouviernews logo" class="nav-brand">
+            
+    <nav class="nav-main2">
+        <ul class="nav-menu2">
             <li>
-                <a href="/singup.html"> Sign Up </a>
+                <a href="#"> NewAlbum </a>
+            </li>
+            <li>
+                <a href="#"> Store </a>
+            </li>
+
+            <li>
+                <a href="/singup.html"> SignUp </a>
             </li>
             <li>
                 <a href="#"> Videos </a>
             </li>
-            
         </ul>
-        <ul class="nav-menurigth">
-            <li> 
-                <a href="#">
-                    <i class="fas fa-search"></i>
-                </a>
-            </li>
-        </ul>
-        
     </nav>
-        <div class="newsday">
-            <h2 class="titlebouvier">Bouvier 부비에 in his first solo debut !</h2> </div>
-        <br>
-            <div class="notice">
-                <p> Bouvier begins his solo career in 2022, It will debut with its first release the last week of March 2022.
-                                #NonStop ! it becomes his first entry on the R&B and Kpop Male Musicians chart.! Lets Do it.</p>
-            </div>
-        </div>
+</section>
+</section>
         
         <div v-cloak></div>
                 </div>
@@ -76,27 +93,31 @@
                 </a>
             </div>
             <!--Contenido News-->
-            
+            <section>
+                    <div class="titulo"><h2>Bouvier 부비에 in his first solo debut !</h2>
+                    </div>
+                    <div class="parrafo"><p> Bouvier begins his solo career in 2022,It will debut with its first 
+                            release the last week of March 2022.#NonStop ! it becomes his first entry on the R&B and Kpop Male Musicians chart.!</p>
+            </section>
             <article>
                 <div class="medium">
                     <p>Bouvier In May Releases is Album.</p>
                 </div>
-
+                
                 <!--informacion revista-->
                 
                 <div class="inforevista">
-                        <a href="https://www.youtube.com/channel/UC-DihFjlogk-dlhJ3kqKVNw" target="_blank" class="news">
-                        Suscribe Now
+                        <a href="/singup.html" target="_blank" class="suscribenews">
+                        Suscribe Now !
                         </a>
                     <div>
-                        <p class="newsletterrevista">Suscribe In Our Newsletter.</p>
+                        <p class="nsletterrevista">Suscribe In Our Newsletter.</p>
                         <img class="revista" src="/Imagenes/Danzed revista.png" alt="">
+                        
                     </div>
-                
-            
                 </div>
             </article>
-
+            <!--Informacion footer-->
             <footer class="footer">
                 <div class="redes">
                     <button><ion-icon name="logo-instagram"></ion-icon></button>
@@ -110,7 +131,6 @@
                     <button><ion-icon name="logo-twitter"></ion-icon></button>
                     <h4>Twiter</h4>
                 </div>
-                
             </footer>
             <aside class="piepag">
                 <img src="/Imagenes/LOGOWEB-PhotoRoom.png" alt="">
@@ -119,9 +139,6 @@
                     -copyright - Bouvier - all rights reserved © 2022 -
                 </h5>
             </aside>
-                        
-                    
-                    <script src="/Javascript/Popup.js"></script>
                     <!--Iconos Footer-->
                     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
                     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

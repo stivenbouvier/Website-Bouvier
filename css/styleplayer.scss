@@ -68,12 +68,11 @@ ul {
 
 .nav-main ul li a {
   padding: 4px;
-  color: #04ff04;
+  color:#FFFFFF;
 }
 
 .nav-main ul li a:hover {
   border-bottom: solid #FFFFFF;
-  background-color: black;
 }
 
 .nav-main ul.nav-menu {
@@ -411,21 +410,20 @@ input[type=range]::-webkit-slider-thumb {
   margin-left: 20px;
 }
 
-.right #audio {
-  border: solid;
+.right #auto {
   font-size: 18px;
   cursor: pointer;
   margin-top: 10px;
   border: none;
   padding: 10px 14px;
   color: #FFFFFF;
-  background: rgba(245, 245, 245, 0.103);
+  background: rgba(245,245,245,0.2);
   outline: none;
   border-radius: 10px;
   box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
 }
 
-.right #audio i {
+.right #auto i {
   margin-left: 8px;
 }
 
@@ -433,9 +431,7 @@ input[type=range]::-webkit-slider-thumb {
   background-color: red;
 }
 
-.right button :hover {
-  background-color: red;
-}
+
 
 .right i ::before {
   color: #FFFFFF;
@@ -475,32 +471,33 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .medium p {
-  border: solid;
   margin-bottom: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 15px;
+  
+
 }
 
 .inforevista {
   width: 95%;
   height: 1000px;
   margin-top: 20px;
-  border: solid;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 60px;
   margin-left: 25px;
+  background-color: #000000;
 }
 
 .newsletterrevista {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: pink;
-  font-size: 50px;
+  color: rgb(255, 255, 255);
+  font-size: 80px;
   font-weight: 40px;
 }
 
@@ -510,7 +507,9 @@ input[type=range]::-webkit-slider-thumb {
   width: 650px;
   height: 800px;
   margin-bottom: 100px;
-  top: 20px;
+  top: 50px;
+  left: 100px;
+  position: relative;
 }
 
 /* Footer */

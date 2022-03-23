@@ -19,13 +19,14 @@ ul {
 }
 
 /* Showcase */
-.Showcase {
+.showcase {
   display: flex;
   align-items: center;
   width: 100%;
   height: 70px;
   background-color: #000000;
-  opacity: 80%;
+  position: fixed;
+  z-index: 10;
 }
 
 .nav-menurigth {
@@ -37,6 +38,7 @@ ul {
   height: 70px;
   position: relative;
   left: 90%;
+  padding: 10px;
 }
 
 .nav-menurigth ion-icon:hover {
@@ -68,7 +70,6 @@ ul {
   width: 100%;
   height: 700px;
   background: url(/Imagenes/Diseño\ sin\ título\ \(7\).png);
-  background-position: center;
   background-size: cover;
 }
 
@@ -78,7 +79,7 @@ ul {
   justify-content: center;
   align-items: center;
   width: 40%;
-  font-size: 30px;
+  font-size: 25px;
   height: 200px;
 }
 
@@ -91,7 +92,7 @@ ul {
   justify-content: center;
   align-items: center;
   width: 40%;
-  font-size: 30px;
+  font-size: 25px;
   height: 200px;
 }
 
@@ -142,7 +143,6 @@ ul {
   width: 250px;
   height: 250px;
   position: relative;
-  bottom: 5%;
 }
 
 @media screen and (min-width: 500px) {
@@ -166,43 +166,40 @@ ul {
 }
 .parrafosus {
   color: #FFFFFF;
-  width: 1200px;
-  height: 100px;
-  margin-left: 150px;
-  font-size: large;
   font-size: 50px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  margin-top: 50px;
 }
 
 .parrafosus {
-  margin: 0;
-  display: flexbox;
+  display: inline-block;
   width: 100%;
-  height: 300px;
+  height: 400px;
   border-bottom: solid white;
+  padding: 0;
 }
 
 .parrafosus p {
   text-align: center;
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 .parrafosus button {
-  width: 10px;
-  height: 100px;
-}
-
-#open {
-  border: solid white;
-  color: black;
+  cursor: pointer;
+  color: #6f70b6;
+  background-color: #0c0b0b;
   width: 200px;
   height: 50px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   cursor: pointer;
-  font-size: 20px;
-  border: #FFFFFF;
-  box-shadow: 5px 5px 0px;
+  font-size: 25px;
+  box-shadow: 2px 0px 2px 0px;
+}
+
+.open2:hover {
+  color: #6f70b6;
+  background-color: black;
+  font-size: 23px;
+  transition: all 3ms;
 }
 
 /*Seccion 2*/
@@ -212,27 +209,48 @@ ul {
   display: flex;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: #FFFFFF;
-  font-size: 60px;
+  font-size: 50px;
   height: 500px;
 }
 
 .infolanzamiento {
+  background-color: white;
   width: 50%;
-  display: flexbox;
-  text-align: center;
+  height: 500px;
+  color: #000000;
 }
 
 .infolanzamiento h2 {
-  padding: 20px;
-  font-size: 60px;
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+  top: 20px;
 }
 
 .infolanzamiento p {
-  width: 80%;
-  margin-top: 40px;
-  margin-left: 80px;
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
+  margin-top: 50px;
+}
+
+.info button {
+  cursor: pointer;
+  color: white;
+  background-color: #0c0b0b;
+  width: 200px;
+  height: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 2px 0px 2px 0px;
+  margin-top: 40px;
+}
+
+.info button :hover {
+  color: #949494;
+  background-color: black;
+  font-size: 23px;
+  transition: all 3ms;
 }
 
 .boton {
@@ -243,13 +261,24 @@ ul {
 
 .boton button {
   cursor: pointer;
-  color: black;
+  color: #ffd900;
+  background-color: #000000;
   width: 200px;
   height: 50px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   cursor: pointer;
   font-size: 20px;
-  box-shadow: 5px 5px 0px;
+  box-shadow: 2px 0px 2px 0px;
+  position: relative;
+  top: 30px;
+  right: 30px;
+}
+
+.boton :hover {
+  color: #6f70b6;
+  background-color: black;
+  font-size: 23px;
+  transition: all 3ms;
 }
 
 .img1 {
@@ -262,50 +291,160 @@ ul {
 .img1 img {
   width: 60%;
   height: 100%;
+  position: relative;
+  bottom: 20px;
 }
 
 /* seccion oculta*/
+/*mensaje de cambios hechos ventana*/
+.toast {
+  position: absolute;
+  top: 400px;
+  right: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff4fc;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  height: 80px;
+  width: 350px;
+  position: fixed;
+  overflow: hidden;
+}
+
+.toast-content {
+  display: flex;
+  align-items: center;
+}
+
+.toast-content .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  background-color: #1b9e0f;
+  color: #FFFFFF;
+  font-size: 20px;
+  border-radius: 50%;
+  margin-top: 7px;
+}
+
+.toast-content .message {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  width: 200px;
+  position: relative;
+}
+
+.message .text {
+  font-weight: 400;
+  color: violet;
+  align-items: center;
+}
+
+.message .text.text-1 {
+  font-weight: 600;
+  color: #000000;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+}
+
+.message .text.text-2 {
+  font-weight: 600;
+  color: black;
+  font-size: 16px;
+}
+
+.toast .closer {
+  position: absolute;
+  top: 0.9px;
+  right: 5px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  color: transparent;
+}
+
+.toast .closer:hover {
+  color: #000000;
+}
+
+.toast .progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  border-radius: 80%;
+}
+
+.toast .progress::before {
+  content: "";
+  position: absolute;
+  bottom: -1;
+  right: 50px;
+  height: 100%;
+  width: 100%;
+  background-color: #05eb37;
+}
+
+/*Ventana de registro*/
 .bg-model {
+  margin-top: 10px;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
+  background-image: url(/imgnonstop/Suscribete\ a\ nuestras\ newsletter\ \(3\).png);
+  background-size: 1400px;
   top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
   position: fixed;
   bottom: 300px;
+  z-index: 10;
+}
+
+.send {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 /*display: none;*/
 .model_content {
   width: 60%;
   height: 600px;
-  background: url(/Imagenes/kelvin-moquete-LOV7Gbmgm30-unsplash.jpg);
   border-radius: 4px;
   text-align: center;
   padding: 20px;
-  position: relative;
   box-shadow: 5px 5px 40px;
 }
 
 .model_content h1 {
-  color: black;
+  color: #07ff5a;
 }
 
 #send {
   cursor: pointer;
   padding: 10px;
   color: #010003;
-  background-color: violet;
+  background-color: rgba(233, 89, 233, 0.863);
   width: 100px;
   height: 10px;
   font-size: 23px;
   box-shadow: 5px 5px 0px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  border: solid;
+  margin-bottom: 20px;
 }
 
 #send {
@@ -313,14 +452,11 @@ ul {
   height: 50%;
   text-align: center;
   display: flex;
-  margin: 15px;
-  margin-left: 15.3%;
+  margin-top: 20px;
   border-color: #FFFFFF;
   margin-bottom: 0px;
   justify-content: center;
-  position: relative;
-  left: 30%;
-  top: 5px;
+  z-index: 10;
 }
 
 .model_content input {
@@ -355,7 +491,7 @@ ul {
 /*Boton youtube*/
 /* Footer */
 .footer {
-  background-color: #414141;
+  background-color: #141313;
   width: 100%;
   height: 300px;
   display: flex;
@@ -381,8 +517,8 @@ ul {
 
 .redes ion-icon {
   color: #a0eef8;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
 }
 
 .redes h4 {
@@ -409,8 +545,8 @@ ul {
 
 .redes1 ion-icon {
   color: #a0eef8;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
 }
 
 .redes1 h4 {
@@ -437,8 +573,8 @@ ul {
 
 .redes2 ion-icon {
   color: #a0eef8;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
 }
 
 .redes2 h4 {
@@ -449,26 +585,27 @@ ul {
 
 .piepag {
   width: 100%;
-  height: 200px;
-  display: flex;
+  height: 250px;
+  display: block;
   align-items: center;
+  justify-content: center;
+}
+
+.piepag div {
+  display: flex;
   justify-content: center;
 }
 
 .piepag img {
   width: 180px;
   height: 180px;
-  position: relative;
-  left: 90px;
   bottom: 20px;
 }
 
 .piepag h5 {
   font-size: 15px;
   color: white;
-  position: relative;
-  top: 60px;
-  right: 90px;
+  text-align: center;
 }
 
 /*---------------RESPONSIVE NAV -------------*/
@@ -573,6 +710,9 @@ ul {
 
   .showcase {
     display: flex;
+    position: fixed;
+    height: 70px;
+    z-index: 10;
   }
 
   .logomenu {
@@ -592,8 +732,8 @@ ul {
   }
 
   .nav-menurigth a ion-icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
 
   .nav-menu {
@@ -608,6 +748,7 @@ ul {
     overflow-y: auto;
     left: 100%;
     transition: left 0.3s;
+    z-index: 10;
   }
 
   .nav-main li a {
@@ -624,6 +765,7 @@ ul {
 
   .nav-main :hover {
     background-color: red;
+    color: black;
   }
 
   .covermenu {
@@ -641,10 +783,6 @@ ul {
     color: white;
   }
 
-  .nav-toggle {
-    display: block;
-  }
-
   .nav-menu_visible {
     left: 0;
   }
@@ -652,7 +790,200 @@ ul {
   .nav-toggle:focus:not(:focus-visible) {
     outline: none;
   }
+
+  .nav-toggle :hover {
+    border: solid white;
+    border-radius: 5px;
+  }
+
+  .nav-toggle :active {
+    color: red;
+  }
+
+  .parrafosus p {
+    font-size: 30px;
+  }
+
+  .parrafosus {
+    padding: 0;
+    margin-bottom: 0;
+    height: 300px;
+    border: none;
+  }
+
+  .info {
+    display: block;
+    align-items: center;
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .bg-model {
+    margin-top: 10px;
+    z-index: 10;
+  }
+
+  .model_content img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 50px;
+  }
+
+  .send {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+  }
+
+  #send {
+    position: relative;
+    right: 16.5%;
+    width: 200px;
+    margin-left: auto;
+  }
+
+  .infolanzamiento {
+    width: 100%;
+    height: 250px;
+  }
+
+  .infolanzamiento h2 {
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
+    padding: 0%;
+  }
+
+  .infolanzamiento p {
+    font-size: 20px;
+  }
+
+  .boton {
+    width: 50%;
+    margin: 0;
+    position: relative;
+    left: 32%;
+    top: 50px;
+  }
+
+  .boton button {
+    margin: 0;
+    top: 0;
+  }
+
+  .img1 img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .img1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .footer {
+    position: relative;
+    top: 230px;
+    height: 100px;
+    padding-top: 10px;
+  }
+
+  .redes {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+  }
+
+  .redes h4 {
+    font-size: 15px;
+  }
+
+  .redes button {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+  }
+
+  .redes ion-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .redes1 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+  }
+
+  .redes1 h4 {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .redes1 button {
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+  }
+
+  .redes1 ion-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .redes2 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+  }
+
+  .redes2 h4 {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .redes2 button {
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+  }
+
+  .redes2 ion-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .piepag {
+    height: 200px;
+    display: block;
+    position: relative;
+    top: 230px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .piepag img {
+    top: 8%;
+    left: 37%;
+    width: 120px;
+    height: 120px;
+  }
+
+  .piepag h5 {
+    text-align: center;
+    top: 0;
+    right: 0;
+  }
 }
+/*# sourceMappingURL=styleindex.css.map */
 /*# sourceMappingURL=styleindex.css.map */
 /*# sourceMappingURL=styleindex.css.map */
 
