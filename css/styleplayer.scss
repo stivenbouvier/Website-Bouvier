@@ -30,6 +30,12 @@ ul {
 
 }
 
+.showcase h1 {
+  color: #FFFFFF;
+  width: 50px;
+
+}
+
 .nav-menurigth {
   display: flex;
   align-items: center;
@@ -65,6 +71,7 @@ ul {
   cursor: pointer;
   display: none;
 }
+
 /* Navegacion */
 .container {
   display: flex;
@@ -75,6 +82,7 @@ ul {
   background-size: no-repeat;
   align-items: center;
 }
+
 .nav-main {
   display: flex;
   justify-content: center;
@@ -154,6 +162,7 @@ ul {
   align-items: center;
   justify-content: center;
 }
+
 .comingsoon {
   width: 95%;
   height: 200px;
@@ -163,10 +172,12 @@ ul {
   font-size: 90px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .comingsoon p {
   text-align: center;
   margin-top: 20px;
 }
+
 .logo {
   width: 20%;
   margin-bottom: 30px;
@@ -178,21 +189,25 @@ ul {
   border-radius: 5%;
   text-align: center;
 }
+
 .logo a {
   color: #ffffff;
   text-decoration: none;
 }
-.logo  :hover {
+
+.logo :hover {
   border: solid white;
   color: #ff0a0a;
   background-color: white;
   border-radius: 5%;
   transition: 5ms;
 }
+
 .logo :active {
   background-color: #000000;
   color: white;
 }
+
 .logo a :hover {
   border: none;
 }
@@ -227,6 +242,7 @@ ul {
   height: 600px;
   background-color: rgb(31, 31, 53);
 }
+
 .main {
   height: 100%;
   width: 100%;
@@ -237,6 +253,7 @@ ul {
   background-size: 50%;
   border-radius: 0.5%;
 }
+
 .main {
   box-shadow: 0px 0px 50px 30px rgb(0, 0, 0);
 }
@@ -253,9 +270,11 @@ ul {
   justify-content: center;
   flex-direction: column;
 }
+
 .left {
   margin-left: 15%;
 }
+
 .right {
   margin-right: 15%;
 }
@@ -329,8 +348,9 @@ input[type=range]::-webkit-slider-thumb {
   align-items: center;
   justify-content: center;
 }
- .middle button {
-   font-size: 20px;
+
+.middle button {
+  font-size: 20px;
   border: solid;
   height: 70px;
   width: 70px;
@@ -344,15 +364,18 @@ input[type=range]::-webkit-slider-thumb {
   box-shadow: 0px 4px 30px 10px rgba(36, 52, 70, 0.65);
   opacity: 80%;
 }
- .middle button span {
+
+.middle button span {
   cursor: pointer;
   border-radius: 100%;
   width: 10px;
   height: 10px;
 }
+
 .middle button :hover {
   font-size: 25px;
 }
+
 .middle button :active {
   color: rgb(255, 0, 0);
 }
@@ -365,6 +388,7 @@ input[type=range]::-webkit-slider-thumb {
     box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
   }
 }
+
 @media screen and (max-width: 700px) {
   .youtube-btn {
     position: relative;
@@ -374,8 +398,9 @@ input[type=range]::-webkit-slider-thumb {
   }
 
 }
+
 .titulosmp3 {
-  
+
   color: rgb(0, 0, 0);
   width: 180px;
   height: 100px;
@@ -402,6 +427,7 @@ input[type=range]::-webkit-slider-thumb {
   color: #ffffff;
   font-size: 30px;
 }
+
 .show_song_no {
   font-size: 25px;
 }
@@ -666,6 +692,7 @@ input[type=range]::-webkit-slider-thumb {
     right: 50%;
   }
 }
+
 @media (max-width: 1116px) {
   .container img {
     /*visibility: collapse;*/
@@ -732,6 +759,7 @@ input[type=range]::-webkit-slider-thumb {
     left: 80%;
   }
 }
+
 @media (max-width: 768px) {
   .showcase {
     height: 60px;
@@ -762,14 +790,15 @@ input[type=range]::-webkit-slider-thumb {
   }
 
   .container img {
-  display: none;
+    display: none;
   }
 
   .nav-menurigth a ion-icon {
     width: 40px;
     height: 40px;
-    
+
   }
+
   .nav-menu {
     flex-direction: column;
     margin: 0;
@@ -824,14 +853,16 @@ input[type=range]::-webkit-slider-thumb {
   .nav-toggle:focus:not(:focus-visible) {
     outline: none;
   }
-  .nav-toggle :hover{
+
+  .nav-toggle :hover {
     border: solid white;
-    border-radius: 5px 
+    border-radius: 5px
   }
 
   .nav-toggle :active {
     color: red;
   }
+
   .comingsoon {
     width: 100%;
     height: 140px;
@@ -840,14 +871,15 @@ input[type=range]::-webkit-slider-thumb {
   }
 
   .reproductorn {
-    display:flex;   
+    display: flex;
     box-shadow: 0px 0px 80px 10px rgb(53, 53, 53);
     border-radius: 2%;
     width: 100%;
-    margin:0;
+    margin: 0;
     background-image: url(https://images.unsplash.com/photo-1611107875582-684c70574042?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
- 
+
   }
+
   .logo {
     margin-top: 30px;
     text-align: center;
@@ -855,6 +887,7 @@ input[type=range]::-webkit-slider-thumb {
     font-size: 25px;
     color: rgb(255, 255, 255);
   }
+
   .main {
     border-radius: 10%;
     position: relative;
@@ -862,96 +895,116 @@ input[type=range]::-webkit-slider-thumb {
     height: 55%;
     box-shadow: 0px 0px 20px 20px rgb(0, 0, 0);
   }
+
   .right,
-.left {
+  .left {
 
-  height: 100%;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-}
-.left img {
-  width: 90%;
-}
-.left .volume i{
-  border: solid rgb(255, 0, 0);
-  border-radius: 30%;
-}
-.left .volume input {
-  width: 30px;
-}
-.show_song_no {
-  font-size: 10px;
-  top: 0;
-  padding: 0;
-}
-.titulosmp3 {
-  color: #ffffff;
-  width: 80px;
-  bottom: 0px;
-}
-.titulosmp3 p {
-font-size: 15px;
-color: #ffffff;
-}
-#artist {
-  color: #ffffff;
-  font-size: 25px;
-}
-.duration input {
-  position: relative;
-  bottom: 10px;
-  width: 500px;
-}
-#auto {
-  position: relative;
-  top: 100px;
-  right: 50%;
-}
-.middle button {
-  width: 50px;
-  height: 50px;
-  font-size: 15px;
-}
-.middle {
-  width: 100%;
-}
-.article {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
 
-  height: 600px;
-}
-.medium {
+  .left img {
+    width: 90%;
+  }
 
-margin: 0;
-width: 100%;
-}
-.medium p {
-  font-size: 33px;
-  margin-left: 0;
-  margin-top: 0;
-  text-align: center;
-}
-.inforevista {
-  border-top: solid white;
+  .left .volume i {
+    border: solid rgb(255, 0, 0);
+    border-radius: 30%;
+  }
 
-  margin: 0;
-  width: 100%;
-  height: 600px;
-}
-.revista {
-  margin: 0;
-  left: 5%;
+  .left .volume input {
+    width: 30px;
+  }
 
-}
-.inforevista p {
-  font-size:30px ;
-}
-.inforevista img {
-  width: 300px;
-  height: auto;
-}
+  .show_song_no {
+    font-size: 10px;
+    top: 0;
+    padding: 0;
+  }
+
+  .titulosmp3 {
+    color: #ffffff;
+    width: 80px;
+    bottom: 0px;
+  }
+
+  .titulosmp3 p {
+    font-size: 15px;
+    color: #ffffff;
+  }
+
+  #artist {
+    color: #ffffff;
+    font-size: 25px;
+  }
+
+  .duration input {
+    position: relative;
+    bottom: 10px;
+    width: 500px;
+  }
+
+  #auto {
+    position: relative;
+    top: 100px;
+    right: 50%;
+  }
+
+  .middle button {
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .middle {
+    width: 100%;
+  }
+
+  .article {
+
+    height: 600px;
+  }
+
+  .medium {
+
+    margin: 0;
+    width: 100%;
+  }
+
+  .medium p {
+    font-size: 33px;
+    margin-left: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .inforevista {
+    border-top: solid white;
+
+    margin: 0;
+    width: 100%;
+    height: 600px;
+  }
+
+  .revista {
+    margin: 0;
+    left: 5%;
+
+  }
+
+  .inforevista p {
+    font-size: 30px;
+  }
+
+  .inforevista img {
+    width: 300px;
+    height: auto;
+  }
+
   .footer {
 
     position: relative;
@@ -959,70 +1012,83 @@ width: 100%;
     height: 100px;
     padding-top: 10px;
   }
+
   .redes {
 
     height: 80px;
-    display:grid;
+    display: grid;
     align-items: center;
     justify-content: center;
 
   }
+
   .redes h4 {
     font-size: 15px;
   }
+
   .redes button {
 
     width: 40px;
     height: 40px;
     margin-left: 20px;
   }
+
   .redes ion-icon {
     width: 20px;
     height: 30px;
   }
+
   .redes1 {
     height: 80px;
-    display:grid;
+    display: grid;
     align-items: center;
     justify-content: center;
 
   }
+
   .redes1 h4 {
     font-size: 15px;
     text-align: center;
   }
+
   .redes1 button {
 
     margin-left: 10px;
     width: 40px;
     height: 40px;
   }
+
   .redes1 ion-icon {
     width: 20px;
     height: 30px;
   }
+
   .redes2 {
     height: 80px;
-    display:grid;
+    display: grid;
     align-items: center;
     justify-content: center;
 
   }
+
   .redes2 h4 {
     font-size: 15px;
     text-align: center;
   }
+
   .redes2 button {
 
     margin-left: 10px;
     width: 40px;
     height: 40px;
   }
+
   .redes2 ion-icon {
     width: 25px;
 
     height: 30px;
   }
+
   .piepag {
     height: 200px;
     display: block;
@@ -1031,18 +1097,21 @@ width: 100%;
     justify-content: center;
     align-items: center;
   }
+
   .piepag img {
     top: 8%;
-margin: auto;
+    margin: auto;
     width: 120px;
     height: 120px;
   }
+
   .piepag h5 {
     text-align: center;
     top: 0;
     right: 0;
   }
 }
+
 /*# sourceMappingURL=styleplayer.css.map */
 
 /*# sourceMappingURL=styleplayer.css.map */
