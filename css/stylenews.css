@@ -27,8 +27,11 @@ ul {
   background-color: #000000;
   position: fixed;
   z-index: 10;
-  border: solid;
-  color: #fffdfd;
+}
+
+.showcase h1 {
+  color: #FFFFFF;
+  width: 50px;
 }
 
 .nav-menurigth {
