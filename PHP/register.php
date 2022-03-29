@@ -1,8 +1,8 @@
 <?php 
 
-//conexion al servidor localhost xampp.
+//conexion al servidor localhost xampp.'bouvier-music.com','u898004372_bouvierdata','Seulgivelvet123','u898004372_newsletter''localhost','root','','registro website bouvier'
 
-$conexion = mysqli_connect('localhost','root','','registro website bouvier')
+$conexion = mysqli_connect('localhost','u898004372_bouvierdata','Seulgivelvet123','u898004372_newsletter')
 or die(mysqli_error($mysqli)); //or die nos sirve para identificar si la conexion presenta algun error.
 
 
@@ -31,7 +31,7 @@ function insertar($conexion){
 // se genera el if para que desde $envio referente a los datos envios exitosos envio mensaje prompt de suscripcion y dirije a la pagona principal.
     if($envio){
     echo "<script> alert('Se ha enviado tu suscripcion satisfactoriamente')
-    ;window.location='/Registros Website Bouvier/Pagina Web Bouvier/index.html'</script>";
+    ;window.location='/index.html'</script>";
     }
 
 }
