@@ -66,7 +66,6 @@ ul {
 }
 
 .container {
-
   display: flex;
   width: 100%;
   height: 700px;
@@ -142,7 +141,6 @@ ul {
   border-bottom: solid #000000;
 }
 
-
 .container img {
   width: 250px;
   height: 250px;
@@ -185,27 +183,16 @@ ul {
   justify-content: center;
   margin-left: 100px;
   font-size: 30px;
-
 }
 
-.titulo {
-  margin-top: 70px;
-  color: rgba(128, 153, 255, 0.705);
+.titlebouvier {
+  font-size: large;
   font-size: 50px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 5px;
-}
-
-.parrafo {
-  margin-top: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 100px;
-  font-size: 30px;
+  color: pink;
+  text-shadow: #FFFFFF;
+  margin-bottom: 100px;
+  margin-right: 60px;
+  margin-bottom: 200px;
 }
 
 .notice {
@@ -355,7 +342,6 @@ ul {
 
 .suscribenews {
   display: flex;
-
   color: #000000;
   position: absolute;
   right: 43.8%;
@@ -365,7 +351,6 @@ ul {
   border-radius: 10px;
   box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
   background-color: #07ff45;
-
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 16px;
@@ -374,7 +359,6 @@ ul {
   overflow: hidden;
   align-items: center;
   justify-content: center;
-
   z-index: 10;
 }
 
@@ -388,16 +372,13 @@ ul {
 }
 @media screen and (max-width: 700px) {
   .suscribenews {
-
     position: relative;
     bottom: auto;
     right: auto;
     margin-top: 20px;
   }
 
-
   .suscribenewss:active {
-
     transform: scale(1.1);
     box-shadow: 0px 17px 20px -6px white;
   }
@@ -458,13 +439,47 @@ ul {
 .suscribenews {
   display: flex;
   border: solid;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.inforevista {
+  width: 95%;
+  height: 1000px;
+  margin-top: 20px;
+  border: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  margin-right: 1000px;
+}
+
+.news {
+  display: flex;
+  border: solid;
 }
 
 .newsletterrevista {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  left: 30px;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  margin-right: 20%;
+  margin-top: 50px;
+}
 
+.newsletterrevista {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   left: 30px;
   text-align: center;
@@ -617,6 +632,7 @@ ul {
     font-size: 25px;
     border-bottom: none;
   }
+
   .nav-main2 {
     font-size: 20px;
   }
@@ -644,6 +660,7 @@ ul {
     height: 70px;
     font-size: 15px;
   }
+
   .nav-main2 {
     position: relative;
     bottom: 17%;
@@ -665,10 +682,12 @@ ul {
     font-size: 20px;
     border-bottom: none;
   }
+
   .nav-main2 li a:hover {
     font-size: 20px;
     border-bottom: none;
   }
+
   .nav-menurigth {
     left: 88%;
   }
@@ -677,10 +696,12 @@ ul {
   .showcase {
     height: 60px;
   }
+
   .container img {
     bottom: 25%;
     left: 1%;
   }
+
   .nav-menu {
     flex-direction: column;
     align-items: center;
@@ -691,6 +712,7 @@ ul {
     left: 0px;
     top: 70px;
   }
+
   .nav-menu2 {
     flex-direction: column;
     align-items: center;
@@ -705,6 +727,5 @@ ul {
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=stylenews.css.map */
 /*# sourceMappingURL=stylenews.css.map */
-
 
 /*# sourceMappingURL=stylenews.css.map */
