@@ -30,56 +30,56 @@ let All_song =[
 {
     name:"She Needs Flowers",
     path:"Nonstop/Track1.mp3",
-    img: "imgnonstop/nonstopimg.png",
+    img: "imgnonstop/Nonstopalbum.png",
     singer:"Bouvier"
 
 },
 {
     name:"feel It Tonight",
     path:"Nonstop/Track2.mp3",
-    img: "imgnonstop/nonstopimg.png",
+    img: "imgnonstop/Nonstopalbum.png",
     singer:"Bouvier"
 
 },
 {
     name:"Nonstop",
     path:"Nonstop/Track3.mp3",
-    img: "imgnonstop/nonstopimg.png",
+    img: "imgnonstop/Nonstopalbum.png",
     singer:"Bouvier"
 
 },
 {
     name:"Everybody Are Summer",
     path:"Nonstop/Track4.mp3",
-    img: "imgnonstop/nonstopimg.png",
+    img: "imgnonstop/Nonstopalbum.png",
     singer:"Bouvier"
 
 },
 {
     name:"She Wasnt",
     path:"Nonstop/Track5.mp3",
-    img: "imgnonstop/nonstopimg.png",
+    img: "imgnonstop/Nonstopalbum.png",
     singer:"Bouvier"
 
 },
 {
     name:"Lovesick",
     path:"Nonstop/Track6.mp3",
-    img: "imgnonstop/nonstopimg.png",
+    img: "imgnonstop/Nonstopalbum.png",
     singer:"Bouvier"
 
 },
 {
     name:"lovehurts",
     path:"Nonstop/Track7.mp3",
-    img: "imgnonstop/nonstopimg.png",
+    img: "imgnonstop/Nonstopalbum.png",
     singer:"Bouvier"
 
 },
 {
     name:"Pandemic Love (Himno)",
     path:"Nonstop/Track8.mp3",
-    img: "imgnonstop/nonstopimg.png",
+    img: "imgnonstop/Nonstopalbum.png",
     singer:"Bouvier"
 
 }
