@@ -518,7 +518,7 @@ ul {
 
 .close {
   position: absolute;
-  color: black;
+  color: #ffe6e6;
   top: 0;
   right: 14px;
   font-size: 42px;
@@ -803,7 +803,7 @@ ul {
   .nav-main li a {
     position: relative;
     right: 10px;
-    font-size: 35px;
+    font-size: 30px;
     margin: 5px;
   }
 

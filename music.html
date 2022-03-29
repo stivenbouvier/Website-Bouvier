@@ -30,52 +30,69 @@
             <button class="nav-toggle"  aria-label="abrirmenú"><ion-icon name="reorder-four-outline"></ion-icon></button> 
         </div>
     </header>
-        <div class="container">
-            <nav class="nav-main">
-                <img id="logomenu" src="/Imagenes/LOGOWEB-PhotoRoom.png"  href="/index.html"alt="Bouviernews logo" class="nav-brand" >
-                <ul class="nav-menu">
-                    <li>
-                        <a href="/index.html"> Home </a>
-                    </li>
-                    <li>
-                        <a href="/news.html"> News </a>
-                    </li>
-                    <li>
-                        <a href="/music.html"> Music </a>
-                    </li>
-                    <li>
-                        <a href="#"> Store </a>
-                    </li>
-                    <li>
-                        <a href="#"> New Album </a>
-                    </li>
-                    <li>
-                        <a href="#"> Socialmedia </a>
-                    </li>
-                    <li>
-                        <a href="/singup.html"> Sign Up </a>
-                    </li>
-                    <li>
-                        <a href="#"> Videos </a>
-                    </li>
-                    
-                </ul>
-            </nav>
-            <article>
-                <div class="comingsoon">
-                <p>#NONSTOP Coming Soon!</p>
-                </div>
-            </article>
+    <section class="container">
+        <nav class="nav-main">
             
-                <div v-cloak>
+            <ul class="nav-menu">
+                <li>
+                    <a href="/index.html"> Home </a>
+                </li>
+                <li>
+                    <a class="news" href="/news.html"> News </a>
+                </li>
+                <li>
+                    <a href="/music.html"> Music </a>
+                </li>
+                <li>
+                    <a href="#"> Socialmedia </a>
+                </li>
+
+                <li class="covermenu">
+                    <a href="#"> NewAlbum </a>
+                </li>
+                <li class="covermenu">
+                    <a href="#"> Store </a>
+                </li class="covermenu">
+
+                <li class="covermenu">
+                    <a href="/singup.html"> SignUp </a>
+                </li >
+                <li class="covermenu">
+                    <a href="#"> Videos </a>
+                </li>
+
+            </ul>
+        </nav>
+
+                <img class="logomenu" src="/Imagenes/LOGOWEB-PhotoRoom.png" alt="Bouviernews logo" class="nav-brand">
                 
-                    <a href="https://www.youtube.com/channel/UC-DihFjlogk-dlhJ3kqKVNw" target="_blank" class="github-btn">
-                    Youtube channel
-                     </a>
-                </div>
-            <div class="main">
-                <p id="logo">Youtube music <i class="fa fa-music" aria-hidden="true"></i></p>
-                
+        <nav class="nav-main2">
+            <ul class="nav-menu2">
+                <li>
+                    <a href="#"> NewAlbum </a>
+                </li>
+                <li>
+                    <a href="#"> Store </a>
+                </li>
+
+                <li>
+                    <a href="/singup.html"> SignUp </a>
+                </li>
+                <li>
+                    <a href="#"> Videos </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+        <article class="coming">
+            <div class="comingsoon">
+            <p>#NONSTOP Coming Soon!</p>
+            </div>
+            <div class="logo"><a href="https://www.youtube.com/channel/UC-DihFjlogk-dlhJ3kqKVNw"> music youtube <span class="fa fa-music" aria-hidden="true"></span></a></div>
+
+        </article>
+    <aside class="reproductorn">
+            <div class="main">               
                 
                 <!--left part-->
                 
@@ -100,7 +117,7 @@
                         </div>
                         <!--song title-->
                         <div class="titulosmp3">
-                            <p id="artist">artist</p>
+                            <p id="artist"><n>artist</n></p>
                             <p id="title">Title.mp3</p>
                         </div>
                         
@@ -125,9 +142,11 @@
             </div>
             
             </div>
+        </aside>
+
             <!--Contenido News-->
             
-                    <article>
+                    <article class="article">
                         <div class="medium">
                             <p>Bouvier In May Releases is Album.</p>
                         </div>
@@ -150,7 +169,7 @@
                         </div>
                         <div class="redes1">
                             <button><ion-icon name="logo-tiktok"></ion-icon></button>
-                            <h4>Tik Tok</h4>
+                            <h4>TikTok</h4>
                         </div>
                         <div class="redes2">
                             <button><ion-icon name="logo-twitter"></ion-icon></button>
