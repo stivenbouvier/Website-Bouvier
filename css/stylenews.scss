@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -21,21 +22,22 @@ ul {
 
 /* Showcase */
 
-  .showcase {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    background-color: #000000;
-    position: fixed;
-    z-index: 10;
-  
-  
+.showcase {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: #000000;
+  position: fixed;
+  z-index: 10;
+
+
 }
-.showcase h1{
+
+.showcase h1 {
   color: #FFFFFF;
   width: 50px;
-  
+
 }
 
 .nav-menurigth {
@@ -155,19 +157,21 @@ ul {
   height: 250px;
   position: relative;
 }
-.seccion1{
-  border:solid;
-  color: #48ff00;
+
+.seccion1 {
+
   width: 98%;
   height: 300px;
   align-items: center;
   justify-content: center;
   position: relative;
-  
-  
+  margin-left: 10px;
+  border-radius: 8px;
+
+
 }
 
-.seccion1 h2{
+.seccion1 h2 {
   color: #81e93b;
   font-size: 50px;
   width: 98%;
@@ -175,23 +179,22 @@ ul {
   position: relative;
   justify-content: center;
   align-items: center;
-  
+
 }
 
-.seccion1 p{
+.seccion1 p {
   color: #ffffff;
   width: 98%;
   font-size: 20px;
-  border: solid;
   position: relative;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
+  margin-left: 10px;
 }
 
 .medium {
-  border:solid;
-  color:pink;
+  color: pink;
   display: flex;
   justify-content: center;
   width: 99%;
@@ -200,27 +203,39 @@ ul {
 }
 
 
-.medium p{
+.medium p {
   color: rgb(0, 0, 0);
   font-size: 80px;
   background-color: yellow;
   font-display: 60px;
   width: 98%;
+  height: 150px;
   position: relative;
   justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  text-align: center;
 }
 
 
-.inforevista{
-  border:solid;
+.inforevista {
+  
   color: #ffff86;
   width: 98%;
   height: 1200px;
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
 
-  
-  
+
+
+/*@media screen and (min-width: 500px) {*/
+.inforevista a:hover {
+  background:yellow;
+  transform: scale(1.1);
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  color: #000000;
 }
 
 .inforevista a{
@@ -243,18 +258,9 @@ ul {
   align-items: center;
   justify-content: center;
   z-index: 10;
-
 }
-/*@media screen and (min-width: 500px) {*/
-  .inforevista a:hover {
-    background: pink;
-    transform: scale(1.1);
-    box-shadow: 0px 5px 10px rgb(0, 0, 0);
-    color: #000000;
-  }
-/*}*/
 @media screen and (max-width: 700px) {
-  .inforevista a{
+  .inforevista a {
     position: relative;
     bottom: auto;
     right: auto;
@@ -267,23 +273,24 @@ ul {
   }
 }
 
-.inforevista p{
-  margin-top: 60px;
-  font-size: 50px;
+.inforevista p {
+  margin-top: 300px;
+  font-size: 100px;
   display: flex;
-  width: 500px;
-  height: 200px;
-  border: solid;
-  
+  width: 100%;
+  height: 500px;
+  background-color: #000000;
+  color: #ffffff;
+
 }
-.inforevista img{
-  width: 700px;
+
+.inforevista img {
+  width: 600px;
   height: 900px;
-  
-  margin-right: auto;
-  margin-top: 100px;
-  
+  margin-top: 60px;
+  margin-left: 20px;
 }
+
 .img1 {
   display: flex;
   justify-content: center;
@@ -302,7 +309,7 @@ ul {
 
 /* Footer */
 .footer {
-  background-color: #141313;
+  background-color: #b31212;
   width: 100%;
   height: 300px;
   display: flex;
@@ -404,6 +411,7 @@ ul {
   align-items: center;
   justify-content: center;
 }
+
 .piepag div {
   display: flex;
   justify-content: center;
@@ -446,6 +454,7 @@ ul {
     right: 50%;
   }
 }
+
 @media (max-width: 1116px) {
   .container img {
     /*visibility: collapse;*/
@@ -512,6 +521,7 @@ ul {
     left: 78%;
   }
 }
+
 @media (max-width: 768px) {
   .showcase {
     height: 60px;
@@ -547,8 +557,9 @@ ul {
   .nav-menurigth a ion-icon {
     width: 40px;
     height: 40px;
-    
+
   }
+
   .nav-menu {
     flex-direction: column;
     margin: 0;
@@ -603,17 +614,20 @@ ul {
   .nav-toggle:focus:not(:focus-visible) {
     outline: none;
   }
-  .nav-toggle :hover{
+
+  .nav-toggle :hover {
     border: solid white;
-    border-radius: 5px 
+    border-radius: 5px
   }
 
   .nav-toggle :active {
     color: red;
   }
+
   .parrafosus p {
     font-size: 30px;
   }
+
   .parrafosus {
     padding: 0;
     margin-bottom: 0;
@@ -621,6 +635,7 @@ ul {
     border: none;
 
   }
+
   .info {
     display: block;
     align-items: center;
@@ -633,12 +648,14 @@ ul {
     margin-top: 10px;
     z-index: 10;
   }
+
   .model_content img {
     width: 200px;
     height: 200px;
     position: relative;
     top: 50px;
   }
+
   #send {
     width: 120px;
     margin-left: auto;
@@ -650,15 +667,18 @@ ul {
     height: 250px;
 
   }
+
   .infolanzamiento h2 {
     font-size: 28px;
     width: 100%;
     text-align: center;
     padding: 0%;
   }
+
   .infolanzamiento p {
     font-size: 20px;
   }
+
   .boton {
     width: 50%;
     margin: 0;
@@ -666,14 +686,17 @@ ul {
     left: 32%;
     top: 50px;
   }
+
   .boton button {
     margin: 0;
     top: 0;
   }
+
   .img1 img {
     width: 300px;
     height: 300px;
   }
+
   .img1 {
     width: 100%;
 
@@ -682,6 +705,7 @@ ul {
     align-items: center;
     position: relative;
   }
+
   .footer {
 
     position: relative;
@@ -689,70 +713,83 @@ ul {
     height: 100px;
     padding-top: 10px;
   }
+
   .redes {
 
     height: 80px;
-    display:grid;
+    display: grid;
     align-items: center;
     justify-content: center;
 
   }
+
   .redes h4 {
     font-size: 15px;
   }
+
   .redes button {
 
     width: 40px;
     height: 40px;
     margin-left: 20px;
   }
+
   .redes ion-icon {
     width: 20px;
     height: 30px;
   }
+
   .redes1 {
     height: 80px;
-    display:grid;
+    display: grid;
     align-items: center;
     justify-content: center;
 
   }
+
   .redes1 h4 {
     font-size: 15px;
     text-align: center;
   }
+
   .redes1 button {
 
     margin-left: 10px;
     width: 40px;
     height: 40px;
   }
+
   .redes1 ion-icon {
     width: 20px;
     height: 30px;
   }
+
   .redes2 {
     height: 80px;
-    display:grid;
+    display: grid;
     align-items: center;
     justify-content: center;
 
   }
+
   .redes2 h4 {
     font-size: 15px;
     text-align: center;
   }
+
   .redes2 button {
 
     margin-left: 10px;
     width: 40px;
     height: 40px;
   }
+
   .redes2 ion-icon {
     width: 25px;
 
     height: 30px;
   }
+
   .piepag {
     height: 200px;
     display: block;
@@ -761,21 +798,23 @@ ul {
     justify-content: center;
     align-items: center;
   }
+
   .piepag img {
     top: 8%;
     left: 37%;
     width: 120px;
     height: 120px;
   }
+
   .piepag h5 {
     text-align: center;
     top: 0;
     right: 0;
   }
 }
-/*# sourceMappingURL=styleindex.css.map */
-/*# sourceMappingURL=styleindex.css.map */
-
 
 /*# sourceMappingURL=styleindex.css.map */
+/*# sourceMappingURL=styleindex.css.map */
 
+
+/*# sourceMappingURL=styleindex.css.map */

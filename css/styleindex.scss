@@ -75,7 +75,7 @@ ul {
   display: flex;
   width: 100%;
   height: 700px;
-  background: url(/Imagenes/Diseño\ sin\ título\ \(7\).png);
+  background: url(/imgnonstop/04\ \(9\).png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -224,12 +224,12 @@ ul {
 
 background-color: white;
   width: 50%;
-  height: 500px;
+  height: 540px;
   color: #000000;
 
 }
 .infolanzamiento h2 {
-  font-size: 50px;
+  font-size: 80px;
   text-align: center;
   position: relative;
   top: 20px;
@@ -237,7 +237,7 @@ background-color: white;
 
 }
 .infolanzamiento p {
-  font-size: 35px;
+  font-size: 40px;
   text-align: center;
   margin-top: 50px;
 
@@ -273,15 +273,15 @@ background-color: white;
   cursor: pointer;
   color: rgb(255, 217, 0);
   background-color: #000000;
-  width: 200px;
-  height: 50px;
+  width: 350px;
+  height: 80px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   cursor: pointer;
   font-size: 20px;
   box-shadow: 2px 0px 2px 0px;
   position: relative;
   top: 30px;
-  right: 30px;
+  right: 20px;
 }
 .boton :hover {
   color: rgb(111, 112, 182);
@@ -298,10 +298,10 @@ background-color: white;
 }
 
 .img1 img {
-  width: 60%;
-  height: 100%;
+  width: 600px;
+  height: 550px;
   position: relative;
-  bottom: 20px;
+  bottom: 8px;
 }
 
 /* seccion oculta*/
@@ -427,7 +427,7 @@ background-color: white;
 .bg-model {
   width: 100%;
   height: 100%;
-  background-image: url(/imgnonstop/Suscribete\ a\ nuestras\ newsletter\ \(8\).png);
+  background-color: #000000;
   background-position: center;
   //background-repeat: no-repeat;
   //background-size: 100% 100%;
@@ -508,12 +508,15 @@ background-color: white;
   z-index: 10;
 }
 
+#send:hover{
+  background-color: #ffffff;
+}
 .model_content input {
   width: 70%;
-  height: 50%;
+  height: 30px;
   text-align: center;
   display: flex;
-  margin: 15px;
+  margin: 20px;
   margin-left: 15.3%;
   border-color: rgb(229, 255, 0);
   margin-bottom: 0px;
@@ -526,15 +529,53 @@ background-color: white;
 
 .close {
   position: absolute;
-  color: rgb(255, 230, 230);
+  color: rgb(255, 255, 255);
   top: 0;
-  right: 14px;
+  right: 40px;
   font-size: 42px;
   transform: rotate(45deg);
   cursor: pointer;
   
 }
+.animacion{
+  color: #ff9fe2;
+  position: relative;
+  margin-bottom: 100px;
+}
 
+
+.animacion .text{
+  position: relative;
+  color:rgb(229, 255, 0);; /*#775375;*/
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.animacion .one-text{
+  color: #FFFFFF;
+  font-size: 60px;
+
+}
+  .text.two-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    border-left: 2px solid #4070f4;
+    animation: animate 5s steps(26) infinite;
+
+  }
+  @keyframes animate {
+    40%, 60%{
+      left: calc(100% + 4px);
+    }
+    60%{
+      left: 0%;
+    }
+  }
 .logopop {
   width: 350px;
   height: 350px;
@@ -546,7 +587,7 @@ background-color: white;
 /*Boton youtube*/
 /* Footer */
 .footer {
-  background-color: #141313;
+  background-color: #1b1b1b4d;
   width: 100%;
   height: 300px;
   display: flex;
@@ -564,8 +605,8 @@ background-color: white;
 }
 
 .redes button {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 20%;
   background-color: black;
   cursor: pointer;
@@ -573,12 +614,12 @@ background-color: white;
 
 .redes ion-icon {
   color: #a0eef8;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 .redes h4 {
-  font-size: 40px;
+  font-size: 30px;
   color: white;
   margin: 10px;
 }
@@ -593,8 +634,8 @@ background-color: white;
 }
 
 .redes1 button {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 20%;
   background-color: black;
   cursor: pointer;
@@ -602,12 +643,12 @@ background-color: white;
 
 .redes1 ion-icon {
   color: #a0eef8;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 .redes1 h4 {
-  font-size: 40px;
+  font-size: 30px;
   color: white;
   margin: 10px;
 }
@@ -622,8 +663,8 @@ background-color: white;
 }
 
 .redes2 button {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 20%;
   background-color: black;
   cursor: pointer;
@@ -631,12 +672,12 @@ background-color: white;
 
 .redes2 ion-icon {
   color: #a0eef8;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 .redes2 h4 {
-  font-size: 40px;
+  font-size: 30px;
   color: white;
   margin: 10px;
 }
@@ -665,8 +706,238 @@ background-color: white;
   text-align: center;
 }
 
-/*---------------RESPONSIVE NAV -------------*/
-@media (max-width: 1364px) {
+
+
+
+
+
+/*_________________________________________________________________*/
+
+
+
+
+
+
+
+
+
+/* Responsive Laptop*/
+@media (max-width: 1502px) {
+  .info {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display:flex;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #FFFFFF;
+  font-size: 50px;
+  height: 500px;
+}
+.infolanzamiento {
+
+background-color: white;
+  width: 50%;
+  height: 540px;
+  color: #000000;
+
+}
+.infolanzamiento h2 {
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+  top: 20px;
+
+
+}
+.infolanzamiento p {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 50px;
+
+}
+.info button {
+  cursor: pointer;
+
+  color: rgb(255, 255, 255);
+  background-color: #0c0b0b;
+  width: 200px;
+  height: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 2px 0px 2px 0px;
+  margin-top: 40px;
+}
+.info button :hover {
+
+  color: rgb(148, 148, 148);
+  background-color: black;
+  font-size: 23px;
+  transition: all 3ms;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.boton button {
+  cursor: pointer;
+  color: rgb(255, 217, 0);
+  background-color: #000000;
+  width: 300px;
+  height: 80px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 2px 0px 2px 0px;
+  position: relative;
+  top: 30px;
+  right: 10px;
+}
+.boton :hover {
+  color: rgb(111, 112, 182);
+  background-color: black;
+  font-size: 23px;
+  transition: all 3ms;
+}
+
+.img1 {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+}
+
+.img1 img {
+  width: 600px;
+  height: 540px;
+  position: relative;
+  bottom: 1px;
+}
+  .footer {
+    background-color: #221d1d69;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 150px;
+    margin: 10px;
+  }
+  
+  .redes button {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    background-color: black;
+    cursor: pointer;
+  }
+  
+  .redes ion-icon {
+    color: #a0eef8;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .redes h4 {
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+  }
+  
+  .redes1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 150px;
+    margin: 10px;
+  }
+  
+  .redes1 button {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    background-color: black;
+    cursor: pointer;
+  }
+  
+  .redes1 ion-icon {
+    color: #a0eef8;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .redes1 h4 {
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+  }
+  
+  .redes2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 150px;
+    margin: 10px;
+  }
+  
+  .redes2 button {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    background-color: black;
+    cursor: pointer;
+  }
+  
+  .redes2 ion-icon {
+    color: #a0eef8;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .redes2 h4 {
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+  }
+  
+  .piepag {
+    width: 100%;
+    height: 250px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  .piepag div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .piepag img {
+    width: 180px;
+    height: 180px;
+    bottom: 20px;
+  }
+  
+  .piepag h5 {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+
+}
+/*---------------RESPONSIVE Tablet-------------*/
+@media (max-width: 1250px) {
   .nav-main {
     font-size: 20px;
   }
@@ -690,7 +961,25 @@ background-color: white;
     right: 50%;
   }
 }
-@media (max-width: 1116px) {
+
+
+
+
+
+
+
+
+
+
+/*_______________________________________________________________________*/
+
+
+
+
+
+/*Responsive miniTablet*/
+
+@media (max-width: 1150px) {
   .container img {
     /*visibility: collapse;*/
     width: 100px;
@@ -755,8 +1044,103 @@ background-color: white;
   .nav-menurigth {
     left: 78%;
   }
+  .info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display:flex;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: #FFFFFF;
+    font-size: 40px;
+    height: 500px;
+  }
+  .infolanzamiento {
+  
+  background-color: white;
+    width: 50%;
+    height: 540px;
+    color: #000000;
+  
+  }
+  .infolanzamiento h2 {
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+  
+  
+  }
+  .infolanzamiento p {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+  
+  }
+  .info button {
+    cursor: pointer;
+  
+    color: rgb(255, 255, 255);
+    background-color: #0c0b0b;
+    width: 200px;
+    height: 50px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 2px 0px 2px 0px;
+    margin-top: 3px;
+  }
+  .info button :hover {
+  
+    color: rgb(148, 148, 148);
+    background-color: black;
+    font-size: 23px;
+    transition: all 3ms;
+  }
+  
+  .boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  
+  .boton button {
+    cursor: pointer;
+    color: rgb(255, 217, 0);
+    background-color: #000000;
+    width: 300px;
+    height: 80px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 2px 0px 2px 0px;
+    position: relative;
+    bottom: 40px;
+    right: 10px;
+  }
+  .boton :hover {
+    color: rgb(111, 112, 182);
+    background-color: black;
+    font-size: 23px;
+    transition: all 3ms;
+  }
+  
+  .img1 {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+  }
+  
+  .img1 img {
+    width: 500px;
+    height: 550px;
+    position: relative;
+    bottom: 8px;
+  }
 }
-@media (max-width: 768px) {
+
+/*minITablet Responsive*/
+
+@media (max-width: 1050px) {
   .showcase {
     height: 60px;
   }
@@ -895,19 +1279,19 @@ background-color: white;
 
   }
   .infolanzamiento h2 {
-    font-size: 28px;
+    font-size: px;
     width: 100%;
     text-align: center;
     padding: 0%;
   }
   .infolanzamiento p {
-    font-size: 20px;
+    font-size: 25px;
   }
   .boton {
     width: 50%;
     margin: 0;
     position: relative;
-    left: 32%;
+    left: 26%;
     top: 50px;
   }
   .boton button {
@@ -915,8 +1299,9 @@ background-color: white;
     top: 0;
   }
   .img1 img {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
+    top: 40px;
   }
   .img1 {
     width: 100%;
@@ -926,6 +1311,46 @@ background-color: white;
     align-items: center;
     position: relative;
   }
+
+  .animacion{
+    color: #ff9fe2;
+    position: relative;
+    margin-bottom: 100px;
+  }
+  
+  
+  .animacion .text{
+    position: relative;
+    color:rgb(229, 255, 0);; /*#775375;*/
+    font-size: 50px;
+    font-weight: 600;
+  }
+  
+  .animacion .one-text{
+    color: #FFFFFF;
+    font-size: 50px;
+  
+  }
+    .text.two-text:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #000000;
+      border-left: 2px solid #4070f4;
+      animation: animate 5s steps(26) infinite;
+  
+    }
+    @keyframes animate {
+      40%, 60%{
+        left: calc(100% + 4px);
+      }
+      60%{
+        left: 0%;
+      }
+    }
   .footer {
 
     position: relative;
@@ -1017,6 +1442,342 @@ background-color: white;
     right: 0;
   }
 }
+
+
+
+
+
+
+/*_________________________________________________________*/
+
+
+
+
+
+
+/*Responsive Movil*/
+
+@media (max-width: 900px) {
+  .showcase {
+    height: 60px;
+  }
+
+  .container {
+    height: 300px;
+    background-size:cover;
+  }
+
+  .showcase {
+    display: flex;
+    position: fixed;
+    height: 70px;
+    z-index: 10;
+  }
+
+  .logomenu {
+    display: none;
+  }
+
+  .logomenu2 {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border: solid white;
+  }
+
+  .container img {
+    bottom: 28%;
+    left: 0%;
+  }
+
+  .nav-menurigth a ion-icon {
+    width: 40px;
+    height: 40px;
+    
+  }
+  .nav-menu {
+    flex-direction: column;
+    margin: 0;
+    background-color: #000000;
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+    z-index: 10;
+  }
+
+  .nav-main li a {
+    position: relative;
+    right: 10px;
+    font-size: 30px;
+    margin: 5px;
+  }
+
+  .nav-main li {
+    font-size: 50px;
+    margin-top: 0;
+  }
+
+  .nav-main :hover {
+    background-color: red;
+    color: black;
+  }
+
+  .covermenu {
+    display: flex;
+  }
+
+  .nav-menu2 {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+    position: relative;
+    right: 80px;
+    color: white;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+  .nav-toggle :hover{
+    border: solid white;
+    border-radius: 5px 
+  }
+
+  .nav-toggle :active {
+    color: red;
+  }
+  .parrafosus p {
+    font-size: 30px;
+  }
+  .parrafosus {
+    padding: 0;
+    margin-bottom: 0;
+    height: 300px;
+    border: none;
+
+  }
+  .info {
+    display: block;
+    align-items: center;
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .bg-model {
+    margin-top: 10px;
+    z-index: 10;
+  }
+  .model_content img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 50px;
+  }
+  #send {
+    width: 120px;
+    margin-left: auto;
+  }
+  
+  .close{
+    right: 14px;
+  }
+
+  .infolanzamiento {
+    width: 100%;
+    height: 300px;
+
+  }
+  .infolanzamiento h2 {
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    padding: 0%;
+  }
+  .infolanzamiento p {
+    font-size: 21px;
+  }
+  .boton {
+    width: 50%;
+    margin: 0;
+    position: relative;
+    left: 26%;
+  }
+  .boton button {
+    cursor: pointer;
+    color: rgb(255, 217, 0);
+    background-color: #000000;
+    width: 250px;
+    height: 60px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 2px 0px 2px 0px;
+    position: relative;
+    top: 30px;
+    right: 10px;
+  }
+  .boton button {
+    margin: 0;
+    top: 0;
+  }
+  .img1 img {
+    width: 300px;
+    height: 300px;
+    border: solid;
+    margin-bottom: 100px;
+  }
+  .img1 {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .animacion{
+    color: #ff9fe2;
+    position: relative;
+    margin-bottom: 100px;
+  }
+  
+  
+  .animacion .text{
+    position: relative;
+    color:rgb(229, 255, 0);; /*#775375;*/
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .animacion .one-text{
+    color: #FFFFFF;
+    font-size: 20px;
+  
+  }
+    .text.two-text:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #000000;
+      border-left: 2px solid #4070f4;
+      animation: animate 5s steps(26) infinite;
+  
+    }
+    @keyframes animate {
+      40%, 60%{
+        left: calc(100% + 4px);
+      }
+      60%{
+        left: 0%;
+      }
+    }
+  .footer {
+
+    position: relative;
+    top: 230px;
+    height: 100px;
+    padding-top: 10px;
+  }
+  .redes {
+
+    height: 80px;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .redes h4 {
+    font-size: 15px;
+  }
+  .redes button {
+
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+  }
+  .redes ion-icon {
+    width: 20px;
+    height: 30px;
+  }
+  .redes1 {
+    height: 80px;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .redes1 h4 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .redes1 button {
+
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  .redes1 ion-icon {
+    width: 20px;
+    height: 30px;
+  }
+  .redes2 {
+    height: 80px;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .redes2 h4 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .redes2 button {
+
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  .redes2 ion-icon {
+    width: 25px;
+
+    height: 30px;
+  }
+  .piepag {
+    height: 200px;
+    display: block;
+    position: relative;
+    top: 230px;
+    justify-content: center;
+    align-items: center;
+  }
+  .piepag img {
+    top: 8%;
+    left: 37%;
+    width: 120px;
+    height: 120px;
+  }
+  .piepag h5 {
+    text-align: center;
+    top: 0;
+    right: 0;
+  }
+}
+
+
 /*# sourceMappingURL=styleindex.css.map */
 /*# sourceMappingURL=styleindex.css.map */
 
