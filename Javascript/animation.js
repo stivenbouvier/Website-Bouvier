@@ -2,13 +2,13 @@ const text = document.querySelector(".two-text");
 
 const textload = () => {
     setTimeout(()=>{
-        text.textContent = "NEW ALBUM";
+        text.textContent = "¡NONSTOP!";
     }, 0);
     setTimeout(()=>{
-        text.textContent = "스티븐 부비에";
+        text.textContent = "¡NONSTOP!";
     }, 4000);
     setTimeout(()=>{
-        text.textContent = "MAY 2022";
+        text.textContent = "¡NONSTOP!";
     }, 8000);//1s = 1000 milliseconds
 }
 textload();

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Home │ Official Website</title>
+    
+    <link rel="shortcut icon" href="/imgnonstop/Verde y Negro Cuadros DJ Blitz Logo.png">
+    <! -- FONT AWESOME -- >
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--Add Css-->
+    <link rel="stylesheet" href="/css/stylehome.css">
+    
+    
+    <!--Font Oswalds-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+        <!--Showcase-->
+    <header class="showcase">
+        
+        <div>
+            <button class="nav-toggle"  aria-label="abrirmenú"><ion-icon name="reorder-four-outline"></ion-icon></button> 
+        </div>
+        <div class="korean">
+            <a class="cta" href="/index.html" target="_blank">
+                <span class="hover-underline-animation"> Shop Now  </span>
+                <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                </svg>
+            </a>
+            </div>
+        <div class="redesshow">
+            <div class="apple">
+                <a href="https://www.instagram.com/stivenbouvierr/">
+                    <img id="showapple" src="/icons3D/apple.svg" alt=""></a>
+            </div>
+            <div class="youtube">
+                <a href="https://www.instagram.com/stivenbouvierr/">
+                    <img id="showyoutube" src="/icons3D//youtube (2).svg" alt=""></a>
+            </div>
+            <div class="spotify">
+                <a href="https://www.instagram.com/stivenbouvierr/">
+                    <img id="showspotify" src="/icons3D//spotify.svg" alt=""></a>
+            </div>
+            <div class="instagram">
+                <a href="https://www.instagram.com/stivenbouvierr/">
+                    <img id="showinstagram" src="/icons3D/instagram (1).svg" alt=""></a>
+        </div>
+        </div>
+        <div class="nav-menurigth">
+            <a href="#" id="lupa">
+                <ion-icon name="search-outline"></ion-icon>
+            </a>
+        </div> 
+    </header>
+        <section class="container">
+            <nav class="nav-main">
+                
+                <ul class="nav-menu">
+                    <li>
+                        <a href="/home.html"> Home </a>
+                    </li>
+                    <li>
+                        <a class="news" href="/news.html"> News </a>
+                    </li>
+                    <li>
+                        <a href="/music.html"> Music </a>
+                    </li>
+                    <li>
+                        <a href="#"> Socialmedia </a>
+                    </li>
+
+                    <li class="covermenu">
+                        <a href="#"> NewAlbum </a>
+                    </li>
+                    <li class="covermenu">
+                        <a href="#"> Store </a>
+                    </li class="covermenu">
+
+                    <li class="covermenu">
+                        <a href="/singup.html"> SignUp </a>
+                    </li >
+                    <li class="covermenu">
+                        <a href="#"> Videos </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+                    <img class="logomenu" src="/Imagenes/LOGOWEB-PhotoRoom.png" alt="Bouviernews logo" class="nav-brand">
+                    
+            <nav class="nav-main2">
+                <ul class="nav-menu2">
+                    <li>
+                        <a href="#"> NewAlbum </a>
+                    </li>
+                    <li>
+                        <a href="/store.html"> Store </a>
+                    </li>
+
+                    <li>
+                        <a href="/signup.html"> SignUp </a>
+                    </li>
+                    <li>
+                        <a href="#"> Videos </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        </section>
+    <!----------------------------------------------------Popup Register------------------------------------------------------------------------->
+<article class="parrafosus">
+    <p>Newsletter in your email<br>suscribe</p>
+    <a class="buttons" id="open">SUSCRIBE</a>
+        <div class="banner1">
+            <div class="titulostore">
+                <h1>LISTEN NONSTOP NEW ALBUM</h1>
+            </div>
+            <div class="card">
+                <div class="card__content">
+                <div class="card__date"> 25 . 05 . 2022
+                </div>
+                <div class="card__info">
+                    <h3>New Album</h3>
+                </div>
+                </div>
+            </div>
+            <a id="listen" href="/music.html"> LISTEN NOW </a>
+        </div>
+        
+</article>
+<div class="toast">
+    <div class="toast-content">
+        <i class="fas fa-solid fa-check check"></i>
+        <div class="message">
+        <span class="text text-1">Success</span>
+        <span class="text text-1">Your changes has been saved</span>
+        </div>
+    </div>
+    <i class="fa solid fa-xmark"></i>
+    <div class="progress"></div>
+</div>
+
+<article class="bg-model">
+        <div class="model_content">
+            <div class="close">+</div>
+            <!--<img class="logopop" src="#" alt="">-->
+            <div class="animacion">
+                <span class="text one-text">NEW ALBUM </span>
+                <span class="text two-text">coming soon</span>
+                </div>
+            <div class="tosuscribe">
+                <h1>SUSCRIBE IN OUR NEWSLETTER.</h1>
+            </div>
+            
+            <!--Formulario oculto con base de datos PHP-->
+
+            <form class="botons" action="/PHP/register.php" name="" method="POST" >
+                <input class="input" type="text" style="font-size: 2.em;"name="name" placeholder ="Name">
+                <input class="input" type="email" name="email" placeholder ="E-mail">
+                    <div class="wrapper">
+                        <button id="send" type="submit" name="send">Send</button>
+                    </div>
+                    
+            </form>
+</article>
+
+<!--Ventana success-->
+ 
+            <article>
+                <div class="toast">
+                    <div class="toast-content">
+                        <i class="fas fa-solid fa-check check"></i>
+                <div class="message">
+                <span class="text text-1">Success</span>
+                <span class="text text-2">Your changes  has been Saved</span>
+                </div>
+                    </div>
+                            <i class="fa-solid fa-xmark closer"></i>
+                <div class="progress"></div>
+                </div>
+</article>
+<article class="info">
+    <div class="infolanzamiento">
+        <h2>Debut │ NonStop</h2>
+        <p> Bouvier begin your debut in the middle of this <br> present year 2022 with your first Album NonStop.</p>
+        <div class="boton">
+            <a href="/news.html" target="_blank">
+                Read More !
+            </a>
+        </div>
+    </div> 
+    <div class="img1">
+        <img class="mtv" src="/Imagenes/Green Black Friday Instagram Post (1).png">
+    </div>
+
+    <div v-cloak></div>
+</article>
+<!---------------------------------------------------------------------anuncios socialmedia-------------------------------------------------------------------------------->
+<article class="socialmedia">
+    <div class="anunciosocialmedia">
+        <div class="socialmediaadds">
+            <h1>Follow In Our Socialmedia.</h1>
+                <img id="twsocial" src="/icons3D/twitter.svg">
+        </div>
+        
+        <div class="socialmediaimg">
+            <img id="socialaviso" src="/icons3D/twitter.svg">
+        </div>
+    </div>
+</article>      
+<article>
+    <div class="redessociales">
+        
+        <div class="facebook">
+            <a href="https://www.facebook.com/stivenbouviermusic">
+                <img id="facebook" src="/icons3D/facebook (1).svg" alt=""></a>
+        </div>
+
+        <div class="twitter">
+            <a href="https://twitter.com/stivenbouvier">
+                <img id="twitter" src="/icons3D/twitter (1).svg" alt=""></a>
+        </div>
+
+        <div class="instagram">
+            <a href="https://www.instagram.com/stivenbouvierr/">
+                <img id="instagram" src="/icons3D/instagram (1).svg" alt=""></a>
+        </div>
+
+        <div class="snapchat">
+            <a href="https://www.snapchat.com/add/boouvieer?share_id=RDk2N0M2MEYtOUM2QS00M0ZGLTlENUYtRjQwRjgwMjI5NzEx&locale=es_CO">
+                <img id="instagram" src="/icons3D/snapchat (2).svg" alt=""></a>
+        </div>
+
+        <div class="tiktok">
+            <a href="https://www.snapchat.com/add/boouvieer?share_id=RDk2N0M2MEYtOUM2QS00M0ZGLTlENUYtRjQwRjgwMjI5NzEx&locale=es_CO">
+                <img id="tiktok" src="/icons3D/tik-tok.svg" alt=""></a>
+        </div>
+
+        <div class="twich">
+            <a href="https://www.twitch.tv/stivenbouvier">
+                <img id="twich" src="/icons3D/twitch.svg" alt=""></a>
+        </div>
+
+        <div class="pinterest">
+            <a href="https://co.pinterest.com/stivenbouvier/_saved/">
+                <img id="pinterest" src="/icons3D/pinterest.svg" alt=""></a>
+        </div>
+
+        <div class="youtube">
+            <a href="https://co.pinterest.com/stivenbouvier/_saved/">
+                <img id="youtube" src="/icons3D/youtube (2).svg" alt=""></a>
+        </div>
+    </div>
+</article>
+<!----------------------------------------------------------------------- footer-------------------------------------------------------------------------------------------------->
+<footer class="footer">
+    
+</footer>
+<aside class="piepag">
+ <div>
+    <img src="/Imagenes/LOGOWEB-PhotoRoom.png" alt="">
+</div> 
+    <h5>
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        -copyright - Bouvier - all rights reserved © 2022 -
+    </h5>
+</aside>
+            
+        <script src="/Javascript/success.js"></script>
+        <script src="/Javascript/Popup.js"></script>
+        <!--Iconos Footer-->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="/Javascript/index.js"></script>
+        <script src="/Javascript/animation.js"></script>
+        
+</body>
+</html>

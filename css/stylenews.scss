@@ -83,7 +83,6 @@ ul {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: solid;
 }
 
 /* Navegacion */
@@ -173,24 +172,25 @@ ul {
 
 .seccion1 h2 {
   color: #81e93b;
-  font-size: 50px;
-  width: 98%;
+  font-size: 100px;
+  width: 100%;
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 
 }
 
 .seccion1 p {
   color: #ffffff;
-  width: 98%;
-  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
   position: relative;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-  margin-left: 10px;
 }
 
 .medium {
@@ -205,116 +205,119 @@ ul {
 
 .medium p {
   color: rgb(0, 0, 0);
-  font-size: 80px;
+  font-size: 90px;
   background-color: yellow;
   font-display: 60px;
-  width: 98%;
+  width: 100%;
   height: 150px;
   position: relative;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
   text-align: center;
+  left: 15px;
 }
 
 
 .inforevista {
-  
+  top: 200px;
   color: #ffff86;
   width: 98%;
-  height: 1200px;
+  height: 1400px;
   position: relative;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns:50% 50%;
 }
 
 
 
-/*@media screen and (min-width: 500px) {*/
-.inforevista a:hover {
-  background:yellow;
-  transform: scale(1.1);
-  box-shadow: 0px 5px 10px rgb(0, 0, 0);
-  color: #000000;
-}
 
 .inforevista a{
+  color: #fffbfb;
+  font-size: 25px;
+  width: 500px;
+  height: 120px;
+  border: solid;
+  text-align: center;
   display: flex;
-  color: #000000;
-  position: absolute;
-  right: 43.8%;
-  bottom: 188px;
-  text-decoration: none;
-  padding: 15px 25px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
-  background-color: rgb(7, 255, 69);
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 16px;
-  transition: all 0.3s ease-in-out;
-  position: fixed;
-  overflow: hidden;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  position: relative;
+  left:35%;
+  bottom: 500px;
   z-index: 10;
-}
-@media screen and (max-width: 700px) {
-  .inforevista a {
-    position: relative;
-    bottom: auto;
-    right: auto;
-    margin-top: 20px;
-  }
+  border-radius: 1px;
+  box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
 
-  .inforevista a:active {
-    transform: scale(1.1);
-    box-shadow: 0px 17px 20px -6px rgb(255, 255, 255);
-  }
+
 }
 
+.inforevista a:hover{
+  background-color: white;
+  color: black;
+
+}
 .inforevista p {
-  margin-top: 300px;
-  font-size: 100px;
-  display: flex;
-  width: 100%;
-  height: 500px;
-  background-color: #000000;
-  color: #ffffff;
-
+  color: #FFFFFF;
+  font-size: 190px;
+  height: 800px;
+  position: relative;
+  left: 111px;
 }
 
 .inforevista img {
-  width: 600px;
-  height: 900px;
-  margin-top: 60px;
-  margin-left: 20px;
+  display: flex;
+  width: 1000px;
+  height: 1300px;
+  position: relative;
+  left: 150px;
 }
 
 .img1 {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  width: 50%;
+
 }
 
 
 
 .img1 img {
-  width: 60%;
-  height: 100%;
-  position: relative;
-  bottom: 20px;
 }
 
+
+.finalnote{
+  display: flex;
+  top: 100px;
+  background-color: rgba(10, 8, 8, 0.541);
+  font-display: 60px;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  left: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  text-align: center;
+  box-shadow: inset;
+  color: #FFFFFF;
+}
+
+.finalnote p{
+  font-size: 120px;
+  position: relative;
+  display: flex;
+}
 /* Footer */
 .footer {
-  background-color: #b31212;
+  top: 200px;
+  background-color: #18141433;
   width: 100%;
   height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .redes {
@@ -327,8 +330,8 @@ ul {
 }
 
 .redes button {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 20%;
   background-color: black;
   cursor: pointer;
@@ -336,12 +339,12 @@ ul {
 
 .redes ion-icon {
   color: #a0eef8;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 .redes h4 {
-  font-size: 40px;
+  font-size: 30px;
   color: white;
   margin: 10px;
 }
@@ -356,8 +359,8 @@ ul {
 }
 
 .redes1 button {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 20%;
   background-color: black;
   cursor: pointer;
@@ -365,12 +368,12 @@ ul {
 
 .redes1 ion-icon {
   color: #a0eef8;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 .redes1 h4 {
-  font-size: 40px;
+  font-size: 30px;
   color: white;
   margin: 10px;
 }
@@ -385,8 +388,8 @@ ul {
 }
 
 .redes2 button {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 20%;
   background-color: black;
   cursor: pointer;
@@ -394,17 +397,19 @@ ul {
 
 .redes2 ion-icon {
   color: #a0eef8;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 .redes2 h4 {
-  font-size: 40px;
+  font-size: 30px;
   color: white;
   margin: 10px;
 }
 
 .piepag {
+  position: relative;
+  top: 200px;
   width: 100%;
   height: 250px;
   display: block;
@@ -427,10 +432,344 @@ ul {
   font-size: 15px;
   color: rgb(255, 255, 255);
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/*---------------RESPONSIVE NAV -------------*/
-@media (max-width: 1364px) {
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------Responsive Laptop.------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 2200px) {
+  .seccion1 {
+
+    width: 98%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: 10px;
+    border-radius: 8px;
+  
+  
+  }
+  
+  .seccion1 h2 {
+    color: #81e93b;
+    font-size: 60px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  
+  }
+  
+  .seccion1 p {
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .medium {
+    color: pink;
+    display: flex;
+    justify-content: center;
+    width: 99%;
+    position: relative;
+    margin-top: 80px;
+  }
+  
+  
+  .medium p {
+    color: rgb(0, 0, 0);
+    font-size: 90px;
+    background-color: yellow;
+    font-display: 60px;
+    width: 98%;
+    height: 150px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+    margin-right: 10px;
+  }
+  
+  
+  .inforevista {
+    top: 200px;
+    color: #ffff86;
+    width: 98%;
+    height: 1200px;
+    position: relative;
+    display: grid;
+    grid-template-columns:50% 50%;
+  }
+  
+  
+  
+  
+  
+  
+  .inforevista a{
+    color: #fffbfb;
+    font-size: 25px;
+    width: 300px;
+    height: 80px;
+    border: solid;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left:76%;
+    bottom:50px;
+    z-index: 10;
+    border-radius: 1px;
+    box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  
+  
+  }
+  
+  .inforevista a:hover{
+    background-color: white;
+    color: black;
+  
+  }
+  .inforevista p {
+    top: 90px;
+    color: #FFFFFF;
+    font-size: 145px;
+    height: 800px;
+    left: 20px;
+    
+  }
+  
+  .inforevista img {
+    display: flex;
+    width: 600px;
+    height: 700px;
+    position: relative;
+    left: 40px;
+  }
+  
+  .img1 {
+  
+  }
+  
+  
+  
+  .img1 img {
+  }
+  
+  
+  .finalnote{
+    display: flex;
+    background-color: rgba(10, 8, 8, 0.541);
+    font-display: 60px;
+    width: 98%;
+    height: 300px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset;
+    color: #FFFFFF;
+  }
+  
+  .finalnote p{
+    font-size: 90px;
+    position: relative;
+    display: flex;
+  }
+  /* Footer */
+  .footer {
+    top: 200px;
+    background-color: #18141433;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 150px;
+    margin: 10px;
+  }
+  
+  .redes button {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    background-color: black;
+    cursor: pointer;
+  }
+  
+  .redes ion-icon {
+    color: #a0eef8;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .redes h4 {
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+  }
+  
+  .redes1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 150px;
+    margin: 10px;
+  }
+  
+  .redes1 button {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    background-color: black;
+    cursor: pointer;
+  }
+  
+  .redes1 ion-icon {
+    color: #a0eef8;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .redes1 h4 {
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+  }
+  
+  .redes2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 150px;
+    margin: 10px;
+  }
+  
+  .redes2 button {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    background-color: black;
+    cursor: pointer;
+  }
+  
+  .redes2 ion-icon {
+    color: #a0eef8;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .redes2 h4 {
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+  }
+  
+  .piepag {
+    position: relative;
+    top: 200px;
+    width: 100%;
+    height: 250px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .piepag div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .piepag img {
+    width: 180px;
+    height: 180px;
+    bottom: 20px;
+  }
+  
+  .piepag h5 {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------Resposive Tablet ------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1300px) {
   .nav-main {
     font-size: 20px;
   }
@@ -453,9 +792,330 @@ ul {
     position: relative;
     right: 50%;
   }
+  .seccion1 {
+
+    width: 98%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: 10px;
+    border-radius: 8px;
+  
+  
+  }
+  
+  .seccion1 h2 {
+    color: #81e93b;
+    font-size: 80px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  
+  }
+  
+  .seccion1 p {
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .medium {
+    color: pink;
+    display: flex;
+    justify-content: center;
+    width: 99%;
+    position: relative;
+    margin-top: 80px;
+  }
+  
+  
+  .medium p {
+    color: rgb(0, 0, 0);
+    font-size: 90px;
+    background-color: yellow;
+    font-display: 60px;
+    width: 98%;
+    height: 280px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    text-align: center;
+    margin-left: 16px;
+  }
+  
+  
+  .inforevista {
+    top: 200px;
+    color: #ffff86;
+    width: 98%;
+    height: 2500px;
+    position: relative;
+    display: block;
+    grid-template-columns:50% 50%;
+  }
+  
+  
+  
+  
+  
+  
+  .inforevista a{
+    color: #fffbfb;
+    font-size: 25px;
+    width: 450px;
+    height: 100px;
+    border: solid;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left:33%;
+    z-index: 10;
+    top: 100px;
+    border-radius: 1px;
+    box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    margin-bottom: 900px;
+  
+  
+  }
+  
+  .inforevista a:hover{
+    background-color: white;
+    color: black;
+  
+  }
+  .inforevista p {
+    top: 20px;
+    color: #FFFFFF;
+    font-size: 145px;
+    height: 800px;
+    left: 40px;
+    text-align: center;
+    
+  }
+  
+  .inforevista img {
+    display: flex;
+    width: 800px;
+    height: 1100px;
+    position: relative;
+    left: 250px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 200px;
+  }
+  
+  .img1 {
+  
+  }
+  
+  
+  
+  .img1 img {
+  }
+  
+  
+  .finalnote{
+    display: flex;
+    background-color: rgba(10, 8, 8, 0.541);
+    font-display: 60px;
+    width: 98%;
+    height: 300px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset;
+    color: #FFFFFF;
+  }
+  
+  .finalnote p{
+    font-size: 90px;
+    position: relative;
+    display: flex;
+  }
+  /* Footer */
+  .footer {
+    top: 200px;
+    background-color: #18141433;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 150px;
+    margin: 10px;
+  }
+  
+  .redes button {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    background-color: black;
+    cursor: pointer;
+  }
+  
+  .redes ion-icon {
+    color: #a0eef8;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .redes h4 {
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+  }
+  
+  .redes1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 150px;
+    margin: 10px;
+  }
+  
+  .redes1 button {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    background-color: black;
+    cursor: pointer;
+  }
+  
+  .redes1 ion-icon {
+    color: #a0eef8;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .redes1 h4 {
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+  }
+  
+  .redes2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 150px;
+    margin: 10px;
+  }
+  
+  .redes2 button {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    background-color: black;
+    cursor: pointer;
+  }
+  
+  .redes2 ion-icon {
+    color: #a0eef8;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .redes2 h4 {
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+  }
+  
+  .piepag {
+    position: relative;
+    top: 200px;
+    width: 100%;
+    height: 250px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .piepag div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .piepag img {
+    width: 180px;
+    height: 180px;
+    bottom: 20px;
+  }
+  
+  .piepag h5 {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  
+
 }
 
-@media (max-width: 1116px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------Responsive Minitablet-----------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1100px) {
   .container img {
     /*visibility: collapse;*/
     width: 100px;
@@ -520,9 +1180,320 @@ ul {
   .nav-menurigth {
     left: 78%;
   }
+  .seccion1 {
+
+    width: 98%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: 10px;
+    border-radius: 8px;
+  
+  
+  }
+  
+  .seccion1 h2 {
+    color: #81e93b;
+    font-size: 80px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  
+  }
+  
+  .seccion1 p {
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .medium {
+    color: pink;
+    display: flex;
+    justify-content: center;
+    width: 99%;
+    position: relative;
+    margin-top: 80px;
+  }
+  
+  
+  .medium p {
+    color: rgb(0, 0, 0);
+    font-size: 90px;
+    background-color: yellow;
+    height: 250px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    text-align: center;
+    margin-left: 16px;
+  }
+  
+  
+  .inforevista {
+    top: 200px;
+    color: #ffff86;
+    width: 98%;
+    height: 2500px;
+    position: relative;
+    display: block;
+    grid-template-columns:50% 50%;
+  }
+  
+  
+  
+  
+  
+  
+  .inforevista a{
+    color: #fffbfb;
+    font-size: 25px;
+    width: 450px;
+    height: 100px;
+    border: solid;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left:30%;
+    z-index: 10;
+    top: 100px;
+    border-radius: 1px;
+    box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    margin-bottom: 900px;
+  
+  
+  }
+  
+  .inforevista a:hover{
+    background-color: white;
+    color: black;
+  
+  }
+  .inforevista p {
+    top: 20px;
+    color: #FFFFFF;
+    font-size: 145px;
+    height: 800px;
+    left: 40px;
+    text-align: center;
+    
+  }
+  
+  .inforevista img {
+    display: flex;
+    width: 800px;
+    height: 1100px;
+    position: relative;
+    left: 158px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 200px;
+  }
+  
+  .img1 {
+  
+  }
+  
+  
+  
+  .img1 img {
+  }
+  
+  
+  .finalnote{
+    display: flex;
+    background-color: rgba(10, 8, 8, 0.541);
+    font-display: 60px;
+    width: 98%;
+    height: 300px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset;
+    color: #FFFFFF;
+  }
+  
+  .finalnote p{
+    font-size: 90px;
+    position: relative;
+    display: flex;
+  }
+  /* Footer */
+  .footer {
+    top: 200px;
+    background-color: #18141433;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 150px;
+    margin: 10px;
+  }
+  
+  .redes button {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    background-color: black;
+    cursor: pointer;
+  }
+  
+  .redes ion-icon {
+    color: #a0eef8;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .redes h4 {
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+  }
+  
+  .redes1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 150px;
+    margin: 10px;
+  }
+  
+  .redes1 button {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    background-color: black;
+    cursor: pointer;
+  }
+  
+  .redes1 ion-icon {
+    color: #a0eef8;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .redes1 h4 {
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+  }
+  
+  .redes2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 150px;
+    margin: 10px;
+  }
+  
+  .redes2 button {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    background-color: black;
+    cursor: pointer;
+  }
+  
+  .redes2 ion-icon {
+    color: #a0eef8;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .redes2 h4 {
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+  }
+  
+  .piepag {
+    position: relative;
+    top: 200px;
+    width: 100%;
+    height: 250px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .piepag div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .piepag img {
+    width: 180px;
+    height: 180px;
+    bottom: 20px;
+  }
+  
+  .piepag h5 {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  
 }
 
-@media (max-width: 768px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----.--------------------------------------------Responsive Movil-------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
   .showcase {
     height: 60px;
   }
@@ -623,89 +1594,139 @@ ul {
   .nav-toggle :active {
     color: red;
   }
+  .seccion1 {
 
-  .parrafosus p {
-    font-size: 30px;
-  }
-
-  .parrafosus {
-    padding: 0;
-    margin-bottom: 0;
-    height: 300px;
-    border: none;
-
-  }
-
-  .info {
-    display: block;
+    width: 90%;
+    height: 350px;
     align-items: center;
-    margin-top: 0;
-    padding: 0;
+    justify-content: center;
+    position: relative;
+    color: violet;
+    margin-left: 20px;
+    top:150px
+  
+  
+  }
+  
+  .seccion1 h2 {
+    color: #81e93b;
+    font-size: 40px;
     width: 100%;
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+  
   }
-
-  .bg-model {
-    margin-top: 10px;
-    z-index: 10;
+  
+  .seccion1 p {
+    display: flex;
+    color: #ffffff;
+    width: 98%;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    position: relative;
+    right: 7px;
   }
-
-  .model_content img {
-    width: 200px;
+  
+  .medium {
+    color: pink;
+    display: flex;
+    justify-content: center;
+    width: 99%;
     height: 200px;
     position: relative;
-    top: 50px;
   }
-
-  #send {
-    width: 120px;
-    margin-left: auto;
-  }
-
-
-  .infolanzamiento {
+  
+  
+  .medium p {
+    color: rgb(0, 0, 0);
+    font-size: 80px;
+    background-color: yellow;
     width: 100%;
-    height: 250px;
-
-  }
-
-  .infolanzamiento h2 {
-    font-size: 28px;
-    width: 100%;
-    text-align: center;
-    padding: 0%;
-  }
-
-  .infolanzamiento p {
-    font-size: 20px;
-  }
-
-  .boton {
-    width: 50%;
-    margin: 0;
+    height: 150px;
     position: relative;
-    left: 32%;
-    top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 50px;
+    bottom: 180px;
+    border: solid;
   }
+  
+  
+  .inforevista {
 
-  .boton button {
-    margin: 0;
-    top: 0;
+    color: #ffff86;
+    width: 98%;
+    height: 1500px;
+    position: relative;
+    bottom: 800px;
   }
-
-  .img1 img {
-    width: 300px;
+    
+  .inforevista p {
+    display: flex;
+    color: #FFFFFF;
+    font-size: 70px;
     height: 300px;
+    text-align: center;
+    position: relative;
+    margin-right: 70px;
   }
-
-  .img1 {
-    width: 100%;
-
+  
+  .inforevista img {
+    display: flex;
+    width: 600px;
+    height:900px;
+    position: relative;
+    margin-left: -18px;
+    margin-top: 200px;
+    
+  }
+  
+  .inforevista a{
+    color: #fffbfb;
+    font-size: 25px;
+    width: 350px;
+    height: 100px;
+    border: solid;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-left: 5px;
+    margin-top: -200px;
+    border-radius: 1px;
+    box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+  
+  
   }
-
+  .finalnote{
+    display: flex;
+    background-color: rgba(10, 8, 8, 0.541);
+    font-size:  60px;
+    width: 98%;
+    height: 300px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
+  .finalnote p{
+    font-size: 40px;
+    position: relative;
+    display: flex;
+  }
   .footer {
 
     position: relative;
@@ -812,6 +1833,375 @@ ul {
     right: 0;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------Responsive Iphone 12 --------------------------------------------------------------------------------------------*/
+
+
+
+
+@media (max-width: 400px) {
+  .showcase {
+    height: 60px;
+  }
+
+  .container {
+    height: 300px;
+  }
+
+  .showcase {
+    display: flex;
+    position: fixed;
+    height: 70px;
+    z-index: 10;
+  }
+
+  .logomenu {
+    display: none;
+  }
+
+  .logomenu2 {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border: solid white;
+  }
+
+  .container img {
+    bottom: 28%;
+    left: 0%;
+  }
+
+  .nav-menurigth a ion-icon {
+    width: 40px;
+    height: 40px;
+
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    margin: 0;
+    background-color: #000000;
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+    z-index: 10;
+  }
+
+  .nav-main li a {
+    position: relative;
+    right: 10px;
+    font-size: 35px;
+    margin: 5px;
+  }
+
+  .nav-main li {
+    font-size: 50px;
+    margin-top: 0;
+  }
+
+  .nav-main :hover {
+    background-color: red;
+    color: black;
+  }
+
+  .covermenu {
+    display: flex;
+  }
+
+  .nav-menu2 {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+    position: relative;
+    right: 80px;
+    color: white;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  .nav-toggle :hover {
+    border: solid white;
+    border-radius: 5px
+  }
+
+  .nav-toggle :active {
+    color: red;
+  }
+  .seccion1 {
+
+    width: 90%;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: violet;
+    margin-left: 20px;
+    top:10px
+  
+  
+  }
+  
+  .seccion1 h2 {
+    color: #81e93b;
+    font-size: 50px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+  
+  }
+  
+  .seccion1 p {
+    display: flex;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 5px;
+    margin-top: 30px;
+  }
+  
+  .medium {
+    color: pink;
+    display: flex;
+    justify-content: center;
+    width: 460px;
+    height: 200px;
+    position: relative;
+    top: 200px;
+    right: 30px;
+  }
+  
+  
+  .medium p {
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    background-color: yellow;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 50px;
+    border: solid;
+    bottom: 150px;
+  }
+  
+  
+  .inforevista {
+
+    color: #ffff86;
+    width: 98%;
+    height: 1200px;
+    position: relative;
+    bottom: 800px;
+  }
+    
+  .inforevista p {
+    display: flex;
+    color: #FFFFFF;
+    font-size: 70px;
+    height: 300px;
+    text-align: center;
+    position: relative;
+    margin-right: 70px;
+  }
+  
+  .inforevista img {
+    display: flex;
+    width: 350px;
+    height:600px;
+    position: relative;
+    left: 38px;
+    bottom: 100px;
+    
+  }
+  
+  .inforevista a{
+    color: #fffbfb;
+    font-size: 25px;
+    width: 250px;
+    height: 70px;
+    border: solid;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: -50px;
+    top: 200px;
+    border-radius: 1px;
+    box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+  
+  
+  }
+  .finalnote{
+    display: flex;
+    background-color: rgba(10, 8, 8, 0.541);
+    font-size:  60px;
+    width: 98%;
+    height: 200px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
+  .finalnote p{
+    font-size: 5s0px;
+    position: relative;
+    display: flex;
+    margin-right: 15px;
+    top: 50px;
+  }
+  .footer {
+
+    position: relative;
+    top: 230px;
+    height: 100px;
+    padding-top: 10px;
+  }
+
+  .redes {
+
+    height: 80px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .redes h4 {
+    font-size: 15px;
+  }
+
+  .redes button {
+
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+  }
+
+  .redes ion-icon {
+    width: 20px;
+    height: 30px;
+  }
+
+  .redes1 {
+    height: 80px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .redes1 h4 {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .redes1 button {
+
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .redes1 ion-icon {
+    width: 20px;
+    height: 30px;
+  }
+
+  .redes2 {
+    height: 80px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .redes2 h4 {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .redes2 button {
+
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .redes2 ion-icon {
+    width: 25px;
+
+    height: 30px;
+  }
+
+  .piepag {
+    height: 200px;
+    display: block;
+    position: relative;
+    top: 230px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .piepag img {
+    top: 8%;
+    left: 37%;
+    width: 120px;
+    height: 120px;
+  }
+
+  .piepag h5 {
+    text-align: center;
+    top: 0;
+    right: 0;
+    font-size: 10px;
+  }
+}
+
+
+
+
+
+
 
 /*# sourceMappingURL=styleindex.css.map */
 /*# sourceMappingURL=styleindex.css.map */
