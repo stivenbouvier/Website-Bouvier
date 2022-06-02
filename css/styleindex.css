@@ -17,7 +17,7 @@
 }
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-image: url(/Imagenes/pexels-artem-saranin-1453781.jpg);
+  background-color: black;
   justify-content: center;
   background-size: cover;
   align-items: center;
@@ -25,30 +25,53 @@ body {
   position: relative;
 }
 
-/* From uiverse.io by @felipesntr */
 .welcome {
   width: 100%;
   height: 900px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   display: block;
   justify-content: center;
   text-align: center;
+  align-items: center;
 }
 
 .welcome h1 {
   position: relative;
-  top: 150px;
-  color: rgb(255, 254, 254);
-  font-size: 90px;
+  color: rgb(255, 255, 255);
+  font-size: 13em;
   font-weight: 700;
   display: block;
-  font-family: "bannersy";
+  left: 10%;
+  top: 200px;
+  font-family: "banners";
   z-index: 10;
+}
+
+.continue {
+  padding: 1.5em 4em;
+  font-size: 40px;
+  background-color: #FBCA1F;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  position: relative;
+  right: 42%;
+  top: 200px;
+  border-radius: 6px;
+  text-align: center;
+  font-family: "school";
+}
+
+.continue:hover {
+  padding: 1em 4em;
+  background-color: #00BCD4;
+  color: rgb(0, 0, 0);
+  font-family: "school";
 }
 
 .loader {
   display: flex;
-  top: 300px;
+  top: 380px;
+  left: 9.5%;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -57,8 +80,8 @@ body {
 
 .out-1 {
   position: absolute;
-  width: 4em;
-  height: 4em;
+  width: 2em;
+  height: 2em;
   border-radius: 100%;
   border: 0.2em solid transparent;
   border-top-color: rgb(43, 226, 83);
@@ -68,8 +91,8 @@ body {
 
 .out-2 {
   position: absolute;
-  width: 4em;
-  height: 4em;
+  width: 2em;
+  height: 2em;
   border-radius: 100%;
   border: 0.2em solid transparent;
   border-left-color: rgb(226, 223, 43);
@@ -79,11 +102,11 @@ body {
 
 .out-3 {
   position: absolute;
-  width: 4em;
-  height: 4em;
+  width: 2em;
+  height: 2em;
   border-radius: 100%;
   border: 0.2em solid transparent;
-  border-bottom-color: rgb(51, 105, 252);
+  border-bottom-color: #00BCD4;
   animation: rec 2s infinite;
   transition: all ease-in-out 0.3s;
 }
@@ -91,7 +114,7 @@ body {
 .in {
   position: absolute;
   border-radius: 100%;
-  border: 0.2em solid rgba(43, 226, 83, 0.11);
+  border: 0.2em solid rgba(31, 241, 76, 0.11);
   width: 4em;
   height: 4em;
   transition: all ease-in-out 0.3s;
@@ -100,6 +123,337 @@ body {
 @keyframes rec {
   0% {
     transform: rotate(360deg);
+  }
+}
+@media (max-width: 1502px) {
+  /* From uiverse.io by @felipesntr */
+  .welcome {
+    width: 100%;
+    height: 400px;
+    color: rgb(0, 0, 0);
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .welcome h1 {
+    position: relative;
+    color: white;
+    font-size: 100px;
+    font-weight: 700;
+    display: block;
+    font-family: "banners";
+    z-index: 10;
+  }
+
+  .continue {
+    padding: 1em 4em;
+    font-size: 18px;
+    background-color: #FBCA1F;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    position: relative;
+    right: 42%;
+    bottom: 100px;
+    border-radius: 6px;
+    text-align: center;
+    font-family: "school";
+  }
+
+  .continue:hover {
+    padding: 1em 4em;
+    background-color: #00BCD4;
+    color: rgb(0, 0, 0);
+    font-family: "school";
+  }
+
+  .loader {
+    display: flex;
+    top: 380px;
+    left: 9.5%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .out-1 {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+    border: 0.2em solid transparent;
+    border-top-color: rgb(255, 255, 255);
+    animation: rec 2s infinite;
+    transition: all ease-in-out 0.3s;
+  }
+
+  .out-2 {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+    border: 0.2em solid transparent;
+    border-left-color: rgb(226, 223, 43);
+    animation: rec 2s infinite;
+    transition: all ease-in-out 0.3s;
+  }
+
+  .out-3 {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+    border: 0.2em solid transparent;
+    border-bottom-color: #00BCD4;
+    animation: rec 2s infinite;
+    transition: all ease-in-out 0.3s;
+  }
+
+  .in {
+    position: absolute;
+    border-radius: 100%;
+    border: 0.2em solid rgba(0, 0, 0, 0.11);
+    width: 4em;
+    height: 4em;
+    transition: all ease-in-out 0.3s;
+  }
+
+  @keyframes rec {
+    0% {
+      transform: rotate(360deg);
+    }
+  }
+}
+/* ----------------------responsive movil ---------------------*/
+@media (max-width: 900px) {
+  body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+
+  .welcome {
+    width: 100%;
+    height: 900px;
+    display: block;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    text-align: center;
+  }
+
+  .welcome h1 {
+    position: relative;
+    top: 250px;
+    color: rgb(255, 255, 255);
+    font-size: 4em;
+    left: 0%;
+    font-weight: 700;
+    font-family: "banners";
+    align-items: center;
+    text-align: center;
+    padding-left: 10px;
+  }
+
+  .continue {
+    border: blue solid;
+    padding: 1em 4em;
+    font-size: 18px;
+    background-color: #FBCA1F;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    position: relative;
+    bottom: 100px;
+    border-radius: 6px;
+    text-align: center;
+    font-family: "school";
+    display: none;
+  }
+
+  .continue:hover {
+    padding: 1em 4em;
+    background-color: #00BCD4;
+    color: rgb(0, 0, 0);
+    font-family: "school";
+  }
+
+  .loader {
+    width: 100%;
+    display: flex;
+    top: 380px;
+    left: 0%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .out-1 {
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    border: 0.2em solid transparent;
+    border-top-color: rgb(255, 255, 255);
+    animation: rec 2s infinite;
+    transition: all ease-in-out 0.3s;
+  }
+
+  .out-2 {
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    border: 0.2em solid transparent;
+    border-left-color: rgb(226, 223, 43);
+    animation: rec 2s infinite;
+    transition: all ease-in-out 0.3s;
+  }
+
+  .out-3 {
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    border: 0.2em solid transparent;
+    border-bottom-color: #00BCD4;
+    animation: rec 2s infinite;
+    transition: all ease-in-out 0.3s;
+  }
+
+  .in {
+    position: absolute;
+    border-radius: 100%;
+    border: 0.2em solid rgba(0, 0, 0, 0.11);
+    width: 4em;
+    height: 4em;
+    transition: all ease-in-out 0.3s;
+  }
+
+  @keyframes rec {
+    0% {
+      transform: rotate(360deg);
+    }
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+
+  .welcome {
+    width: 100%;
+    height: 900px;
+    display: block;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    text-align: center;
+  }
+
+  .welcome h1 {
+    position: relative;
+    top: 250px;
+    color: rgb(255, 255, 255);
+    font-size: 2.2em;
+    left: 0%;
+    font-family: "bannersy";
+    align-items: center;
+    text-align: center;
+    padding-left: 10px;
+  }
+
+  .continue {
+    border: blue solid;
+    padding: 1em 4em;
+    font-size: 18px;
+    background-color: #FBCA1F;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    position: relative;
+    bottom: 100px;
+    border-radius: 6px;
+    text-align: center;
+    font-family: "school";
+    display: none;
+  }
+
+  .continue:hover {
+    padding: 1em 4em;
+    background-color: #00BCD4;
+    color: rgb(0, 0, 0);
+    font-family: "school";
+  }
+
+  .loader {
+    width: 100%;
+    display: flex;
+    top: 380px;
+    left: 0%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .out-1 {
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    border: 0.2em solid transparent;
+    border-top-color: rgb(255, 255, 255);
+    animation: rec 2s infinite;
+    transition: all ease-in-out 0.3s;
+  }
+
+  .out-2 {
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    border: 0.2em solid transparent;
+    border-left-color: rgb(226, 223, 43);
+    animation: rec 2s infinite;
+    transition: all ease-in-out 0.3s;
+  }
+
+  .out-3 {
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    border: 0.2em solid transparent;
+    border-bottom-color: #00BCD4;
+    animation: rec 2s infinite;
+    transition: all ease-in-out 0.3s;
+  }
+
+  .in {
+    position: absolute;
+    border-radius: 100%;
+    border: 0.2em solid rgba(0, 0, 0, 0.11);
+    width: 4em;
+    height: 4em;
+    transition: all ease-in-out 0.3s;
+  }
+
+  @keyframes rec {
+    0% {
+      transform: rotate(360deg);
+    }
   }
 }
 

@@ -1,4 +1,3 @@
-setTimeout(function(){
-    location.href='home.html';
-}, 1000 * 4);
-
+setTimeout(function () {
+  location.href = "home.html";
+}, 1000 * 10);
