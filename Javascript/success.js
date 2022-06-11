@@ -6,11 +6,11 @@
 //selectors
 
 document.getElementById('send').addEventListener('click',function(){
-    document.querySelector('.toast').style.display ='flex';
+    document.querySelector('toast').style.display ='flex';
     });
 
     document.querySelector('.closer').addEventListener('click',function(){
-        document.querySelector('.toast').style.display = 'none';
+        document.querySelector('.toast .closer').style.display = 'none';
         });
 
 

@@ -1,13 +1,27 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Arvo");
+@font-face {
+  font-family: "banners";
+  src: url(/fuentes/Hey\ August.ttf);
+}
+@font-face {
+  font-family: "bannersy";
+  src: url(/fuentes/Brotherhood\ Brush.ttf);
+}
+@font-face {
+  font-family: "school";
+  src: url(/fuentes/BEACHWORKS.ttf);
+}
 * {
   margin: 0;
   padding: 0;
+  font-family: "Oswald", sans-serif;
 }
 
 body {
-  width: 100%;
-  background-color: black;
-  font-size: 16px;
+  background-color: white;
   font-family: "Oswald", sans-serif;
+  color: #000000;
 }
 
 a {
@@ -18,20 +32,119 @@ ul {
   list-style: none;
 }
 
-/* Showcase */
 .showcase {
-  display: flex;
+  display: grid;
+  grid-template-columns: 100%;
   align-items: center;
   width: 100%;
-  height: 70px;
-  background-color: #000000;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
   position: fixed;
-  z-index: 10;
+  z-index: 1;
 }
 
-.showcase h1 {
-  color: #FFFFFF;
+.blackhead {
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background-color: #000000;
+  color: #ffffff;
+  bottom: 5px;
+}
+
+.menumobile {
   width: 50px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  color: #FFFFFF;
+}
+
+.korean {
+  position: relative;
+  width: 200px;
+  height: 30px;
+  right: 200px;
+  color: #05eb37;
+  background-color: rgb(255, 255, 255);
+}
+
+.blackhead h1 {
+  cursor: pointer;
+  color: #ffffff;
+  position: relative;
+  padding-bottom: 7px;
+  letter-spacing: 1px;
+  font-size: 2em;
+  bottom: 5px;
+}
+
+.blackhead h1:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.whitehead {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 20% 20% 50%;
+}
+
+.cta {
+  position: relative;
+  border: none;
+  top: -10px;
+  font-weight: 700;
+  background: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 20px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: rgb(0, 0, 0);
+  padding-bottom: 20px;
+  font-size: 60px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .nav-menurigth {
@@ -47,22 +160,24 @@ ul {
 }
 
 .nav-menurigth ion-icon:hover {
-  color: #ffff86;
-  width: 60px;
-  height: 60px;
+  color: #000000;
+  width: 35px;
+  height: 35px;
 }
 
 .nav-menurigth a ion-icon {
-  color: #ffffff;
-  width: 40px;
-  height: 40px;
+  color: #000000;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  left: 80%;
+  bottom: 18px;
   border-radius: 50%;
 }
 
 .nav-toggle {
-  color: white;
+  color: rgb(0, 0, 0);
   background: none;
-  border: none;
   font-size: 40px;
   padding: 0 20px;
   line-height: 60px;
@@ -71,21 +186,25 @@ ul {
 }
 
 .container {
-  display: flex;
-  height: 700px;
-  background: url(/imgnonstop/jk.png);
-  background-position: center;
+  position: relative;
+  top: 20px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  width: 100%;
+  height: 1200px;
+  background-image: url(/imgnonstop/pexels-tima-miroshnichenko-6847588.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 /* Navegacion */
 .nav-main {
+  position: relative;
+  left: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40%;
-  font-size: 25px;
+  font-size: 35px;
   height: 200px;
 }
 
@@ -94,12 +213,15 @@ ul {
 }
 
 .nav-main2 {
+  position: relative;
+  left: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40%;
-  font-size: 25px;
+  font-size: 50px;
   height: 200px;
+  display: none;
 }
 
 .nav-menu {
@@ -109,6 +231,7 @@ ul {
 }
 
 .nav-menu2 {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,12 +245,11 @@ ul {
 
 .nav-main ul li a {
   padding: 4px;
-  color: #fffdfd;
+  color: #ffffff;
 }
 
 .nav-main li a:hover {
-  font-size: 30px;
-  border-bottom: solid #ffffff;
+  font-size: 23px;
 }
 
 .nav-main2 li {
@@ -137,258 +259,254 @@ ul {
 
 .nav-main2 li a {
   padding: 4px;
-  color: #fffbfb;
+  color: #ffffff;
 }
 
 .nav-main2 li a:hover {
-  font-size: 30px;
-  border-bottom: solid #fff5f5;
+  font-size: 23px;
 }
 
-.container img {
-  width: 250px;
-  height: 250px;
+.biography {
   position: relative;
-}
-
-.seccion1 {
-  width: 98%;
-  height: 300px;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin-left: 10px;
-  border-radius: 8px;
-}
-
-.seccion1 h2 {
-  color: #81e93b;
-  font-size: 100px;
-  width: 100%;
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-}
-
-.seccion1 p {
-  color: #ffffff;
-  width: 100%;
-  text-align: center;
-  font-size: 50px;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-}
-
-.medium {
-  color: pink;
-  display: flex;
-  justify-content: center;
-  width: 99%;
-  position: relative;
-  margin-top: 80px;
-}
-
-.medium p {
-  color: rgb(0, 0, 0);
-  font-size: 90px;
-  background-color: yellow;
-  font-display: 60px;
-  width: 100%;
-  height: 150px;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-  text-align: center;
-  left: 15px;
-}
-
-.inforevista {
-  top: 200px;
-  color: #ffff86;
-  width: 98%;
-  height: 1400px;
-  position: relative;
+  height: 1200px;
+  background-color: black;
+  color: white;
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
-.inforevista a {
-  color: #fffbfb;
-  font-size: 25px;
-  width: 500px;
-  height: 120px;
-  border: solid;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.text h1 {
   position: relative;
-  left: 35%;
-  bottom: 500px;
-  z-index: 10;
-  border-radius: 1px;
-  box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
-  letter-spacing: 1px;
-  transition: all 0.3s ease-in-out;
-  overflow: hidden;
+  top: 130px;
+  font-size: 4.8em;
+  text-align: center;
+  font-weight: 900;
 }
 
-.inforevista a:hover {
-  background-color: white;
-  color: black;
+.text p {
+  font-size: 2.5em;
+  position: relative;
+  top: 180px;
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.inforevista p {
-  color: #FFFFFF;
-  font-size: 190px;
+.retrato img {
+  width: 750px;
+  height: 900px;
+  left: 22%;
+  top: 150px;
+  position: relative;
+}
+
+.momentsgalery {
   height: 800px;
   position: relative;
-  left: 111px;
+  top: 50px;
 }
 
-.inforevista img {
-  display: flex;
-  width: 1000px;
-  height: 1300px;
-  position: relative;
-  left: 150px;
-}
-
-.finalnote {
-  display: flex;
-  top: 100px;
-  background-color: rgba(10, 8, 8, 0.541);
-  font-display: 60px;
-  width: 100%;
-  height: 300px;
-  position: relative;
-  left: 10px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
+.galery h1 {
+  font-size: 8em;
+  color: black;
   text-align: center;
-  box-shadow: inset;
-  color: #FFFFFF;
+  font-weight: 900;
 }
 
-.finalnote p {
-  font-size: 120px;
+.galery p {
+  font-size: 2.8em;
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #f5f4f4;
+  font-size: 13px;
+  font-family: "Arvo", monospace;
+}
+@supports (display: grid) {
+  body,
+html {
+    display: block;
+  }
+}
+
+.message {
+  border: 1px solid #d2d0d0;
+  padding: 2em;
+  font-size: 1.7vw;
+  box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
+}
+@supports (display: grid) {
+  .message {
+    display: none;
+  }
+}
+
+.section {
+  top: 200px;
+  display: none;
+  padding: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 4rem;
+  }
+}
+@supports (display: grid) {
+  .section {
+    display: block;
+  }
+}
+
+h1 {
+  font-size: 2.6rem;
+  margin: 0 0 1.5em;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 150px;
+  grid-auto-flow: row dense;
+}
+
+.item {
   position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  background: #0c9a9a;
+  color: #fff;
+  grid-column-start: auto;
+  grid-row-start: auto;
+  color: #fff;
+  background: url(/imgnonstop/Shewasnt.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: -2px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  counter-increment: item-counter;
+}
+.item .item__details {
+  font-family: "school";
+}
+.item:nth-of-type(3n) {
+  background-image: url(/imgnonstop/Everybodyaresummer.jpg);
+}
+.item:nth-of-type(4n) {
+  background-image: url(/imgnonstop/LOGOSTIVENBOUVIER.png);
+}
+.item:nth-of-type(5n) {
+  background-image: url(/Imagenes/Green\ Black\ Friday\ Instagram\ Post\ \(1\).png);
+}
+.item:nth-of-type(6n) {
+  background-image: url(/imgnonstop/pexels-wendy-wei-1916824.jpg);
+}
+.item:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  transition: opacity 0.3s ease-in-out;
+}
+.item:hover {
+  transform: scale(1.05);
+}
+.item:hover:after {
+  opacity: 0;
+}
+.item--medium {
+  grid-row-end: span 2;
+}
+.item--large {
+  grid-row-end: span 3;
+}
+.item--full {
+  grid-column-end: auto;
+}
+@media screen and (min-width: 768px) {
+  .item--full {
+    grid-column: 1/-1;
+    grid-row-end: span 2;
+  }
+}
+.item__details {
+  position: relative;
+  padding: 15px;
+  color: #444;
+  background: #fff;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  color: black;
+}
+.item__details:before {
+  content: counter(item-counter);
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-right: 0.5em;
+  color: #444;
 }
 
-/* Footer */
 .footer {
-  top: 200px;
-  background-color: rgba(24, 20, 20, 0.2);
+  position: relative;
+  background: linear-gradient(to bottom right, rgb(255, 105, 205), rgb(105, 105, 221), rgb(68, 255, 130), rgb(255, 105, 205));
   width: 100%;
   height: 300px;
-  display: flex;
   align-items: center;
   justify-content: center;
+  top: 1800px;
+}
+
+.nav-mainfooter {
   position: relative;
+  top: 150px;
+  display: grid;
+  border: none;
 }
 
-.redes {
+.nav-menufooter {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.nav-menufooter a {
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  width: 20%;
-  height: 150px;
-  margin: 10px;
-}
-
-.redes button {
-  width: 70px;
-  height: 70px;
-  border-radius: 20%;
-  background-color: black;
-  cursor: pointer;
-}
-
-.redes ion-icon {
-  color: #a0eef8;
-  width: 30px;
-  height: 30px;
-}
-
-.redes h4 {
+  color: #000000;
   font-size: 30px;
+}
+
+.nav-menufooter a:hover {
   color: white;
-  margin: 10px;
-}
-
-.redes1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-  height: 150px;
-  margin: 10px;
-}
-
-.redes1 button {
-  width: 70px;
-  height: 70px;
-  border-radius: 20%;
-  background-color: black;
-  cursor: pointer;
-}
-
-.redes1 ion-icon {
-  color: #a0eef8;
-  width: 30px;
-  height: 30px;
-}
-
-.redes1 h4 {
   font-size: 30px;
-  color: white;
-  margin: 10px;
-}
-
-.redes2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-  height: 150px;
-  margin: 10px;
-}
-
-.redes2 button {
-  width: 70px;
-  height: 70px;
-  border-radius: 20%;
-  background-color: black;
-  cursor: pointer;
-}
-
-.redes2 ion-icon {
-  color: #a0eef8;
-  width: 30px;
-  height: 30px;
-}
-
-.redes2 h4 {
-  font-size: 30px;
-  color: white;
-  margin: 10px;
+  box-shadow: 1px 3px 12px black;
+  border-radius: 9px;
 }
 
 .piepag {
   position: relative;
-  top: 200px;
+  top: 1800px;
   width: 100%;
-  height: 250px;
+  height: 500px;
   display: block;
   align-items: center;
   justify-content: center;
+  background-color: black;
 }
 
 .piepag div {
@@ -397,1538 +515,446 @@ ul {
 }
 
 .piepag img {
-  width: 180px;
-  height: 180px;
-  bottom: 20px;
+  position: relative;
+  align-items: center;
+  width: 300px;
+  height: 300px;
 }
 
 .piepag h5 {
-  font-size: 15px;
+  top: 80px;
+  position: relative;
+  font-size: 25px;
   color: rgb(255, 255, 255);
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-/*-------------------------------------------------Responsive Laptop.------------------------------------------------------------------------------------------------------*/
-@media (max-width: 2200px) {
-  .seccion1 {
-    width: 98%;
-    height: 300px;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-left: 10px;
-    border-radius: 8px;
+@media (max-width: 1502px) {
+  .blackhead {
+    height: 30px;
+    background-color: rgb(0, 0, 0);
   }
 
-  .seccion1 h2 {
-    color: #81e93b;
-    font-size: 60px;
-    width: 100%;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
+  .blackhead h1 {
+    top: 5px;
+    font-size: 12px;
   }
 
-  .seccion1 p {
-    color: #ffffff;
-    width: 100%;
-    text-align: center;
-    font-size: 30px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
+  .cta span {
+    top: 28px;
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 13px;
+    padding-right: 15px;
+    text-transform: uppercase;
   }
 
-  .medium {
-    color: pink;
-    display: flex;
-    justify-content: center;
-    width: 99%;
-    position: relative;
-    margin-top: 80px;
-  }
-
-  .medium p {
-    color: rgb(0, 0, 0);
-    font-size: 90px;
-    background-color: yellow;
-    font-display: 60px;
-    width: 98%;
-    height: 150px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    text-align: center;
-    margin-right: 10px;
-  }
-
-  .inforevista {
-    top: 200px;
-    color: #ffff86;
-    width: 98%;
-    height: 1200px;
-    position: relative;
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-
-  .inforevista a {
-    color: #fffbfb;
-    font-size: 25px;
-    width: 300px;
-    height: 80px;
-    border: solid;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 76%;
-    bottom: 50px;
-    z-index: 10;
-    border-radius: 1px;
-    box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
-    letter-spacing: 1px;
-    transition: all 0.3s ease-in-out;
-    overflow: hidden;
-  }
-
-  .inforevista a:hover {
-    background-color: white;
-    color: black;
-  }
-
-  .inforevista p {
-    top: 90px;
-    color: #FFFFFF;
-    font-size: 145px;
-    height: 800px;
-    left: 20px;
-  }
-
-  .inforevista img {
-    display: flex;
-    width: 600px;
+  .container {
     height: 700px;
-    position: relative;
-    left: 40px;
-  }
-
-  .finalnote {
-    display: flex;
-    background-color: rgba(10, 8, 8, 0.541);
-    font-display: 60px;
-    width: 98%;
-    height: 300px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    box-shadow: inset;
-    color: #FFFFFF;
-  }
-
-  .finalnote p {
-    font-size: 90px;
-    position: relative;
-    display: flex;
-  }
-
-  /* Footer */
-  .footer {
-    top: 200px;
-    background-color: rgba(24, 20, 20, 0.2);
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-
-  .redes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    height: 150px;
-    margin: 10px;
-  }
-
-  .redes button {
-    width: 50px;
-    height: 50px;
-    border-radius: 20%;
-    background-color: black;
-    cursor: pointer;
-  }
-
-  .redes ion-icon {
-    color: #a0eef8;
-    width: 25px;
-    height: 25px;
-  }
-
-  .redes h4 {
-    font-size: 18px;
-    color: white;
-    margin: 10px;
-  }
-
-  .redes1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    height: 150px;
-    margin: 10px;
-  }
-
-  .redes1 button {
-    width: 50px;
-    height: 50px;
-    border-radius: 20%;
-    background-color: black;
-    cursor: pointer;
-  }
-
-  .redes1 ion-icon {
-    color: #a0eef8;
-    width: 25px;
-    height: 25px;
-  }
-
-  .redes1 h4 {
-    font-size: 18px;
-    color: white;
-    margin: 10px;
-  }
-
-  .redes2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    height: 150px;
-    margin: 10px;
-  }
-
-  .redes2 button {
-    width: 50px;
-    height: 50px;
-    border-radius: 20%;
-    background-color: black;
-    cursor: pointer;
-  }
-
-  .redes2 ion-icon {
-    color: #a0eef8;
-    width: 25px;
-    height: 25px;
-  }
-
-  .redes2 h4 {
-    font-size: 18px;
-    color: white;
-    margin: 10px;
-  }
-
-  .piepag {
-    position: relative;
-    top: 200px;
-    width: 100%;
-    height: 250px;
-    display: block;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .piepag div {
-    display: flex;
-    justify-content: center;
-  }
-
-  .piepag img {
-    width: 180px;
-    height: 180px;
-    bottom: 20px;
-  }
-
-  .piepag h5 {
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-  }
-}
-/*----------------------------------------------------Resposive Tablet ------------------------------------------------------------------------------------*/
-@media (max-width: 1300px) {
-  .nav-main {
-    font-size: 20px;
-  }
-
-  .nav-main li a:hover {
-    font-size: 25px;
-    border-bottom: none;
-  }
-
-  .nav-main2 {
-    font-size: 20px;
-  }
-
-  .nav-main2 li a:hover {
-    font-size: 25px;
-    border-bottom: none;
-  }
-
-  .nav-menurigth {
-    position: relative;
-    right: 50%;
-  }
-
-  .seccion1 {
-    width: 98%;
-    height: 300px;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-left: 10px;
-    border-radius: 8px;
-  }
-
-  .seccion1 h2 {
-    color: #81e93b;
-    font-size: 80px;
-    width: 100%;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-  }
-
-  .seccion1 p {
-    color: #ffffff;
-    width: 100%;
-    text-align: center;
-    font-size: 50px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-  }
-
-  .medium {
-    color: pink;
-    display: flex;
-    justify-content: center;
-    width: 99%;
-    position: relative;
-    margin-top: 80px;
-  }
-
-  .medium p {
-    color: rgb(0, 0, 0);
-    font-size: 90px;
-    background-color: yellow;
-    font-display: 60px;
-    width: 98%;
-    height: 280px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin-top: 200px;
-    text-align: center;
-    margin-left: 16px;
-  }
-
-  .inforevista {
-    top: 200px;
-    color: #ffff86;
-    width: 98%;
-    height: 2500px;
-    position: relative;
-    display: block;
-    grid-template-columns: 50% 50%;
-  }
-
-  .inforevista a {
-    color: #fffbfb;
-    font-size: 25px;
-    width: 450px;
-    height: 100px;
-    border: solid;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 33%;
-    z-index: 10;
-    top: 100px;
-    border-radius: 1px;
-    box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
-    letter-spacing: 1px;
-    transition: all 0.3s ease-in-out;
-    overflow: hidden;
-    margin-bottom: 900px;
-  }
-
-  .inforevista a:hover {
-    background-color: white;
-    color: black;
-  }
-
-  .inforevista p {
-    top: 20px;
-    color: #FFFFFF;
-    font-size: 145px;
-    height: 800px;
-    left: 40px;
-    text-align: center;
-  }
-
-  .inforevista img {
-    display: flex;
-    width: 800px;
-    height: 1100px;
-    position: relative;
-    left: 250px;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    bottom: 200px;
-  }
-
-  .finalnote {
-    display: flex;
-    background-color: rgba(10, 8, 8, 0.541);
-    font-display: 60px;
-    width: 98%;
-    height: 300px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    box-shadow: inset;
-    color: #FFFFFF;
-  }
-
-  .finalnote p {
-    font-size: 90px;
-    position: relative;
-    display: flex;
-  }
-
-  /* Footer */
-  .footer {
-    top: 200px;
-    background-color: rgba(24, 20, 20, 0.2);
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-
-  .redes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    height: 150px;
-    margin: 10px;
-  }
-
-  .redes button {
-    width: 50px;
-    height: 50px;
-    border-radius: 20%;
-    background-color: black;
-    cursor: pointer;
-  }
-
-  .redes ion-icon {
-    color: #a0eef8;
-    width: 25px;
-    height: 25px;
-  }
-
-  .redes h4 {
-    font-size: 18px;
-    color: white;
-    margin: 10px;
-  }
-
-  .redes1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    height: 150px;
-    margin: 10px;
-  }
-
-  .redes1 button {
-    width: 50px;
-    height: 50px;
-    border-radius: 20%;
-    background-color: black;
-    cursor: pointer;
-  }
-
-  .redes1 ion-icon {
-    color: #a0eef8;
-    width: 25px;
-    height: 25px;
-  }
-
-  .redes1 h4 {
-    font-size: 18px;
-    color: white;
-    margin: 10px;
-  }
-
-  .redes2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    height: 150px;
-    margin: 10px;
-  }
-
-  .redes2 button {
-    width: 50px;
-    height: 50px;
-    border-radius: 20%;
-    background-color: black;
-    cursor: pointer;
-  }
-
-  .redes2 ion-icon {
-    color: #a0eef8;
-    width: 25px;
-    height: 25px;
-  }
-
-  .redes2 h4 {
-    font-size: 18px;
-    color: white;
-    margin: 10px;
-  }
-
-  .piepag {
-    position: relative;
-    top: 200px;
-    width: 100%;
-    height: 250px;
-    display: block;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .piepag div {
-    display: flex;
-    justify-content: center;
-  }
-
-  .piepag img {
-    width: 180px;
-    height: 180px;
-    bottom: 20px;
-  }
-
-  .piepag h5 {
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-  }
-}
-/*------------------------------------------------Responsive Minitablet-----------------------------------------------------------------------------------------------------------*/
-@media (max-width: 1100px) {
-  .container img {
-    /*visibility: collapse;*/
-    width: 100px;
-    height: 100px;
-    position: relative;
-    bottom: 20%;
-    right: 6%;
-  }
-
-  .container {
-    display: flex;
-    height: 400px;
+    background-size: cover 700px;
   }
 
   .nav-main {
     position: relative;
-    right: 2%;
-    bottom: 17%;
-    height: 70px;
-    font-size: 15px;
-  }
-
-  .nav-main2 {
-    position: relative;
-    bottom: 17%;
-    left: 0%;
-    height: 70px;
-    font-size: 15px;
-  }
-
-  .nav-menu li {
-    margin: 0;
-  }
-
-  .nav-menu2 li {
-    margin: 0;
-  }
-
-  .nav-menu2 {
-    position: relative;
-    right: 25%;
-  }
-
-  .nav-main ul li a {
-    color: #ffffff;
-  }
-
-  .nav-main2 ul li a {
-    color: #ffffff;
-  }
-
-  .nav-main li a:hover {
-    font-size: 30px;
-    border-bottom: none;
-  }
-
-  .nav-main2 li a:hover {
-    font-size: 20px;
-    border-bottom: none;
-  }
-
-  .nav-menurigth {
-    left: 78%;
-  }
-
-  .seccion1 {
-    width: 98%;
-    height: 300px;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-left: 10px;
-    border-radius: 8px;
-  }
-
-  .seccion1 h2 {
-    color: #81e93b;
-    font-size: 80px;
-    width: 100%;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-  }
-
-  .seccion1 p {
-    color: #ffffff;
-    width: 100%;
-    text-align: center;
-    font-size: 50px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-  }
-
-  .medium {
-    color: pink;
-    display: flex;
-    justify-content: center;
-    width: 99%;
-    position: relative;
-    margin-top: 80px;
-  }
-
-  .medium p {
-    color: rgb(0, 0, 0);
-    font-size: 90px;
-    background-color: yellow;
-    height: 250px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin-top: 200px;
-    text-align: center;
-    margin-left: 16px;
-  }
-
-  .inforevista {
-    top: 200px;
-    color: #ffff86;
-    width: 98%;
-    height: 2500px;
-    position: relative;
-    display: block;
-    grid-template-columns: 50% 50%;
-  }
-
-  .inforevista a {
-    color: #fffbfb;
-    font-size: 25px;
-    width: 450px;
-    height: 100px;
-    border: solid;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 30%;
-    z-index: 10;
-    top: 100px;
-    border-radius: 1px;
-    box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
-    letter-spacing: 1px;
-    transition: all 0.3s ease-in-out;
-    overflow: hidden;
-    margin-bottom: 900px;
-  }
-
-  .inforevista a:hover {
-    background-color: white;
-    color: black;
-  }
-
-  .inforevista p {
-    top: 20px;
-    color: #FFFFFF;
-    font-size: 145px;
-    height: 800px;
-    left: 40px;
-    text-align: center;
-  }
-
-  .inforevista img {
-    display: flex;
-    width: 800px;
-    height: 1100px;
-    position: relative;
-    left: 158px;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    bottom: 200px;
-  }
-
-  .finalnote {
-    display: flex;
-    background-color: rgba(10, 8, 8, 0.541);
-    font-display: 60px;
-    width: 98%;
-    height: 300px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    box-shadow: inset;
-    color: #FFFFFF;
-  }
-
-  .finalnote p {
-    font-size: 90px;
-    position: relative;
-    display: flex;
-  }
-
-  /* Footer */
-  .footer {
-    top: 200px;
-    background-color: rgba(24, 20, 20, 0.2);
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-
-  .redes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    height: 150px;
-    margin: 10px;
-  }
-
-  .redes button {
-    width: 50px;
-    height: 50px;
-    border-radius: 20%;
-    background-color: black;
-    cursor: pointer;
-  }
-
-  .redes ion-icon {
-    color: #a0eef8;
-    width: 25px;
-    height: 25px;
-  }
-
-  .redes h4 {
-    font-size: 18px;
-    color: white;
-    margin: 10px;
-  }
-
-  .redes1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    height: 150px;
-    margin: 10px;
-  }
-
-  .redes1 button {
-    width: 50px;
-    height: 50px;
-    border-radius: 20%;
-    background-color: black;
-    cursor: pointer;
-  }
-
-  .redes1 ion-icon {
-    color: #a0eef8;
-    width: 25px;
-    height: 25px;
-  }
-
-  .redes1 h4 {
-    font-size: 18px;
-    color: white;
-    margin: 10px;
-  }
-
-  .redes2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    height: 150px;
-    margin: 10px;
-  }
-
-  .redes2 button {
-    width: 50px;
-    height: 50px;
-    border-radius: 20%;
-    background-color: black;
-    cursor: pointer;
-  }
-
-  .redes2 ion-icon {
-    color: #a0eef8;
-    width: 25px;
-    height: 25px;
-  }
-
-  .redes2 h4 {
-    font-size: 18px;
-    color: white;
-    margin: 10px;
-  }
-
-  .piepag {
-    position: relative;
-    top: 200px;
-    width: 100%;
-    height: 250px;
-    display: block;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .piepag div {
-    display: flex;
-    justify-content: center;
-  }
-
-  .piepag img {
-    width: 180px;
-    height: 180px;
-    bottom: 20px;
-  }
-
-  .piepag h5 {
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-  }
-}
-/*----.--------------------------------------------Responsive Movil-------------------------------------------------------*/
-@media (max-width: 1000px) {
-  .showcase {
-    height: 60px;
-  }
-
-  .container {
-    height: 300px;
-  }
-
-  .showcase {
-    display: flex;
-    position: fixed;
-    height: 70px;
-    z-index: 10;
-  }
-
-  .logomenu {
-    display: none;
-  }
-
-  .logomenu2 {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    border: solid white;
-  }
-
-  .container img {
-    bottom: 28%;
-    left: 0%;
-  }
-
-  .nav-menurigth a ion-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    margin: 0;
-    background-color: #000000;
-    position: fixed;
-    top: 70px;
-    width: 100%;
-    padding: 20px 0;
-    height: calc(100% - 60px);
-    overflow-y: auto;
-    left: 100%;
-    transition: left 0.3s;
-    z-index: 10;
-  }
-
-  .nav-main li a {
-    position: relative;
-    right: 10px;
-    font-size: 35px;
-    margin: 5px;
-  }
-
-  .nav-main li {
-    font-size: 50px;
-    margin-top: 0;
-  }
-
-  .nav-main :hover {
-    background-color: red;
-    color: black;
-  }
-
-  .covermenu {
-    display: flex;
-  }
-
-  .nav-menu2 {
-    display: none;
-  }
-
-  .nav-toggle {
-    display: flex;
-    position: relative;
-    right: 80px;
-    color: white;
-  }
-
-  .nav-menu_visible {
-    left: 0;
-  }
-
-  .nav-toggle:focus:not(:focus-visible) {
-    outline: none;
-  }
-
-  .nav-toggle :hover {
-    border: solid white;
-    border-radius: 5px;
-  }
-
-  .nav-toggle :active {
-    color: red;
-  }
-
-  .seccion1 {
-    width: 90%;
-    height: 350px;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    color: violet;
-    margin-left: 20px;
-    top: 150px;
-  }
-
-  .seccion1 h2 {
-    color: #81e93b;
-    font-size: 40px;
-    width: 100%;
-    display: flex;
-    position: relative;
-    text-align: center;
-    align-items: center;
-    margin-top: 100px;
-  }
-
-  .seccion1 p {
-    display: flex;
-    color: #ffffff;
-    width: 98%;
-    text-align: center;
-    font-size: 20px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    position: relative;
-    right: 7px;
-  }
-
-  .medium {
-    color: pink;
-    display: flex;
-    justify-content: center;
-    width: 99%;
-    height: 200px;
-    position: relative;
-  }
-
-  .medium p {
-    color: rgb(0, 0, 0);
-    font-size: 80px;
-    background-color: yellow;
-    width: 100%;
-    height: 150px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-right: 50px;
-    bottom: 180px;
-    border: solid;
-  }
-
-  .inforevista {
-    color: #ffff86;
-    width: 98%;
-    height: 1500px;
-    position: relative;
-    bottom: 800px;
-  }
-
-  .inforevista p {
-    display: flex;
-    color: #FFFFFF;
-    font-size: 70px;
-    height: 300px;
-    text-align: center;
-    position: relative;
-    margin-right: 70px;
-  }
-
-  .inforevista img {
-    display: flex;
-    width: 600px;
-    height: 900px;
-    position: relative;
-    margin-left: -18px;
-    margin-top: 200px;
-  }
-
-  .inforevista a {
-    color: #fffbfb;
-    font-size: 25px;
-    width: 350px;
-    height: 100px;
-    border: solid;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-left: 5px;
-    margin-top: -200px;
-    border-radius: 1px;
-    box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
-    letter-spacing: 1px;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .finalnote {
-    display: flex;
-    background-color: rgba(10, 8, 8, 0.541);
-    font-size: 60px;
-    width: 98%;
-    height: 300px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-  }
-
-  .finalnote p {
-    font-size: 40px;
-    position: relative;
-    display: flex;
-  }
-
-  .footer {
-    position: relative;
-    top: 230px;
-    height: 100px;
-    padding-top: 10px;
-  }
-
-  .redes {
-    height: 80px;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .redes h4 {
-    font-size: 15px;
-  }
-
-  .redes button {
-    width: 40px;
-    height: 40px;
-    margin-left: 20px;
-  }
-
-  .redes ion-icon {
-    width: 20px;
-    height: 30px;
-  }
-
-  .redes1 {
-    height: 80px;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .redes1 h4 {
-    font-size: 15px;
-    text-align: center;
-  }
-
-  .redes1 button {
-    margin-left: 10px;
-    width: 40px;
-    height: 40px;
-  }
-
-  .redes1 ion-icon {
-    width: 20px;
-    height: 30px;
-  }
-
-  .redes2 {
-    height: 80px;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .redes2 h4 {
-    font-size: 15px;
-    text-align: center;
-  }
-
-  .redes2 button {
-    margin-left: 10px;
-    width: 40px;
-    height: 40px;
-  }
-
-  .redes2 ion-icon {
-    width: 25px;
-    height: 30px;
-  }
-
-  .piepag {
-    height: 200px;
-    display: block;
-    position: relative;
-    top: 230px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .piepag img {
-    top: 8%;
-    left: 37%;
-    width: 120px;
-    height: 120px;
-  }
-
-  .piepag h5 {
-    text-align: center;
-    top: 0;
-    right: 0;
-  }
-}
-/*----------------------------------------------------------------Responsive Iphone 12 --------------------------------------------------------------------------------------------*/
-@media (max-width: 400px) {
-  .showcase {
-    height: 60px;
-  }
-
-  .container {
-    height: 300px;
-  }
-
-  .showcase {
-    display: flex;
-    position: fixed;
-    height: 70px;
-    z-index: 10;
-  }
-
-  .logomenu {
-    display: none;
-  }
-
-  .logomenu2 {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    border: solid white;
-  }
-
-  .container img {
-    bottom: 28%;
-    left: 0%;
-  }
-
-  .nav-menurigth a ion-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    margin: 0;
-    background-color: #000000;
-    position: fixed;
-    top: 70px;
-    width: 100%;
-    padding: 20px 0;
-    height: calc(100% - 60px);
-    overflow-y: auto;
-    left: 100%;
-    transition: left 0.3s;
-    z-index: 10;
-  }
-
-  .nav-main li a {
-    position: relative;
-    right: 10px;
-    font-size: 35px;
-    margin: 5px;
-  }
-
-  .nav-main li {
-    font-size: 50px;
-    margin-top: 0;
-  }
-
-  .nav-main :hover {
-    background-color: red;
-    color: black;
-  }
-
-  .covermenu {
-    display: flex;
-  }
-
-  .nav-menu2 {
-    display: none;
-  }
-
-  .nav-toggle {
-    display: flex;
-    position: relative;
-    right: 80px;
-    color: white;
-  }
-
-  .nav-menu_visible {
-    left: 0;
-  }
-
-  .nav-toggle:focus:not(:focus-visible) {
-    outline: none;
-  }
-
-  .nav-toggle :hover {
-    border: solid white;
-    border-radius: 5px;
-  }
-
-  .nav-toggle :active {
-    color: red;
-  }
-
-  .seccion1 {
-    width: 90%;
-    height: 350px;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    color: violet;
-    margin-left: 20px;
+    left: 40%;
     top: 10px;
-  }
-
-  .seccion1 h2 {
-    color: #81e93b;
-    font-size: 50px;
-    width: 100%;
-    display: flex;
-    position: relative;
-    text-align: center;
-    align-items: center;
-  }
-
-  .seccion1 p {
-    display: flex;
-    color: #ffffff;
-    width: 100%;
-    text-align: center;
-    font-size: 35px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    right: 5px;
-    margin-top: 30px;
-  }
-
-  .medium {
-    color: pink;
     display: flex;
     justify-content: center;
-    width: 460px;
+    align-items: center;
+    width: 40%;
+    font-size: 20px;
     height: 200px;
+    color: white;
+  }
+
+  .biography {
     position: relative;
-    top: 200px;
+    height: 800px;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .text h1 {
+    position: relative;
+    top: 50px;
+    font-size: 45px;
+  }
+
+  .text p {
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+  }
+
+  .retrato img {
+    width: 520px;
+    height: 700px;
+    display: flex;
+    position: relative;
+    top: 50px;
     right: 30px;
   }
 
-  .medium p {
-    color: rgb(0, 0, 0);
-    font-size: 35px;
-    background-color: yellow;
+  .galery {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .galery h1 {
+    position: relative;
+    text-align: center;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+  }
+
+  .galery p {
+    font-size: 23px;
+    position: relative;
+    display: flex;
+    text-align: start;
+    top: -70px;
+    padding: 25px;
+  }
+
+  .section h1 {
+    position: relative;
+    top: -60px;
+    text-align: right;
+    letter-spacing: 8px;
+    font-size: 80px;
+    border-bottom: solid black 3px;
+  }
+
+  .footer {
+    position: relative;
+    top: 2500px;
+    background: linear-gradient(to bottom right, rgb(255, 105, 205), rgb(105, 105, 221), rgb(68, 255, 130), rgb(255, 105, 205));
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-mainfooter {
+    position: relative;
+    top: 150px;
+    display: grid;
+    border: none;
+  }
+
+  .nav-menufooter {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+
+  .nav-menufooter a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-size: 18px;
+  }
+
+  .nav-menufooter a:hover {
+    color: white;
+    font-size: 20px;
+    box-shadow: 1px 3px 12px black;
+    border-radius: 9px;
+  }
+
+  .piepag {
+    position: relative;
+    top: 2500px;
+    width: 100%;
+    height: 250px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .piepag div {
+    display: block;
+    justify-content: center;
+  }
+
+  .piepag img {
+    width: 120px;
+    height: 120px;
+    left: 45%;
+    position: relative;
+    top: 50px;
+  }
+
+  .piepag h5 {
+    font-size: 0.8em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    top: 100px;
+    right: 1%;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+}
+@media (max-width: 550px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: black;
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+  }
+
+  /* Showcase */
+  .showcase {
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 1;
+  }
+
+  .blackhead {
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  .blackhead h1 {
+    top: 10px;
+    padding-bottom: 7px;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    color: white;
+  }
+
+  .whitehead {
     width: 100%;
     height: 100px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-right: 50px;
-    border: solid;
-    bottom: 150px;
+    display: grid;
+    grid-template-columns: 50% 50% 75%;
   }
 
-  .inforevista {
-    color: #ffff86;
-    width: 98%;
-    height: 1200px;
-    position: relative;
-    bottom: 800px;
+  .nav-toggle {
+    color: rgb(0, 0, 0);
+    background: none;
+    font-size: 40px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
   }
 
-  .inforevista p {
-    display: flex;
-    color: #FFFFFF;
-    font-size: 70px;
-    height: 300px;
-    text-align: center;
-    position: relative;
-    margin-right: 70px;
+  .nav-menu {
+    flex-direction: column;
+    margin: 0;
+    background-color: #000000;
+    position: fixed;
+    top: 120px;
+    width: 100%;
+    padding: 10px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+    z-index: 10;
+    color: white;
   }
 
-  .inforevista img {
-    display: flex;
-    width: 350px;
-    height: 600px;
+  .nav-main li a {
     position: relative;
-    left: 38px;
+    font-size: 1.2em;
+    margin: 10px;
     bottom: 100px;
+    color: white;
   }
 
-  .inforevista a {
-    color: #fffbfb;
-    font-size: 25px;
-    width: 250px;
-    height: 70px;
-    border: solid;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .nav-main ul li a {
+    left: 10%;
+    color: white;
+  }
+
+  .nav-main li {
+    margin-top: 0;
     position: relative;
-    margin-left: -50px;
-    top: 200px;
-    border-radius: 1px;
-    box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
-    letter-spacing: 1px;
-    transition: all 0.3s ease-in-out;
+    right: 10px;
+    margin: 10px;
+    font-size: 1.2em;
+    color: white;
   }
 
-  .finalnote {
+  .nav-main :hover {
+    background-color: #ff0d0d;
+    color: #000000;
+    font-size: 1em;
+  }
+
+  .nav-main li a:hover {
+    font-size: 1.4em;
+  }
+
+  .covermenu {
     display: flex;
-    background-color: rgba(10, 8, 8, 0.541);
-    font-size: 60px;
-    width: 98%;
+  }
+
+  .nav-menu2 {
+    display: none;
+  }
+
+  .nav-toggle {
+    font-size: 3em;
+    display: flex;
+    position: relative;
+    right: 20px;
+    top: 15px;
+    z-index: 1;
+    color: rgb(0, 0, 0);
+    border: none;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  .nav-toggle :hover {
+    border: solid white;
+    border-radius: 5px;
+  }
+
+  .nav-toggle :active {
+    color: #000000;
+  }
+
+  .cta {
+    position: relative;
+    border: none;
+    left: 140px;
+    top: 1px;
+    font-weight: 700;
+    background: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 12px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+
+  .nav-menurigth ion-icon:hover {
+    color: #000000;
+    width: 45px;
+    height: 45px;
+  }
+
+  .nav-menurigth a ion-icon {
+    color: #000000;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: 10%;
+    top: 5px;
+    border-radius: 50%;
+  }
+
+  .container {
+    background-image: url(/imgnonstop/논스톱.png);
+    background-size: 500px cover;
+  }
+
+  .retrato img {
+    position: relative;
+    right: 50px;
+    width: 200px;
     height: 200px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
+    display: none;
   }
 
-  .finalnote p {
-    font-size: 5s0px;
+  .biography {
+    display: block;
+  }
+
+  .text h1 {
     position: relative;
-    display: flex;
-    margin-right: 15px;
+    top: 50px;
+    font-size: 45px;
+  }
+
+  .text p {
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+  }
+
+  .galery {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+
+  .galery h1 {
+    padding: 15px;
+    font-size: 2.8em;
+    color: black;
+    text-align: center;
+    font-weight: 900;
+  }
+
+  .galery p {
+    font-size: 20px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .momentsgalery {
+    height: 800px;
+    display: block;
+    position: relative;
     top: 50px;
   }
 
   .footer {
     position: relative;
-    top: 230px;
-    height: 100px;
-    padding-top: 10px;
+    top: 6100px;
   }
 
-  .redes {
-    height: 80px;
+  .nav-mainfooter {
+    position: relative;
+    top: 120px;
     display: grid;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .redes h4 {
-    font-size: 15px;
-  }
-
-  .redes button {
-    width: 40px;
-    height: 40px;
-    margin-left: 20px;
-  }
-
-  .redes ion-icon {
-    width: 20px;
-    height: 30px;
-  }
-
-  .redes1 {
-    height: 80px;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .redes1 h4 {
-    font-size: 15px;
-    text-align: center;
-  }
-
-  .redes1 button {
-    margin-left: 10px;
-    width: 40px;
-    height: 40px;
-  }
-
-  .redes1 ion-icon {
-    width: 20px;
-    height: 30px;
-  }
-
-  .redes2 {
-    height: 80px;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .redes2 h4 {
-    font-size: 15px;
-    text-align: center;
-  }
-
-  .redes2 button {
-    margin-left: 10px;
-    width: 40px;
-    height: 40px;
-  }
-
-  .redes2 ion-icon {
-    width: 25px;
-    height: 30px;
+    border: none;
   }
 
   .piepag {
-    height: 200px;
-    display: block;
     position: relative;
-    top: 230px;
-    justify-content: center;
-    align-items: center;
+    top: 6050px;
   }
 
   .piepag img {
-    top: 8%;
-    left: 37%;
-    width: 120px;
-    height: 120px;
-  }
-
-  .piepag h5 {
-    text-align: center;
-    top: 0;
-    right: 0;
-    font-size: 10px;
+    position: relative;
+    left: 36%;
+    display: flex;
   }
 }
-/*# sourceMappingURL=styleindex.css.map */
-/*# sourceMappingURL=styleindex.css.map */
-/*# sourceMappingURL=styleindex.css.map */
 
 /*# sourceMappingURL=stylenews.css.map */

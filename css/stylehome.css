@@ -43,13 +43,14 @@ ul {
 }
 
 .blackhead {
-  height: 30px;
+  height: 40px;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: relative;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
+  bottom: 5px;
 }
 
 .menumobile {
@@ -70,12 +71,12 @@ ul {
 
 .blackhead h1 {
   cursor: pointer;
-  color: #000000;
+  color: #ffffff;
   position: relative;
   padding-bottom: 7px;
   letter-spacing: 1px;
   font-size: 2em;
-  bottom: 5px;
+  bottom: 8px;
 }
 
 .blackhead h1:hover {
@@ -94,7 +95,7 @@ ul {
 .cta {
   position: relative;
   border: none;
-  top: 10px;
+  top: 5px;
   font-weight: 700;
   background: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -103,7 +104,7 @@ ul {
 .cta span {
   padding-bottom: 7px;
   letter-spacing: 4px;
-  font-size: 15px;
+  font-size: 20px;
   padding-right: 15px;
   text-transform: uppercase;
 }
@@ -159,44 +160,59 @@ ul {
 }
 
 #show {
-  width: 20px;
-  height: 15px;
-  margin: 15px;
+  width: 25px;
+  height: 25px;
+  margin: 25px;
 }
 
 #showapple {
-  width: 20px;
-  height: 15px;
-  margin: 15px;
+  width: 25px;
+  height: 25px;
+  margin: 25px;
 }
 
 #showyoutube {
-  width: 20px;
-  height: 15px;
-  margin: 15px;
+  width: 25px;
+  height: 25px;
+  margin: 25px;
 }
 
 #showspotify {
-  width: 20px;
-  height: 15px;
-  margin: 15px;
+  width: 25px;
+  height: 25px;
+  margin: 25px;
 }
 
 #show:hover {
-  width: 20px;
-  height: 20px;
-  box-shadow: 20px #000000;
+  width: 25px;
+  height: 25px;
+  box-shadow: 25px #000000;
 }
 
 #showinstagram {
-  width: 12px;
-  height: 12px;
-  margin: 20px;
+  width: 25px;
+  height: 25px;
+  margin: 25px;
+}
+
+#showyoutube:hover {
+  width: 30px;
+  height: 30px;
+}
+
+#showapple:hover {
+  width: 30px;
+  height: 30px;
+}
+
+#showspotify:hover {
+  width: 30px;
+  height: 30px;
 }
 
 #showinstagram:hover {
-  width: 14px;
-  height: 14px;
+  width: 30px;
+  height: 30px;
 }
 
 .nav-menurigth {
@@ -244,7 +260,7 @@ ul {
   grid-template-columns: 30% 30% 30%;
   width: 100%;
   height: 1200px;
-  background-color: white;
+  background-image: url(/imgnonstop/pexels-tima-miroshnichenko-6847537.jpg);
   background-size: cover;
 }
 
@@ -291,11 +307,12 @@ ul {
 .nav-main {
   position: relative;
   left: 40%;
+  top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40%;
-  font-size: 20px;
+  font-size: 35px;
   height: 200px;
 }
 
@@ -312,6 +329,7 @@ ul {
   width: 40%;
   font-size: 20px;
   height: 200px;
+  display: none;
 }
 
 .nav-menu {
@@ -335,7 +353,7 @@ ul {
 
 .nav-main ul li a {
   padding: 4px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .nav-main li a:hover {
@@ -375,6 +393,7 @@ ul {
 
 .anunciocontenedor h1 {
   font-size: 7.5em;
+  color: white;
 }
 
 .anunciocontenedor p {
@@ -385,7 +404,6 @@ ul {
 
 .anunciocontenedor a {
   padding: 1em 4em;
-  border: solid;
   font-size: 2.1em;
   color: white;
   background-color: #FF0000;
@@ -413,7 +431,7 @@ ul {
 }
 
 .parrafosus h1 {
-  font-family: "school";
+  font-weight: 900;
   font-size: 1.6em;
   text-align: center;
   justify-content: center;
@@ -444,7 +462,7 @@ ul {
   justify-content: center;
   align-items: center;
   top: 200px;
-  left: 39%;
+  left: 41%;
 }
 
 .parrafosus a:hover {
@@ -460,7 +478,6 @@ ul {
   position: relative;
   background-color: #ffffff;
   background-size: 400% 400%;
-  font-family: "school";
   display: block;
 }
 
@@ -472,7 +489,7 @@ ul {
   margin-top: 350px;
   left: 35.5%;
   transform: rotate(90deg);
-  background: #00BCD4;
+  background: linear-gradient(to bottom right, rgb(255, 105, 205), rgb(105, 105, 221), rgb(68, 255, 130), rgb(255, 105, 205));
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   transition-duration: 1.5s;
   transition-property: width, height, transform;
@@ -504,8 +521,8 @@ ul {
   font-size: smaller;
   border-radius: 1rem;
   text-align: center;
-  background-image: url(/imgnonstop/Everybodyaresummer.jpg);
-  background-size: 800px;
+  background-image: none;
+  background-size: 400px;
   color: #ffffff;
   transition-duration: 1s;
   transition-property: color;
@@ -541,8 +558,8 @@ ul {
   box-shadow: 0.1em 0.1em;
   align-items: center;
   position: relative;
-  left: 37%;
-  top: 600px;
+  left: 36%;
+  top: 450px;
 }
 
 .boton a:hover {
@@ -577,13 +594,15 @@ ul {
   font-size: 120px;
   text-align: center;
   position: relative;
-  top: 20px;
+  top: 10px;
 }
 
 .infolanzamiento p {
-  font-size: 60px;
-  text-align: center;
-  margin-top: 150px;
+  font-size: 45px;
+  text-align: start;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 100px;
+  padding: 40px;
 }
 
 .boton a {
@@ -599,7 +618,7 @@ ul {
   align-items: center;
   position: relative;
   left: 350px;
-  top: 180px;
+  top: 80px;
 }
 
 .boton a:hover {
@@ -630,20 +649,21 @@ ul {
 /*mensaje de cambios hechos ventana*/
 .toast {
   position: absolute;
-  top: 400px;
+  top: 1200px;
   right: 3%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff4fc;
+  background-color: black;
   border-radius: 7px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px white;
   display: none;
   justify-content: center;
   align-items: center;
-  border: solid;
-  height: 80px;
-  width: 350px;
+  border: solid white 1px;
+  border-bottom: none;
+  height: 200px;
+  width: 650px;
   position: fixed;
   overflow: hidden;
   z-index: 10;
@@ -671,43 +691,39 @@ ul {
   display: flex;
   flex-direction: column;
   margin: 0 20px;
-  width: 200px;
+  width: 150px;
   position: relative;
 }
 
 .message .text {
   font-weight: 400;
-  color: violet;
+  color: rgb(255, 253, 255);
   align-items: center;
 }
 
 .message .text.text-1 {
   font-weight: 600;
-  color: #000000;
+  color: #00ff4c;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Oswald", sans-serif;
 }
 
 .message .text.text-2 {
   font-weight: 600;
-  color: black;
-  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
 }
 
 .toast .closer {
   position: absolute;
   top: 0.9px;
-  right: 5px;
+  right: 10px;
   padding: 5px;
   cursor: pointer;
   font-size: 20px;
-  color: transparent;
-}
-
-.toast .closer:hover {
-  color: #000000;
+  color: white;
 }
 
 .toast .progress {
@@ -734,8 +750,8 @@ ul {
 .bg-model {
   width: 100%;
   height: 100%;
-  background-color: rgb(0, 0, 0);
-  background-position: center;
+  background-color: black;
+  background-size: cover;
   border-radius: 1px;
   top: 0%;
   display: flex;
@@ -753,7 +769,7 @@ ul {
   text-align: center;
   box-shadow: 5px 5px 5px;
   border: 0.5px solid;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.97);
 }
 
 .tosuscribe {
@@ -769,7 +785,9 @@ ul {
 
 .model_content h1 {
   color: #ffffff;
-  font-size: 5.2em;
+  font-size: 4em;
+  position: relative;
+  top: 145px;
   padding: auto 100px;
 }
 
@@ -803,25 +821,35 @@ ul {
   justify-content: center;
   text-align: center;
   align-items: center;
-  color: #000000;
-  background-color: #FBCA1F;
-  position: absolute;
+  color: #ffffff;
   font-family: "Oswald", sans-serif;
-  margin-top: 40px;
-  left: 21.8%;
-  border: solid;
+  background: rgb(0, 0, 0);
+  position: absolute;
+  margin-top: 150px;
+  left: 43.5%;
+  border: solid white 3px;
 }
 
 #send:hover {
-  background-color: #FBCA1F;
+  cursor: pointer;
+  display: flex;
+  padding: 0.8em 4em;
+  font-size: 2.6em;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   color: #000000;
-  border: 4px white solid;
-  font-size: 20px;
-  box-shadow: 4px #fff4fc;
+  font-family: "Oswald", sans-serif;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  margin-top: 150px;
+  left: 43.5%;
+  border: solid rgb(0, 0, 0) 3px;
 }
 
 .model_content input {
-  margin-top: 200px;
+  position: relative;
+  top: 80px;
   width: 70%;
   height: 60px;
   text-align: center;
@@ -839,10 +867,10 @@ ul {
 
 .close {
   position: absolute;
-  color: rgb(255, 255, 255);
+  color: rgb(114, 108, 108);
   top: 5%;
   right: 4%;
-  font-size: 2em;
+  font-size: 5em;
   transform: rotate(45deg);
   cursor: pointer;
 }
@@ -1008,11 +1036,39 @@ ul {
 }
 
 .footer {
-  background-color: #FBCA1F;
+  background: linear-gradient(to bottom right, rgb(255, 105, 205), rgb(105, 105, 221), rgb(68, 255, 130), rgb(255, 105, 205));
   width: 100%;
   height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-mainfooter {
   position: relative;
-  top: 18px;
+  top: 160px;
+  display: grid;
+  border: none;
+}
+
+.nav-menufooter {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.nav-menufooter a {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-size: 38px;
+}
+
+.nav-menufooter a:hover {
+  color: white;
+  font-size: 20px;
+  box-shadow: 1px 3px 12px black;
+  border-radius: 9px;
 }
 
 .piepag {
@@ -1029,13 +1085,17 @@ ul {
 }
 
 .piepag img {
-  width: 180px;
-  height: 180px;
+  position: relative;
+  top: 130px;
+  width: 300px;
+  height: 300px;
   bottom: 20px;
 }
 
 .piepag h5 {
-  font-size: 15px;
+  position: relative;
+  top: 300px;
+  font-size: 25px;
   color: rgb(255, 255, 255);
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -1044,7 +1104,7 @@ ul {
 /*_____________________________________________________________Responsive Laptop_________________________________________________________________________*/
 @media (max-width: 1502px) {
   .container img {
-    top: 250px;
+    top: 220px;
     left: 130%;
     width: 280px;
     height: 290px;
@@ -1053,10 +1113,81 @@ ul {
     border-radius: 50%;
   }
 
+  .blackhead h1 {
+    top: 10px;
+    font-size: 3em;
+    position: relative;
+  }
+
+  .blackhead h1 {
+    cursor: pointer;
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 7px;
+    letter-spacing: 1px;
+    font-size: 2em;
+  }
+
   .container {
-    height: 800px;
+    height: 700px;
     background-color: white;
-    background-size: 1300px 700px;
+    background-size: cover 700px;
+  }
+
+  #show {
+    width: 15px;
+    height: 15px;
+    margin: 25px;
+  }
+
+  #showapple {
+    width: 15px;
+    height: 15px;
+    margin: 25px;
+  }
+
+  #showyoutube {
+    width: 15px;
+    height: 15px;
+    margin: 25px;
+  }
+
+  #showspotify {
+    width: 15px;
+    height: 15px;
+    margin: 25px;
+  }
+
+  #show:hover {
+    width: 15px;
+    height: 15px;
+    box-shadow: 25px #000000;
+  }
+
+  #showinstagram {
+    width: 15px;
+    height: 15px;
+    margin: 25px;
+  }
+
+  #showyoutube:hover {
+    width: 30px;
+    height: 30px;
+  }
+
+  #showapple:hover {
+    width: 30px;
+    height: 30px;
+  }
+
+  #showspotify:hover {
+    width: 30px;
+    height: 30px;
+  }
+
+  #showinstagram:hover {
+    width: 30px;
+    height: 30px;
   }
 
   .anunciocontenedor {
@@ -1069,8 +1200,10 @@ ul {
   }
 
   .anunciocontenedor h1 {
-    font-size: 80px;
+    font-size: 3em;
     font-weight: 700;
+    top: 110px;
+    position: relative;
   }
 
   .anunciocontenedor p {
@@ -1091,7 +1224,7 @@ ul {
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 20px;
-    top: 60px;
+    top: 150px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
   }
@@ -1142,6 +1275,18 @@ ul {
   #lupa {
     position: relative;
     right: 350px;
+  }
+
+  .nav-main {
+    position: relative;
+    left: 40%;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    font-size: 20px;
+    height: 200px;
   }
 
   .parrafosus {
@@ -1218,29 +1363,38 @@ ul {
     display: flex;
     width: 200px;
     height: 60px;
-    font-size: 20px;
+    font-size: 18px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #000000;
+    position: absolute;
+    margin-top: 150px;
+    left: 43%;
+    border: solid white 3px;
+  }
+
+  #send:hover {
+    cursor: pointer;
+    display: flex;
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
     justify-content: center;
     text-align: center;
     align-items: center;
     color: #000000;
-    background-color: #FBCA1F;
+    background-color: #ffffff;
     position: absolute;
     margin-top: 150px;
     left: 43%;
-    border: solid;
-  }
-
-  #send:hover {
-    background-color: #00BCD4;
-    color: white;
-    border: black solid;
-    font-size: 18px;
-    font-family: "school";
+    border: solid rgb(0, 0, 0) 3px;
   }
 
   .tosuscribe {
     position: relative;
-    top: 100px;
+    bottom: 100px;
     margin: 10px;
     margin-left: 30%;
     width: 40%;
@@ -1268,12 +1422,6 @@ ul {
     margin-bottom: 0px;
   }
 
-  .infolanzamiento p {
-    font-size: 35px;
-    text-align: center;
-    margin-top: 50px;
-  }
-
   .info button {
     cursor: pointer;
     color: rgb(255, 255, 255);
@@ -1294,14 +1442,46 @@ ul {
     transition: all 3ms;
   }
 
+  .close {
+    position: absolute;
+    color: rgb(114, 108, 108);
+    top: 5%;
+    right: 10%;
+    font-size: 2em;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+
+  .toast {
+    position: absolute;
+    top: 500px;
+    right: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 7px;
+    box-shadow: 0 1px 2px white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: solid white 1px;
+    border-bottom: none;
+    height: 80px;
+    width: 350px;
+    position: fixed;
+    overflow: hidden;
+    z-index: 10;
+  }
+
   .banner1 {
     width: 100%;
     height: 1290px;
     position: relative;
     background-color: #ffffff;
     background-size: 400% 400%;
-    font-family: "school";
     display: block;
+    font-family: "Oswald", sans-serif;
   }
 
   .card {
@@ -1311,10 +1491,12 @@ ul {
     margin-top: 120px;
     left: 37%;
     transform: rotate(90deg);
-    background: #00BCD4;
+    background: linear-gradient(to bottom right, rgb(255, 105, 205), rgb(105, 105, 221), rgb(68, 255, 130), rgb(255, 105, 205));
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     transition-duration: 1.5s;
     transition-property: width, height, transform;
+    font-family: "Oswald", sans-serif;
+    font-size: 5em;
   }
 
   .card:hover {
@@ -1367,6 +1549,7 @@ ul {
     align-items: center;
     justify-content: center;
     display: flex;
+    font-family: "Oswald", sans-serif;
   }
 
   #listen {
@@ -1380,7 +1563,7 @@ ul {
     box-shadow: 0.1em 0.1em;
     align-items: center;
     position: relative;
-    left: 37%;
+    left: 38%;
     top: 200px;
   }
 
@@ -1399,8 +1582,8 @@ ul {
     border-radius: 0.4em;
     box-shadow: 0.1em 0.1em;
     position: relative;
-    top: 100px;
-    left: 30%;
+    top: 10px;
+    left: 29%;
   }
 
   .boton a:hover {
@@ -1446,10 +1629,19 @@ ul {
     color: #000000;
   }
 
+  .infolanzamiento h1 {
+    position: relative;
+    top: 100px;
+  }
+
   .infolanzamiento p {
     color: #000000;
     position: relative;
-    top: 25px;
+    bottom: 60px;
+    text-align: start;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   .socialmedia {
@@ -1557,11 +1749,39 @@ ul {
   }
 
   .footer {
-    background-color: #FBCA1F;
+    background: linear-gradient(to bottom right, rgb(255, 105, 205), rgb(105, 105, 221), rgb(68, 255, 130), rgb(255, 105, 205));
     width: 100%;
     height: 200px;
     align-items: center;
     justify-content: center;
+  }
+
+  .nav-mainfooter {
+    position: relative;
+    top: 90px;
+    display: grid;
+    border: none;
+  }
+
+  .nav-menufooter {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+
+  .nav-menufooter a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-size: 18px;
+  }
+
+  .nav-menufooter a:hover {
+    color: white;
+    font-size: 20px;
+    box-shadow: 1px 3px 12px black;
+    border-radius: 9px;
   }
 
   .piepag {
@@ -1652,12 +1872,6 @@ ul {
     position: relative;
     top: 90px;
     font-family: "school";
-  }
-
-  .infolanzamiento p {
-    font-size: 0.6em;
-    text-align: center;
-    margin-top: 150px;
   }
 
   .boton a {
@@ -1768,7 +1982,7 @@ ul {
   .nav-menu {
     flex-direction: column;
     margin: 0;
-    background-color: #ffffff;
+    background-color: #000000;
     position: fixed;
     top: 100px;
     width: 100%;
@@ -1782,10 +1996,10 @@ ul {
 
   .nav-main li a {
     position: relative;
-    font-size: 1.9em;
+    font-size: 2.5em;
     margin: 10px;
     bottom: 65px;
-    color: white;
+    color: rgb(0, 0, 0);
   }
 
   .nav-main li {
@@ -1795,13 +2009,13 @@ ul {
     font-size: 1em;
     margin: 10px;
     font-size: 1em;
-    color: white;
+    color: rgb(0, 0, 0);
   }
 
   .nav-main :hover {
     background-color: #ff0d0d;
     color: #000000;
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   .nav-main li a:hover {
@@ -1841,6 +2055,27 @@ ul {
 
   .nav-toggle :active {
     color: #000000;
+  }
+
+  .anunciocontenedor {
+    top: 300px;
+    position: relative;
+  }
+
+  .anunciocontenedor h1 {
+    top: 0;
+    left: 2%;
+    font-size: 2.3em;
+    font-weight: 900;
+    text-align: center;
+    position: relative;
+  }
+
+  .anunciocontenedor a {
+    position: relative;
+    margin-left: 2%;
+    top: 70px;
+    background-color: #FF0000;
   }
 
   .parrafosus h1 {
@@ -1991,12 +2226,19 @@ ul {
   }
 
   .parrafosus p {
-    top: 100px;
+    top: 180px;
     position: relative;
     font-size: 0.6em;
     text-transform: uppercase;
     text-align: center;
     line-height: 1;
+  }
+
+  .infolanzamiento p {
+    position: relative;
+    top: 150px;
+    text-align: start;
+    padding: 20px;
   }
 
   .parrafosus a {
@@ -2007,7 +2249,7 @@ ul {
     position: relative;
     justify-content: center;
     align-items: center;
-    top: 200px;
+    top: 250px;
     left: 25%;
   }
 
@@ -2145,7 +2387,6 @@ ul {
     position: relative;
     background-color: #ffffff;
     background-size: 400% 400%;
-    font-family: "school";
     display: block;
   }
 
@@ -2224,7 +2465,7 @@ ul {
   .infolanzamiento p {
     font-size: 0.7em;
     text-align: center;
-    margin-top: 150px;
+    bottom: 20px;
   }
 
   .boton a {
@@ -2299,7 +2540,7 @@ ul {
   .bg-model {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: black;
     background-position: center;
     border-radius: 1px;
     top: 0%;
@@ -2319,6 +2560,121 @@ ul {
     box-shadow: 5px 5px 5px;
     border: 0.5px solid;
     background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .model_content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    box-shadow: 5px 5px 5px;
+    background-color: black;
+    bottom: 10%;
+    justify-content: center;
+  }
+
+  .tosuscribe {
+    position: relative;
+    top: 15%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .model_content h1 {
+    position: relative;
+    top: 0%;
+    color: #ffffff;
+    font-size: 4em;
+    padding: auto 100px;
+  }
+
+  .model_content input {
+    top: 200px;
+    position: relative;
+    right: 0%;
+    width: 92%;
+    height: 3em;
+    text-align: center;
+    display: flex;
+    margin: 2em;
+    border-color: #ffffff;
+    margin-bottom: 0px;
+  }
+
+  #send {
+    display: flex;
+    top: 150px;
+    font-size: 1.8em;
+    width: 10em;
+    height: 3em;
+    left: 31%;
+    position: relative;
+    color: #ffffff;
+    background-color: #000000;
+    border: solid white 3px;
+  }
+
+  #send:hover {
+    display: flex;
+    top: 150px;
+    font-size: 1.8em;
+    width: 10em;
+    height: 3em;
+    left: 31%;
+    position: relative;
+    color: #000000;
+    background-color: #ffffff;
+    border: solid rgb(0, 0, 0) 3px;
+  }
+
+  .close {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2em;
+    transform: rotate(45deg);
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .footer {
+    background: linear-gradient(to bottom right, rgb(255, 105, 205), rgb(105, 105, 221), rgb(68, 255, 130), rgb(255, 105, 205));
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+
+  .piepag {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    top: 50px;
+  }
+
+  .piepag div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .piepag img {
+    width: 120px;
+    height: 120px;
+    top: 5px;
+    left: 0%;
+    position: relative;
+  }
+
+  .piepag h5 {
+    top: 50px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+    right: 0%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
 }
 /*_____________________________________________________________Responsive Movil_________________________________________________________________________*/
@@ -2404,7 +2760,7 @@ ul {
     position: relative;
     right: 10px;
     margin: 10px;
-    font-size: 1em;
+    font-size: 1.2em;
     color: white;
   }
 
@@ -2415,7 +2771,7 @@ ul {
   }
 
   .nav-main li a:hover {
-    font-size: 1em;
+    font-size: 1.4em;
   }
 
   .covermenu {
@@ -2492,7 +2848,8 @@ ul {
   }
 
   .container {
-    background-color: white;
+    background-image: url(/imgnonstop/pexels-tima-miroshnichenko-6847537.jpg);
+    background-size: cover;
   }
 
   .container img {
@@ -2529,6 +2886,11 @@ ul {
     width: 50%;
   }
 
+  .nav-brand {
+    margin-top: 60px;
+    position: relative;
+  }
+
   .img1 img {
     width: 240px;
     height: 100px;
@@ -2542,6 +2904,7 @@ ul {
   }
 
   .anunciocontenedor {
+    top: 300px;
     width: 350px;
     position: relative;
   }
@@ -2550,13 +2913,13 @@ ul {
     font-size: 2.3em;
     font-weight: 900;
     text-align: center;
-    top: 50px;
+    top: 10px;
     position: relative;
   }
 
   .anunciocontenedor a {
     left: 15%;
-    top: 120px;
+    top: 70px;
     background-color: #FF0000;
   }
 
@@ -2573,7 +2936,6 @@ ul {
     background-size: 1200px;
     color: rgba(255, 255, 255, 0.945);
     display: inline-block;
-    width: 100%;
     height: 1450px;
     border-bottom: solid white;
     padding: 0;
@@ -2642,6 +3004,27 @@ ul {
     height: 350px;
   }
 
+  .toast {
+    position: absolute;
+    top: 700px;
+    right: 5%;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 7px;
+    box-shadow: 0 1px 2px white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: solid white 1px;
+    border-bottom: none;
+    height: 80px;
+    width: 350px;
+    position: fixed;
+    overflow: hidden;
+    z-index: 10;
+  }
+
   .bg-model {
     width: 100%;
     display: flex;
@@ -2686,7 +3069,7 @@ ul {
   .model_content input {
     top: 200px;
     position: relative;
-    right: 4%;
+    right: 4.5%;
     width: 92%;
     height: 3em;
     text-align: center;
@@ -2704,8 +3087,9 @@ ul {
     height: 3em;
     left: 18%;
     position: relative;
-    color: #000000;
-    background-color: #FBCA1F;
+    color: #ffffff;
+    background-color: #000000;
+    border: solid white 3px;
   }
 
   #send:hover {
@@ -2717,7 +3101,8 @@ ul {
     left: 18%;
     position: relative;
     color: #000000;
-    background-color: #FBCA1F;
+    background-color: #ffffff;
+    border: solid rgb(0, 0, 0) 3px;
   }
 
   .close {
@@ -2777,8 +3162,8 @@ ul {
     position: relative;
     background-color: #ffffff;
     background-size: 400% 400%;
-    font-family: "school";
     display: block;
+    font-family: "Oswald", sans-serif;
   }
 
   .card {
@@ -2805,8 +3190,8 @@ ul {
     justify-content: center;
     display: flex;
     text-align: center;
-    font-family: "school";
     background-color: none;
+    font-family: "Oswald", sans-serif;
   }
 
   #listen {
@@ -2821,24 +3206,8 @@ ul {
     box-shadow: 0.1em 0.1em;
     align-items: center;
     position: relative;
-    left: 9%;
+    left: 11%;
     top: 150px;
-  }
-
-  #listen:hover {
-    color: black;
-    background: #FBCA1F;
-    font-family: inherit;
-    padding: 0.8em 2.5em;
-    font-weight: 900;
-    font-size: 0.3em;
-    border: 3px solid black;
-    border-radius: 0.4em;
-    box-shadow: 0.1em 0.1em;
-    align-items: center;
-    position: relative;
-    left: 15%;
-    top: 180px;
   }
 
   .info {
@@ -2860,21 +3229,23 @@ ul {
     font-size: 1.2em;
     text-align: center;
     position: relative;
-    top: 100px;
-    font-family: "school";
+    top: 20px;
+    font-family: "Oswald", sans-serif;
   }
 
   .infolanzamiento p {
-    font-size: 20px;
-    text-align: center;
-    margin-top: 150px;
+    font-size: 22px;
+    top: -30px;
+    text-align: left;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   .boton a {
     color: black;
     background: #FBCA1F;
     font-family: inherit;
-    padding: 0.8em 1.5em;
+    padding: 0.6em 1.5em;
     font-weight: 900;
     font-size: 0.6em;
     border: 3px solid black;
@@ -2882,9 +3253,9 @@ ul {
     box-shadow: 0.1em 0.1em;
     align-items: center;
     position: relative;
-    top: 100px;
+    top: 40px;
     left: 18%;
-    font-family: "school";
+    font-family: "Oswald", sans-serif;
   }
 
   .boton a:hover {
@@ -3036,10 +3407,15 @@ ul {
   }
 
   .footer {
-    background-color: #FBCA1F;
     width: 100%;
     height: 300px;
     position: relative;
+  }
+
+  .nav-menufooter a {
+    position: relative;
+    top: 40px;
+    font-size: 25px;
   }
 
   .piepag {
@@ -3057,20 +3433,20 @@ ul {
   }
 
   .piepag img {
-    width: 90px;
-    height: 90px;
-    top: -30px;
-    left: 33%;
+    width: 120px;
+    height: 120px;
+    top: 5px;
+    left: 0%;
     position: relative;
   }
 
   .piepag h5 {
-    bottom: 520px;
-    font-size: 12px;
+    top: 50px;
+    font-size: 15px;
     color: rgb(255, 255, 255);
     text-align: center;
     position: relative;
-    right: 14%;
+    right: 0%;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
 }
