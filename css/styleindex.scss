@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +18,7 @@
       }
     body{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        background-color:black;
+        background-image: url(/imgnonstop/pexels-tima-miroshnichenko-6847588.jpg);
         justify-content: center;
         background-size: cover;
         align-items: center;
@@ -38,40 +39,49 @@
   }
   .welcome h1{
       position: relative;
-      color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
       font-size: 13em;
-      font-weight: 700;
-      display: block;
-      left: 10%;
-      top: 200px;
+      font-weight: 900;
+      left: 13%;
+      top: 600px;
       font-family: 'banners';
       z-index: 10;
   }
-
+  
+  .welcome img{
+    position: relative;
+    display: flex;
+    width: 500px;
+    height: 500px;
+    bottom: 100px;
+    left: 51%;
+    display: none;
+  }
   .continue{
     padding: 1.5em 4em;
     font-size: 40px;
-    background-color:#FBCA1F;
+    background-color:#ffffff;
     color: rgb(0, 0, 0);
     text-decoration: none;
     position: relative;
-    right: 42%;
-    top: 200px;
+    right: 40%;
+    top: 600px;
     border-radius: 6px;
     text-align: center;
     font-family: 'school';
   }
 
   .continue:hover{
-    padding: 1em 4em;
-    background-color:#00BCD4;
-    color: rgb(0, 0, 0);
+    padding: 1.5em 4em;
+    font-size: 40px;
+    background-color:#000000;
+    color: rgb(255, 255, 255);
     font-family: 'school';
   }
 .loader {
   display: flex;
-  top:380px;
-  left: 9.5%;
+  top:1000px;
+  left: 13%;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -80,8 +90,8 @@
  
  .out-1 {
   position: absolute;
-  width: 2em;
-  height: 2em;
+  width: 5em;
+  height: 5em;
   border-radius: 100%;
   border: 0.2em solid transparent;
   border-top-color: rgb(43, 226, 83);
@@ -91,8 +101,8 @@
  
  .out-2 {
   position: absolute;
-  width: 2em;
-  height: 2em;
+  width: 5em;
+  height: 5em;
   border-radius: 100%;
   border: 0.2em solid transparent;
   border-left-color: rgb(226, 223, 43);
@@ -102,8 +112,8 @@
  
  .out-3 {
   position: absolute;
-  width: 2em;
-  height: 2em;
+  width: 5em;
+  height: 5em;
   border-radius: 100%;
   border: 0.2em solid transparent;
   border-bottom-color:#00BCD4;
@@ -144,24 +154,36 @@
         
     }
     .welcome h1{
+        top: 220px;
+        left: 10%;
         position: relative;
-        color: white;
-        font-size: 100px;
+        color: rgb(0, 0, 0);
+        font-size: 6em;
         font-weight: 700;
         display: block;
         font-family: 'banners';
         z-index: 10;
     }
 
+    .welcome img{
+      position: relative;
+      display: flex;
+      width: 180px;
+      left: 50%;
+      height: 180px;
+      bottom: 120px;
+      display: none;
+    }
+
     .continue{
       padding: 1em 4em;
       font-size: 18px;
-      background-color:#FBCA1F;
+      background-color:#ffffff;
       color: rgb(0, 0, 0);
       text-decoration: none;
       position: relative;
-      right: 42%;
-      bottom: 100px;
+      right:43%;
+      top: 180px;
       border-radius: 6px;
       text-align: center;
       font-family: 'school';
@@ -169,14 +191,15 @@
 
     .continue:hover{
       padding: 1em 4em;
-      background-color:#00BCD4;
-      color: rgb(0, 0, 0);
+      font-size: 18px;
+      background-color:#000000;
+      color: rgb(255, 255, 255);
       font-family: 'school';
     }
 .loader {
     display: flex;
-    top:380px;
-    left: 9.5%;
+    top:350px;
+    left: 8.5%;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -189,7 +212,7 @@
     height: 2em;
     border-radius: 100%;
     border: 0.2em solid transparent;
-    border-top-color: rgb(255, 255, 255);
+    border-top-color: rgb(0, 0, 0);
     animation: rec 2s infinite;
     transition: all ease-in-out 0.3s;
    }
@@ -219,7 +242,7 @@
    .in {
     position: absolute;
     border-radius: 100%;
-    border: 0.2em solid rgba(0, 0, 0, 0.11);
+    border: 0.2em solid rgba(255, 255, 255, 0.11);
     width: 4em;
     height: 4em;
     transition: all ease-in-out 0.3s;
@@ -237,6 +260,7 @@
   body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgb(0, 0, 0);
+    background-image: none;
     justify-content: center;
     background-size: 600px;
     background-repeat: no-repeat;
@@ -256,42 +280,49 @@
 }
 .welcome h1{
   position: relative;
-  top: 250px;
+  top: 400px;
   color: rgb(255, 255, 255);
-  font-size: 4em;
-  left: 0%;
+  font-size: 5em;
+  left: 20%;
   font-weight: 700;
   font-family: 'banners';
   align-items: center;
   text-align:center;
   padding-left: 10px;
 }
+
+.welcome img{
+  width: 300px;
+  height: 300px;
+  left:45%;
+  top: 10px;
+  position: relative;
+}
 .continue{
-  border: blue solid;
-  padding: 1em 4em;
+  padding: 1.5em 4em;
   font-size: 18px;
-  background-color:#FBCA1F;
+  background-color:#00BCD4;
   color: rgb(0, 0, 0);
   text-decoration: none;
   position: relative;
-  bottom: 100px;
+  top: 200px;
+  right : 36%;
   border-radius: 6px;
   text-align: center;
   font-family: 'school';
-  display: none;
 }
 
 .continue:hover{
   padding: 1em 4em;
-  background-color:#00BCD4;
+  background-color:#ffffff;
   color: rgb(0, 0, 0);
   font-family: 'school';
 }
 .loader {
   width: 100%;
   display: flex;
-  top:380px;
-  left: 0%;
+  top:700px;
+  left: 18%;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -346,117 +377,107 @@
   }
  }
 }
-@media (max-width: 480px) {
+@media (max-width: 550px) {
   
-  body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgb(0, 0, 0);
-    justify-content: center;
-    background-size: 600px;
-    background-repeat: no-repeat;
-    align-items: center;
-    display: flex;
+    body{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-image: none;
+      background-size: 100% 2000px;
+      justify-content: center;
+      background-size: 600px;
+      background-repeat: no-repeat;
+      align-items: center;
+      display: flex;
+      position: relative;
+  }
+  
+  .welcome{
+    width: 100%;
+    height: 900px;
+    display: block;
     position: relative;
-}
-
-.welcome{
-  width: 100%;
-  height: 900px;
-  display: block;
-  color: rgb(255, 255, 255);
-  justify-content: center;
-  text-align: center;
-  
-}
-.welcome h1{
-  position: relative;
-  top: 250px;
-  color: rgb(255, 255, 255);
-  font-size: 2.2em;
-  left: 0%;
-  font-family: 'bannersy';
-  align-items: center;
-  text-align:center;
-  padding-left: 10px;
-}
-.continue{
-  border: blue solid;
-  padding: 1em 4em;
-  font-size: 18px;
-  background-color:#FBCA1F;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  position: relative;
-  bottom: 100px;
-  border-radius: 6px;
-  text-align: center;
-  font-family: 'school';
-  display: none;
-}
-
-.continue:hover{
-  padding: 1em 4em;
-  background-color:#00BCD4;
-  color: rgb(0, 0, 0);
-  font-family: 'school';
-}
-.loader {
-  width: 100%;
-  display: flex;
-  top:380px;
-  left: 0%;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  font-family: Arial, Helvetica, sans-serif;
- }
- 
- .out-1 {
-  position: absolute;
-  width: 3em;
-  height: 3em;
-  border-radius: 100%;
-  border: 0.2em solid transparent;
-  border-top-color: rgb(255, 255, 255);
-  animation: rec 2s infinite;
-  transition: all ease-in-out 0.3s;
- }
- 
- .out-2 {
-  position: absolute;
-  width: 3em;
-  height: 3em;
-  border-radius: 100%;
-  border: 0.2em solid transparent;
-  border-left-color: rgb(226, 223, 43);
-  animation: rec 2s infinite;
-  transition: all ease-in-out 0.3s;
- }
- 
- .out-3 {
-  position: absolute;
-  width: 3em;
-  height: 3em;
-  border-radius: 100%;
-  border: 0.2em solid transparent;
-  border-bottom-color:#00BCD4;
-  animation: rec 2s infinite;
-  transition: all ease-in-out 0.3s;
- }
- 
- .in {
-  position: absolute;
-  border-radius: 100%;
-  border: 0.2em solid rgba(0, 0, 0, 0.11);
-  width: 4em;
-  height: 4em;
-  transition: all ease-in-out 0.3s;
- }
- 
- @keyframes rec {
-  0% {
-   transform: rotate(360deg);
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    text-align: center;
+    
   }
- }
+  .welcome h1{
+    position: relative;
+    top: 380px;
+    color: rgb(255, 255, 255);
+    font-size: 2.9em;
+    left: -1%;
+    align-items: center;
+    text-align:center;
+    padding-left: 10px;
+  }
 
-}
+  .welcome img{
+    position: relative;
+    left: 11%;
+    display: flex;
+
+  }
+  .continue{
+    display: none;
+  }
+  .loader {
+    width: 100%;
+    display: flex;
+    top:230px;
+    left: 0%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   
+   .out-1 {
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    border: 0.2em solid transparent;
+    border-top-color: rgb(0, 0, 0);
+    animation: rec 2s infinite;
+    transition: all ease-in-out 0.3s;
+   }
+   
+   .out-2 {
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    border: 0.2em solid transparent;
+    border-left-color: rgb(226, 223, 43);
+    animation: rec 2s infinite;
+    transition: all ease-in-out 0.3s;
+   }
+   
+   .out-3 {
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    border: 0.2em solid transparent;
+    border-bottom-color:#00BCD4;
+    animation: rec 2s infinite;
+    transition: all ease-in-out 0.3s;
+   }
+   
+   .in {
+    position: absolute;
+    border-radius: 100%;
+    border: 0.2em solid rgba(0, 0, 0, 0.11);
+    width: 4em;
+    height: 4em;
+    transition: all ease-in-out 0.3s;
+   }
+   
+   @keyframes rec {
+    0% {
+     transform: rotate(360deg);
+    }
+   }
+  
+  }

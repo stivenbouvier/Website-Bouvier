@@ -62,15 +62,15 @@ ul {
 }
 .blackhead{
   cursor: pointer;
-  background-color: white;
-  height: 35px;
+  background-color: rgb(0, 0, 0);
+  height: 40px;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 .blackhead h1{
   font-size: 30px;
-  color: #000000;
+  color: #ffffff;
   position: relative;
   text-align: center;
 }
@@ -266,7 +266,7 @@ transform-origin: bottom left;
   border-bottom: solid #ffffff;
 }
 .container{
-  background-image: url(/imgnonstop/Lovesick.jpg);
+  background-image: url(/imgnonstop/pexels-tima-miroshnichenko-6847588.jpg);
   background-size: cover;
   height: 800px;
 
@@ -277,6 +277,7 @@ transform-origin: bottom left;
   position: relative;
   top: 500px;
   left: 8%;
+  display:none;
 }
 
 .coming {
@@ -637,13 +638,12 @@ input[type=range]::-webkit-slider-thumb {
   align-items: center;
   justify-content: center;
   box-shadow: #ffffff;
-  color: pink;
+  color: rgb(0, 0, 0);
   right: 10%;
   left: 30px;
   position: relative;
-  border: solid black;
   margin-left: 25px;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 .medium p {
@@ -653,7 +653,7 @@ input[type=range]::-webkit-slider-thumb {
   align-items: center;
   margin-left: 15px;
   font-family: 'banners';
-  font-size: 100px;
+  font-size: 120px;
 }
 
 .inforevista {
@@ -666,7 +666,7 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: 60px;
   left: 57px;
   position: relative;
-  background-color: #000000;
+  background-color: rgb(255, 255, 255);
 }
 
 .suscribemusic{
@@ -696,7 +696,7 @@ input[type=range]::-webkit-slider-thumb {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 80px;
   font-weight: 40px;
 }
@@ -714,13 +714,40 @@ input[type=range]::-webkit-slider-thumb {
 
 /* Footer */
 .footer {
-  background-color:#FBCA1F;
+  position: relative;
+  background: linear-gradient(to bottom right, rgb(255, 105, 205),rgb(105, 105, 221), rgb(68, 255, 130), rgb(255, 105, 205));
   width: 100%;
   height: 300px;
-  display: flex;
   align-items: center;
   justify-content: center;
-}
+  }
+  .nav-mainfooter{
+    position: relative;
+    top: 150px;
+    display: grid;
+    border: none;
+  }
+  
+  .nav-menufooter{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  
+  .nav-menufooter a{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-size: 30px;
+  }
+
+  .nav-menufooter a:hover{
+    color: white;
+    font-size: 30px;
+    box-shadow: 1px 3px 12px black;
+    border-radius: 9px;
+  }
 
 .redes {
   display: flex;
@@ -886,15 +913,17 @@ input[type=range]::-webkit-slider-thumb {
   }
   .blackhead{
     cursor: pointer;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     height: 25px;
+    color: white;
     text-align: center;
     align-items: center;
     justify-content: center;
   }
   .blackhead h1{
-    font-size: 12px;
-    color: #000000;
+    top:2px;
+    font-size: 15px;
+    color: #ffffff;
     position: relative;
   }
   .blackhead:hover{
@@ -1015,12 +1044,13 @@ transform-origin: bottom left;
   height: 150px;
   position: relative;
   left: 4.8%;
+  display:none;
   top: 40px;
 }
 .container{
-  background-image: url(/imgnonstop/Lovesick.jpg);
+  background-image: url(/imgnonstop/pexels-tima-miroshnichenko-6847537.jpg);
   background-size: cover;
-  height: 400px;
+  height: 700px;
 
 }
 .comingsoon h1{
@@ -1275,15 +1305,19 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .medium{
-  background-color: #000000;
+  background-color: white;
   left: 10px;
   position: relative;
+  border: none;
 }
 
 .medium p{
-  font-family: 'banners';
+  border: none;
+  color: #000000;
 }
-
+.inforevista{
+  background-color: white;
+}
 .suscribemusic{
   position: relative;
   text-decoration: none;
@@ -1315,16 +1349,44 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .newsletterrevista{
+  color: #000000;
   bottom: 130px;
   position: relative;
 }
 
 .footer {
-  background-color:#FBCA1F;
+  background: linear-gradient(to bottom right, rgb(255, 105, 205),rgb(105, 105, 221), rgb(68, 255, 130), rgb(255, 105, 205));
   width: 100%;
   height: 200px;
   align-items: center;
   justify-content: center;
+  }
+  .nav-mainfooter{
+    position: relative;
+    top: 90px;
+    display: grid;
+    border: none;
+  }
+  
+  .nav-menufooter{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  
+  .nav-menufooter a{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-size: 18px;
+  }
+
+  .nav-menufooter a:hover{
+    color: white;
+    font-size: 20px;
+    box-shadow: 1px 3px 12px black;
+    border-radius: 9px;
   }
 
 .piepag {
@@ -1479,6 +1541,47 @@ input[type=range]::-webkit-slider-thumb {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------------------------Responsive Movil------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 480px) {
   .showcase {
     align-items: center;
@@ -1559,7 +1662,7 @@ input[type=range]::-webkit-slider-thumb {
 
   .nav-main li a {
     position: relative; 
-    font-size: 2.2em;
+    font-size: 1.2em;
     margin: 10px;
     top: -100px;
     color: rgb(255, 255, 255);
@@ -1568,7 +1671,7 @@ input[type=range]::-webkit-slider-thumb {
   .nav-main ul li a {
    left: 10%;
     color: white;
-    font-size: 1em;
+    font-size: 1.6em;
   }
   
   .nav-main li {
@@ -1576,7 +1679,7 @@ input[type=range]::-webkit-slider-thumb {
     position: relative;
     right: 10px;
     margin: 10px;
-    font-size: 2em;
+    font-size: 1.2em;
     color: white;
   }
 
@@ -1872,6 +1975,7 @@ input[type=range]::-webkit-slider-thumb {
     bottom: 50px;
     left: -31px;
     width: 100%;
+    background-color: white;
   }
 
   .medium p {
@@ -1879,7 +1983,7 @@ input[type=range]::-webkit-slider-thumb {
     margin-left: 0;
     margin-top: 0;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
   }
 
   .inforevista {
@@ -1915,9 +2019,8 @@ input[type=range]::-webkit-slider-thumb {
 
     position: relative;
     top: 230px;
-    height: 200px;
+    height: 190px;
     padding-top: 10px;
-    background-color: #FF0000;
   }
 
   .redes {

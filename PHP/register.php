@@ -30,8 +30,8 @@ function insertar($conexion){
 
 // se genera el if para que desde $envio referente a los datos envios exitosos envio mensaje prompt de suscripcion y dirije a la pagona principal.
     if($envio){
-    echo "<script> alert('Se ha enviado tu suscripcion satisfactoriamente')
-    ;window.location='/index.html'</script>";
+    echo "<script> alert('Great ! Thank You For Your Suscription')
+    ;window.location='/news.html'</script>";
     }
 
 }
