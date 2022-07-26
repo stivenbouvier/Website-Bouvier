@@ -1,955 +1,969 @@
 @charset "UTF-8";
+
+@font-face {
+  font-family:'banners';
+src: url(/fuentes/Hey\ August.ttf);
+}
+
+@font-face {
+  font-family:'bannersy';
+src: url(/fuentes/Brotherhood\ Brush.ttf);
+}
+
+@font-face {
+  font-family:'school';
+src: url(/fuentes/BEACHWORKS.ttf);
+}
 * {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-background-color: #000000;
-font-size: 16px;
-font-family: "Oswald", sans-serif;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
 }
 
 a {
-text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-list-style: none;
+  list-style: none;
 }
 
 /* Showcase */
 .showcase {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    background-color: #ffffff;
-    position: fixed;
-    z-index: 10;
-    
-   }
-   .cta {
-    border: none;
-    background: none;
-    font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    .cta span {
-    padding-bottom: 7px;
-    letter-spacing: 4px;
-    font-size: 12px;
-    padding-right: 15px;
-    text-transform: uppercase;
-   }
-   
-   .cta svg {
-    transform: translateX(-8px);
-    transition: all 0.3s ease;
-   }
-   
-   .cta:hover svg {
-    transform: translateX(0);
-   }
-   
-   .cta:active svg {
-    transform: scale(0.9);
-   }
-   
-   .hover-underline-animation {
-    position: relative;
-    color: black;
-    padding-bottom: 20px;
-   }
-   
-   .hover-underline-animation:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1.5px;
-    bottom: 0;
-    left: 0;
-    background-color: #000000;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 10;
+}
+.cta {
+  border: none;
+  background: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 20px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
 .cta:hover .hover-underline-animation:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .nav-menurigth {
-display: flex;
-align-items: center;
-justify-content: center;
-cursor: pointer;
-width: 70px;
-height: 70px;
-position: relative;
-left: 90%;
-padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  left: 90%;
+  padding: 10px;
 }
 
 .nav-menurigth ion-icon:hover {
-color: #000000;
-width: 20px;
-height: 20px;
+  color: #000000;
+  width: 20px;
+  height: 20px;
 }
 
 .nav-menurigth a ion-icon {
-color: #000000;
-width: 30px;
-height: 30px;
-border-radius: 50%;
+  color: #000000;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 .nav-toggle {
-color: white;
-background: none;
-border: none;
-font-size: 40px;
-padding: 0 20px;
-line-height: 60px;
-cursor: pointer;
-display: none;
+  color: white;
+  background: none;
+  border: none;
+  font-size: 40px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none;
 }
 
 .container {
-display: flex;
-width: 100%;
-height: 200px;
-background-image: url(/imgnonstop/pexels-ron-lach-8973009.jpg);
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
+  display: flex;
+  width: 100%;
+  height:700px;
+  background-image: url(/imgnonstop/pexels-tima-miroshnichenko-6847537.jpg);
+  background-position-x:top 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Navegacion */
 .nav-main {
-display: flex;
-justify-content: center;
-align-items: center;
-width: 40%;
-font-size: 25px;
-height: 200px;
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  font-size: 37px;
+  height: 200px;
 }
 
 .covermenu {
-display: none;
+  display: none;
 }
 
 .nav-main2 {
-display: flex;
-justify-content: center;
-align-items: center;
-width: 40%;
-font-size: 25px;
-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  font-size: 25px;
+  height: 200px;
 }
 
 .nav-menu {
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-menu2 {
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* nav left */
 .nav-main li {
-padding: 10px;
-margin: 10px;
+  padding: 10px;
+  margin: 10px;
 }
 
 .nav-main ul li a {
-padding: 4px;
-color: #ffffff;
+  padding: 4px;
+  color: #ffffff;
 }
 
 .nav-main li a:hover {
-font-size: 30px;
-border-bottom: solid #eaf81e;
+  font-size: 30px;
+  border-bottom: solid #eaf81e;
 }
 
 .nav-main2 li {
-padding: 10px;
-margin: 10px;
+  padding: 10px;
+  margin: 10px;
 }
 
 .nav-main2 li a {
-padding: 4px;
-color: #ffffff;
+  padding: 4px;
+  color: #ffffff;
 }
 
 .nav-main2 li a:hover {
-font-size: 30px;
-border-bottom: solid #eaf81e;
+  font-size: 30px;
+  border-bottom: solid #eaf81e;
 }
 
 .container img {
-width: 250px;
-height: 250px;
-position: relative;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  display: none;
 }
 
-
-.welcome{
-    color: #FFFFFF;
-    width: 100%;
-    height: 400px;
-    display: grid;
-    grid-template-columns: 30% 25%;
-    font-size:30px;
-    justify-content:center;
-    margin-top: 70px;
-    position: relative;
+.welcome {
+  color: #000000;
+  width: 100%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 30% 25%;
+  font-size: 30px;
+  justify-content: center;
+  margin-top: 70px;
+  position: relative;
 }
 
-.welcome h1{
-  display:flex;
+.welcome h1 {
+  display: flex;
   width: 100%;
   font-size: 80px;
   text-align: left;
   top: 130px;
+  color: #000;
   position: relative;
 }
 .containers {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25% 25%;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    width: 600px;
-    top: 150px;
-    position: relative;
-    
-    
-  }
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25% 25%;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 600px;
+  top: 150px;
+  position: relative;
+}
 
-    #spotify{
-    width: 100px;
-    height: 100px;
-    display:flex;
-    cursor: pointer;
-    
-  }
-  #spotify:hover{
-    width: 110px;
-    height: 110px;
-  }
-  #youtube{
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
-  }
+#spotify {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  cursor: pointer;
+}
+#spotify:hover {
+  width: 110px;
+  height: 110px;
+}
+#youtube {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
 
-  #youtube:hover{
-    width: 110px;
-    height: 110px;
-   
-  }
-  #itunes{
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
-  }
+#youtube:hover {
+  width: 110px;
+  height: 110px;
+}
+#itunes {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
 
-  #itunes:hover{
-    width: 110px;
-    height: 110px;
-    
-   
-  }
-  #soundcload{
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
+#itunes:hover {
+  width: 110px;
+  height: 110px;
+}
+#soundcload {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
   /*StoreMusic*/
-  }
-
-  #soundcload:hover{
-    width: 110px;
-    height: 110px;
-   
-  }
-
-    #dezeer{
-    width: 100px;
-    height: 100px;
-    display:flex;
-    cursor: pointer;
-    
-  }
-  #dezeer:hover{
-    width: 110px;
-    height: 110px;
-  }
-.animated-background{
-    width: 100%;
-    height: 1500px;
-    background: linear-gradient(
-        to right, #1ce20a, #f0701b, #fc45c5);
-    background-size: 400% 400%;
-    animation: animate 10s infinite ease-in-out;
 }
 
-@keyframes animate{
-0% {
+#soundcload:hover {
+  width: 110px;
+  height: 110px;
+}
+
+#dezeer {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  cursor: pointer;
+}
+#dezeer:hover {
+  width: 110px;
+  height: 110px;
+}
+.animated-background {
+  width: 100%;
+  height: 1500px;
+  background: linear-gradient(to right, #d3f8d0, #f8e7ef, #fff5fc);
+  background-size: 400% 400%;
+  animation: animate 10s infinite ease-in-out;
+}
+
+@keyframes animate {
+  0% {
     background-position: 0% 50%;
-}
-50%{
+  }
+  50% {
     background-position: 100% 50%;
-}
-100%{
+  }
+  100% {
     background-position: 0% 50%;
-}
+  }
 }
 
-.titulostore h1{
-    color: #ffffff;
-    font-size: 90px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    
+.titulostore h1 {
+  color: #000000;
+  font-size: 170px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .tiendamusic {
-    
-    color: #000;
-    width: 100%;
-    height: 1500px;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+  color: #000;
+  width: 100%;
+  height: 1500px;
+  display: grid;
+  grid-template-columns:50% 50%;
+}
+
+.titulomusica {
+  border: solid black;
+}
+.titulomusica h1 {
+    position: relative;
+    top: 340px;
+    text-align: center;
+    font-size: 140px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#applemusic{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -1px;
+}
+
+.titulomusica p{
+    border: solid;
+    position: relative;
+    font-size: 40px;
+    top: 358px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .card {
-    margin-top: 100px;
-    margin-left: 50px;
-    width: 190px;
-    height: 254px;
-    border-radius: 1em;
-    padding: 1.5rem;
-    background: #f5f5f5;
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    transition: 0.4s ease-out;
-    box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);
-   }
-   
-   .card:before {
-    content: "$1.25 USD";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 252, 252, 0.6);
-    z-index: 2;
-    transition: 0.5s;
-    opacity: 0;
-   }
-   
-   .card-info {
-    position: relative;
-    z-index: 3;
-    color: #f5f5f5;
-    opacity: 0;
-    transform: translateY(20%);
-    transition: 0.5s;
-   }
-   
-   /*Text*/
-   .text-title {
-    font-size: 1.5rem;
-    font-weight: 500;
-   }
-   
-   .text-body {
-    letter-spacing: 1px;
-    font-size: 0.9rem;
-    margin: 5px 0 15px 0;
-   }
-   
-   /*Button*/
-   .card-button {
-    padding: 0.6rem;
-    outline: none;
-    border: none;
-    border-radius: 4px;
-    background: #f5f5f5;
-    color: #000;
-    font-weight: bold;
-    transition: 0.4s ease;
-   }
-   
-   /*Image*/
-   .card-img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to bottom, #e7aeae, #ee9ca7);
-   }
-   
-   /*Hover*/
-   .card:hover {
-    transform: translateY(10%);
-   }
-   
-   .card:hover:before {
-    opacity: 1;
-   }
-   
-   .card:hover .card-info {
-    opacity: 1;
-    transform: translateY(0);
-   }
-   
-   .card-button:hover {
-    background: dodgerblue;
-    color: #f5f5f5;
-   }
+  margin-top: 100px;
+  margin-left: 50px;
+  width: 600px;
+  height: 600px;
+  border-radius: 1em;
+  padding: 1.5rem;
+  background: #f5f5f5;
+  position: relative;
+  left: 30%;
+  top: 150px;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);
+}
 
-   .card2 {
-    margin-left: 50px;
-    margin-top: 100px;
-    width: 190px;
-    height: 254px;
-    border-radius: 1em;
-    padding: 1.5rem;
-    background: #f5f5f5;
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    transition: 0.4s ease-out;
-    box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);
-   }
-   
-   .card2:before {
-    content: "$1.25 USD";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 252, 252, 0.9);
-    z-index: 2;
-    transition: 0.5s;
-    opacity: 0;
-   }
-   
-   .card2-info {
-    position: relative;
-    z-index: 3;
-    color: #f5f5f5;
-    opacity: 0;
-    transform: translateY(20%);
-    transition: 0.5s;
-   }
-   
-   /*Text*/
-   .text-title {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: black;
-   }
-   
-   .text-body {
-    letter-spacing: 1px;
-    font-size: 0.9rem;
-    margin: 5px 0 15px 0;
-    color: black;
-   }
-   
-   /*Button*/
-   .card2-button {
-    padding: 0.6rem;
-    outline: none;
-    border: none;
-    border-radius: 4px;
-    background: #f5f5f5;
-    color: #000;
-    font-weight: bold;
-    transition: 0.4s ease;
-    }
-    .card2-img img{
-    width: 239px;
-    height: 302px;
-    }
-    /*Image*/
-    .card2-img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #ee9ca7;
-    background: linear-gradient(to bottom, #e7aeae, #ee9ca7);
-    }
+.card:before {
+  content: "New Album";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 700px;
+  height: 700px;
+  background: white;
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.card-info {
+  width: 450px;
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  left: 18%;
+  bottom: 30%;
+  z-index: 3;
+  color: #f5f5f5;
+  opacity: 0;
+  transform: translateY(20%);
+  transition: 0.5s;
+}
+
+/*Text*/
+.text-title {
+  font-size: 90px;
+  font-weight: 500;
+}
+
+.text-body {
+  letter-spacing: 1px;
+  font-size: 25px;
+  margin: 5px 0 15px 0;
+}
+ .card-info p{
+  position: relative;
+  bottom: 20px;
+  letter-spacing: 2px;
+  font-size: 60px;
+ }
+
+ .card-info h1{
+  font-size: 40px;
+ }
+
+ .card-info h2 {
+  font-size: 40px;
+  color: #000;
+ }
+/*Button*/
+.card-info button {
+  padding: 2em 4em;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background: dodgerblue;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+
+/*Image*/
+.card-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #e7aeae, #ee9ca7);
+}
+
+.card-img img {
+  width: 700px;
+  height: 700px;
+}
+/*Hover*/
+.card:hover {
+  transform: translateY(10%);
+}
+
+.card:hover:before {
+  opacity: 1;
+}
+
+.card:hover .card-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-info button:hover {
+  background: rgb(0, 0, 0);
+  color: #f5f5f5;
+}
+
+.card2 {
+  margin-left: 50px;
+  margin-top: 100px;
+  width: 190px;
+  height: 254px;
+  border-radius: 1em;
+  padding: 1.5rem;
+  background: #f5f5f5;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);
+}
+
+.card2:before {
+  content: "$1.25 USD";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 600px;
+  height: 600px;
+  background: rgba(255, 252, 252, 0.1);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.card2-info {
+  position: relative;
+  z-index: 3;
+  color: #f5f5f5;
+  opacity: 0;
+  transform: translateY(20%);
+  transition: 0.5s;
+}
+
+/*Text*/
+.text-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+}
+
+.text-body {
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  margin: 5px 0 15px 0;
+  color: black;
+}
+
+/*Button*/
+.card2-button {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background: #f5f5f5;
+  color: #000;
+  font-weight: bold;
+  transition: 0.4s ease;
+}
+.card2-img img {
+  width: 239px;
+  height: 302px;
+}
+/*Image*/
+.card2-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ee9ca7;
+  background: linear-gradient(to bottom, #e7aeae, #ee9ca7);
+}
 
 /*Hover*/
-   .card2:hover {
-    transform: translateY(10%);
-    }
-   
-   .card2:hover:before {
-    opacity: 1;
-   }
-   
-   .card2:hover .card-info {
-    opacity: 1;
-    transform: translateY(0);
-   }
-   
-   .card2-button:hover {
-    background: dodgerblue;
-    color: #f5f5f5;
-   }
+.card2:hover {
+  transform: translateY(10%);
+}
 
-   .card3 {
-    margin-top: 100px;
-    margin-left: 50px;
-    width: 190px;
-    height: 254px;
-    border-radius: 1em;
-    padding: 1.5rem;
-    background: #f5f5f5;
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    transition: 0.4s ease-out;
-    box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);
-   }
-   
-   .card3:before {
-    content: "$1.25 USD";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 252, 252, 0.6);
-    z-index: 2;
-    transition: 0.5s;
-    opacity: 0;
-   }
-   
-   .card3-info {
-    position: relative;
-    z-index: 3;
-    color: #f5f5f5;
-    opacity: 0;
-    transform: translateY(20%);
-    transition: 0.5s;
-   }
-   
-   /*Text*/
-   .text-title {
-    font-size: 1.5rem;
-    font-weight: 500;
-   }
-   
-   .text-body {
-    letter-spacing: 1px;
-    font-size: 0.9rem;
-    margin: 5px 0 15px 0;
-   }
-   
-   /*Button*/
-   .card3-button {
-    padding: 0.6rem;
-    outline: none;
-    border: none;
-    border-radius: 4px;
-    background: #f5f5f5;
-    color: #000;
-    font-weight: bold;
-    transition: 0.4s ease;
-   }
-   
-   /*Image*/
-   .card3-img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to bottom, #e7aeae, #ee9ca7);
-   }
-   
-   /*Hover*/
-   .card3:hover {
-    transform: translateY(10%);
-   }
-   
-   .card3:hover:before {
-    opacity: 1;
-   }
-   
-   .card3:hover .card-info {
-    opacity: 1;
-    transform: translateY(0);
-   }
-   
-   .card-button:hover {
-    background: dodgerblue;
-    color: #f5f5f5;
-   }
+.card2:hover:before {
+  opacity: 1;
+}
 
-   .card4 {
-    margin-top: 100px;
-    margin-left: 50px;
-    width: 190px;
-    height: 254px;
-    border-radius: 1em;
-    padding: 1.5rem;
-    background: #f5f5f5;
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    transition: 0.4s ease-out;
-    box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);
-   }
-   
-   .card4:before {
-    content: "$1.25 USD";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 252, 252, 0.6);
-    z-index: 2;
-    transition: 0.5s;
-    opacity: 0;
-   }
-   
-   .card4-info {
-    position: relative;
-    z-index: 3;
-    color: #f5f5f5;
-    opacity: 0;
-    transform: translateY(20%);
-    transition: 0.5s;
-   }
-   
-   /*Text*/
-   .text-title {
-    font-size: 1.5rem;
-    font-weight: 500;
-   }
-   
-   .text-body {
-    letter-spacing: 1px;
-    font-size: 0.9rem;
-    margin: 5px 0 15px 0;
-   }
-   
-   /*Button*/
-   .card-button {
-    padding: 0.6rem;
-    outline: none;
-    border: none;
-    border-radius: 4px;
-    background: #f5f5f5;
-    color: #000;
-    font-weight: bold;
-    transition: 0.4s ease;
-   }
-   
-   /*Image*/
-   .card4-img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to bottom, #e7aeae, #ee9ca7);
-   }
-   
-   /*Hover*/
-   .card4:hover {
-    transform: translateY(10%);
-   }
-   
-   .card4:hover:before {
-    opacity: 1;
-   }
-   
-   .card4:hover .card-info {
-    opacity: 1;
-    transform: translateY(0);
-   }
-   
-   .card4-button:hover {
-    background: dodgerblue;
-    color: #f5f5f5;
-   }
+.card2:hover .card-info {
+  opacity: 1;
+  transform: translateY(0);
+}
 
-   //seccion NFT
+.card2-button:hover {
+  background: dodgerblue;
+  color: #f5f5f5;
+}
 
-    
+.card3 {
+  margin-top: 100px;
+  margin-left: 50px;
+  width: 190px;
+  height: 254px;
+  border-radius: 1em;
+  padding: 1.5rem;
+  background: #f5f5f5;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);
+}
+
+.card3:before {
+  content: "$1.25 USD";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 252, 252, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.card3-info {
+  position: relative;
+  z-index: 3;
+  color: #f5f5f5;
+  opacity: 0;
+  transform: translateY(20%);
+  transition: 0.5s;
+}
+
+/*Text*/
+.text-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.text-body {
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  margin: 5px 0 15px 0;
+}
+
+/*Button*/
+.card3-button {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background: #f5f5f5;
+  color: #000;
+  font-weight: bold;
+  transition: 0.4s ease;
+}
+
+/*Image*/
+.card3-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #e7aeae, #ee9ca7);
+}
+
+/*Hover*/
+.card3:hover {
+  transform: translateY(10%);
+}
+
+.card3:hover:before {
+  opacity: 1;
+}
+
+.card3:hover .card-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-button:hover {
+  background: dodgerblue;
+  color: #f5f5f5;
+}
+
+.card4 {
+  margin-top: 100px;
+  margin-left: 50px;
+  width: 190px;
+  height: 254px;
+  border-radius: 1em;
+  padding: 1.5rem;
+  background: #f5f5f5;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);
+}
+
+.card4:before {
+  content: "$1.25 USD";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 252, 252, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.card4-info {
+  position: relative;
+  z-index: 3;
+  color: #f5f5f5;
+  opacity: 0;
+  transform: translateY(20%);
+  transition: 0.5s;
+}
+
+/*Text*/
+.text-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.text-body {
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  margin: 5px 0 15px 0;
+}
+
+/*Button*/
+.card-button {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background: #f5f5f5;
+  color: #000;
+  font-weight: bold;
+  transition: 0.4s ease;
+}
+
+/*Image*/
+.card4-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #e7aeae, #ee9ca7);
+}
+
+/*Hover*/
+.card4:hover {
+  transform: translateY(10%);
+}
+
+.card4:hover:before {
+  opacity: 1;
+}
+
+.card4:hover .card-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card4-button:hover {
+  background: dodgerblue;
+  color: #f5f5f5;
+}
+
+//seccion NFT
+
 /*Boton youtube*/
 /* Footer */
-.anunciosocialmedia{
-    width: 100%;
-    height: 600px;
-    display:grid;
-    grid-template-columns: 50% 50%;
-    background-color: #FFFFFF;
+.anunciosocialmedia {
+  width: 100%;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #ffffff;
 }
-.socialmediaadds{
-    
-    display: grid;
-    grid-template-columns: 25% 20%;
-}
-
-.socialmediaadds h1{
-    font-size: 90px;
-    display: flex;
-    position: relative;
-    left: 60px;
-    top: 50px;
-    
-}
-#twsocial{
-    width:100px;
-    height: 100px;
-    display: flex;
-    position: relative;
-    top: 200px;
-    left: 250px;
+.socialmediaadds {
+  display: grid;
+  grid-template-columns: 25% 20%;
 }
 
-#socialaviso{
-    display: flex;
-    position: relative;
-    left: 80px;
-    width: 400px;
-    height:400px;
-    top: 50px;
+.socialmediaadds h1 {
+  font-size: 90px;
+  display: flex;
+  position: relative;
+  left: 60px;
+  top: 50px;
+}
+#twsocial {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  position: relative;
+  top: 200px;
+  left: 250px;
+}
+
+#socialaviso {
+  display: flex;
+  position: relative;
+  left: 80px;
+  width: 400px;
+  height: 400px;
+  top: 50px;
 }
 .footer {
-background-color: #ffffff;
-width: 100%;
-height: 200px;
-display:grid;
-grid-template-columns: 50% 50%;
-align-items: center;
-justify-content: center;
+  background-color: #ffffff;
+  width: 100%;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-content: center;
 }
 
-
-
-
-.redessociales{
-    background-color: #ffffff;
-    width: 100%;
-    height: 200px;
-    display: grid;
-    grid-template-columns: 15% 15% 15% 15% 15%;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    bottom: 100px;
-    }
+.redessociales {
+  background-color: #ffffff;
+  width: 100%;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15% 15%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 100px;
+}
 #facebook {
-display: flex;
-width: 100px;
-height: 100px;
-margin: 10px;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
 }
 
-.facebook h4{
-    display:flex;
-    color: #000000;
-    font-size: 30px;
-    
-    text-align: center;
+.facebook h4 {
+  display: flex;
+  color: #000000;
+  font-size: 30px;
+
+  text-align: center;
 }
 #twitter {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    }
-    
-    .twitter h4{
-        display: flex;
-        color: #000000;
-        font-size: 30px;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-    }
-    
-    #instagram {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    }
-    
-    .instagram h4{
-        display: flex;
-        color: #000000;
-        font-size: 30px;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-    }
-    #snapchat {
-        display: flex;
-        width: 100px;
-        height: 100px;
-        margin: 10px;
-        }
-        
-        .snapchat h4{
-            display: flex;
-            color: #000000;
-            font-size: 30px;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-        }
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
 
-        #tiktok {
-            display: flex;
-            width: 100px;
-            height: 100px;
-            margin: 10px;
-            }
-            
-            .tiktok h4{
-                display: flex;
-                color: #000000;
-                font-size: 30px;
-                font-family: Arial, Helvetica, sans-serif;
-                text-align: center;
-            }
-    
+.twitter h4 {
+  display: flex;
+  color: #000000;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#instagram {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.instagram h4 {
+  display: flex;
+  color: #000000;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+#snapchat {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.snapchat h4 {
+  display: flex;
+  color: #000000;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#tiktok {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.tiktok h4 {
+  display: flex;
+  color: #000000;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
 
 .piepag {
-width: 100%;
-height: 250px;
-display: block;
-align-items: center;
-justify-content: center;
+  width: 100%;
+  height: 250px;
+  display: block;
+  align-items: center;
+  justify-content: center;
 }
 .piepag div {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .piepag img {
-width: 180px;
-height: 180px;
-bottom: 20px;
+  width: 180px;
+  height: 180px;
+  bottom: 20px;
 }
 
 .piepag h5 {
-font-size: 15px;
-color: rgb(255, 255, 255);
-text-align: center;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*--------------------------------------------------------------------------Responsive Laptop---------------------------------------------------------------------------------- */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 1800px) {
-.nav-main {
+  .nav-main {
     font-size: 20px;
-}
+  }
 
-.nav-main li a:hover {
+  .nav-main li a:hover {
     font-size: 25px;
     border-bottom: none;
-}
+  }
 
-.nav-main2 {
+  .nav-main2 {
     font-size: 20px;
-}
+  }
 
-.nav-main2 li a:hover {
+  .nav-main2 li a:hover {
     font-size: 25px;
     border-bottom: none;
-}
+  }
 
-.nav-menurigth {
-position: relative;
-right: 50%;
-}
-.welcome{
-    color: #FFFFFF;
+  .nav-menurigth {
+    position: relative;
+    right: 50%;
+  }
+  .welcome {
+    color: #ffffff;
     width: 100%;
     height: 400px;
     display: grid;
     grid-template-columns: 30% 25%;
-    font-size:30px;
-    justify-content:center;
+    font-size: 30px;
+    justify-content: center;
     margin-top: 70px;
     position: relative;
-}
+  }
 
-.welcome h1{
-  width: 100%;
-  font-size: 100px;
-  text-align: left;
-  top: 25px;
-  right: 100px;
-  position: relative;
-}
-.containers {
+  .welcome h1 {
+    width: 100%;
+    font-size: 100px;
+    text-align: left;
+    top: 25px;
+    right: 100px;
+    position: relative;
+  }
+  .containers {
     display: grid;
     grid-template-columns: 25% 25% 25% 25% 25%;
     justify-content: center;
@@ -959,199 +973,189 @@ right: 50%;
     top: 150px;
     position: relative;
     left: 50px;
-    
   }
 
-   #spotify{
+  #spotify {
     width: 60px;
     height: 60px;
-    display:flex;
-    cursor: pointer;
-    
-  }
-  #spotify:hover{
-    width: 70px;
-    height: 70px;
-  }
-  #youtube{
     display: flex;
-    width: 60px;
-    height: 60px;
     cursor: pointer;
   }
-
-  #youtube:hover{
+  #spotify:hover {
     width: 70px;
     height: 70px;
-   
   }
-  #itunes{
+  #youtube {
     display: flex;
     width: 60px;
     height: 60px;
     cursor: pointer;
   }
 
-  #itunes:hover{
+  #youtube:hover {
     width: 70px;
     height: 70px;
-    
-   
   }
-  #soundcload{
+  #itunes {
     display: flex;
-    width:60px;
+    width: 60px;
     height: 60px;
     cursor: pointer;
-  /*StoreMusic*/
   }
 
-  #soundcload:hover{
+  #itunes:hover {
     width: 70px;
     height: 70px;
-   
   }
-  #dezeer{
+  #soundcload {
     display: flex;
-    width:60px;
+    width: 60px;
     height: 60px;
     cursor: pointer;
-  /*StoreMusic*/
+    /*StoreMusic*/
   }
 
-  #dezeer:hover{
+  #soundcload:hover {
     width: 70px;
     height: 70px;
-   
   }
-.footer {
-background-color: #ffffff;
-width: 100%;
-height: 200px;
-display: flex;
-align-items: center;
-justify-content: center;
-color: black;
-}
+  #dezeer {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    /*StoreMusic*/
+  }
 
-.redessociales{
-background-color: rgb(255, 255, 255);
-width: 90%;
-height: 320px;
-display: grid;
-grid-template-columns: 15% 15% 15% 15% 15%;
-align-items: center;
-justify-content: center;
-position: relative;
-left: 20px;
-    }
-#facebook {
-display: flex;
-width: 50px;
-height: 50px;
-margin: 10px;
-}
+  #dezeer:hover {
+    width: 70px;
+    height: 70px;
+  }
+  .footer {
+    background-color: #ffffff;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }
 
-#facebook:hover{
-width: 55px;
-height: 55px;
-}
+  .redessociales {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: 320px;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 20px;
+  }
+  #facebook {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
 
-.facebook h4{
+  #facebook:hover {
+    width: 55px;
+    height: 55px;
+  }
+
+  .facebook h4 {
     color: black;
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     left: 8px;
     position: relative;
-}
+  }
 
-#twitter {
+  #twitter {
     display: flex;
     width: 50px;
     height: 50px;
     margin: 10px;
-    }
-    #twitter:hover{
-        width: 55px;
-        height: 55px;
-    }
-    .twitter h4{
-        display: flex;
-        color: black;
-        font-size: 12px;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        left: 13px;
-        position: relative;
-    }
-    
-    #instagram {
+  }
+  #twitter:hover {
+    width: 55px;
+    height: 55px;
+  }
+  .twitter h4 {
+    display: flex;
+    color: black;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    left: 13px;
+    position: relative;
+  }
+
+  #instagram {
     display: flex;
     width: 50px;
     height: 50px;
     margin: 10px;
-    }
-    #instagram:hover{
-        width: 55px;
-        height: 55px;
-    }
-    .instagram h4{
-        display: flex;
-        color: black;
-        font-size: 12px;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        left: 8px;
-        position: relative;
-    }
-    #snapchat {
-        display: flex;
-        width: 50px;
-        height: 50px;
-        margin: 10px;
-        }
-        #snapchat:hover{
-            width: 55px;
-            height: 55px;
-        }
-        .snapchat h4{
-            display: flex;
-            color: black;
-            font-size: 12px;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            left: 10px;
-        position: relative;
-        }
+  }
+  #instagram:hover {
+    width: 55px;
+    height: 55px;
+  }
+  .instagram h4 {
+    display: flex;
+    color: black;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    left: 8px;
+    position: relative;
+  }
+  #snapchat {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
+  #snapchat:hover {
+    width: 55px;
+    height: 55px;
+  }
+  .snapchat h4 {
+    display: flex;
+    color: black;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    left: 10px;
+    position: relative;
+  }
 
-        #tiktok {
-            display: flex;
-            width: 55px;
-            height: 55px;
-            margin: 10px;
-            }
-            #tiktok:hover{
-                width: 60px;
-                height: 60px;
-            }
-            .tiktok h4{
-                bottom: 3px;
-                display: flex;
-                color:black;
-                font-size: 12px;
-                font-family: Arial, Helvetica, sans-serif;
-                text-align: center;
-                left: 18px;
-        position: relative;
-            }
-    
-
-  
+  #tiktok {
+    display: flex;
+    width: 55px;
+    height: 55px;
+    margin: 10px;
+  }
+  #tiktok:hover {
+    width: 60px;
+    height: 60px;
+  }
+  .tiktok h4 {
+    bottom: 3px;
+    display: flex;
+    color: black;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    left: 18px;
+    position: relative;
+  }
 }
 /*Responsive Tablet*/
 @media (max-width: 1116px) {
-.container img {
+  .container img {
     /*visibility: collapse;*/
     width: 100px;
     height: 100px;
@@ -1205,57 +1209,56 @@ height: 55px;
   .nav-main li a:hover {
     font-size: 30px;
     border-bottom: none;
-}
+  }
 
-.nav-main2 li a:hover {
+  .nav-main2 li a:hover {
     font-size: 20px;
     border-bottom: none;
-}
+  }
 
-.nav-menurigth {
+  .nav-menurigth {
     left: 78%;
-}
+  }
 }
 
 /*Responsive Movil*/
 @media (max-width: 768px) {
-.showcase {
+  .showcase {
     height: 60px;
-}
+  }
 
-.container {
+  .container {
     height: 300px;
-}
+  }
 
-.showcase {
+  .showcase {
     display: flex;
     position: fixed;
     height: 70px;
     z-index: 10;
-}
+  }
 
-.logomenu {
+  .logomenu {
     display: none;
-}
+  }
 
-.logomenu2 {
+  .logomenu2 {
     width: 50px;
     height: 50px;
     display: flex;
     border: solid white;
-}
+  }
 
-.container img {
+  .container img {
     bottom: 28%;
     left: 0%;
-}
+  }
 
-.nav-menurigth a ion-icon {
+  .nav-menurigth a ion-icon {
     width: 40px;
     height: 40px;
-    
-}
-.nav-menu {
+  }
+  .nav-menu {
     flex-direction: column;
     margin: 0;
     background-color: #000000;
@@ -1268,66 +1271,67 @@ height: 55px;
     left: 100%;
     transition: left 0.3s;
     z-index: 10;
-}
+  }
 
-.nav-main li a {
+  .nav-main li a {
     position: relative;
     right: 10px;
     font-size: 30px;
     margin: 5px;
-}
+  }
 
-.nav-main li {
+  .nav-main li {
     font-size: 50px;
     margin-top: 0;
-}
+  }
 
-.nav-main :hover {
+  .nav-main :hover {
     background-color: red;
     color: black;
-}
+  }
 
-.covermenu {
+  .covermenu {
     display: flex;
-}
+  }
 
-.nav-menu2 {
+  .nav-menu2 {
     display: none;
-}
+  }
 
-.nav-toggle {
+  .nav-toggle {
     display: flex;
     position: relative;
     right: 80px;
     color: white;
-}
+  }
 
-.nav-menu_visible {
+  .nav-menu_visible {
     left: 0;
-}
+  }
 
-.nav-toggle:focus:not(:focus-visible) {
+  .nav-toggle:focus:not(:focus-visible) {
     outline: none;
-}
-.nav-toggle :hover{
+  }
+  .nav-toggle :hover {
     border: solid white;
-    border-radius: 5px }
+    border-radius: 5px;
+  }
 
-.nav-toggle :active {
+  .nav-toggle :active {
     color: red;
-}
+  }
 
-.welcome{
-    color: #FFFFFF;
+  .welcome {
+    color: #ffffff;
     height: 150px;
     display: flex;
-    font-size:20px;
-    justify-content:center;
+    font-size: 20px;
+    justify-content: center;
     margin-top: 70px;
     position: relative;
-}
+  }
 
-.welcome h1::before{
+  .welcome h1::before {
     position: relative;
     color: #ffffff;
     font-weight: 600;
@@ -1340,106 +1344,98 @@ height: 55px;
     background-color: #000000;
     border-left: 2px solid #000000;
     animation: animate 5s steps(22) infinite;
-
-}
-@keyframes animate {
-    40%, 60%{
-    left: calc(80% + 4px);
+  }
+  @keyframes animate {
+    40%,
+    60% {
+      left: calc(80% + 4px);
     }
-    100%{
-    left: 10%;
+    100% {
+      left: 10%;
     }
-}
-.footer {
-
+  }
+  .footer {
     position: relative;
     top: 230px;
     height: 100px;
     padding-top: 10px;
-}
-.redes {
-
+  }
+  .redes {
     height: 80px;
-    display:grid;
+    display: grid;
     align-items: center;
     justify-content: center;
-
-}
-.redes h4 {
+  }
+  .redes h4 {
     font-size: 15px;
-}
-.redes button {
-
+  }
+  .redes button {
     width: 40px;
     height: 40px;
     margin-left: 20px;
-}
-.redes ion-icon {
+  }
+  .redes ion-icon {
     width: 20px;
     height: 30px;
-}
-.redes1 {
+  }
+  .redes1 {
     height: 80px;
-    display:grid;
+    display: grid;
     align-items: center;
     justify-content: center;
-
-}
-.redes1 h4 {
+  }
+  .redes1 h4 {
     font-size: 15px;
     text-align: center;
-}
-.redes1 button {
-
+  }
+  .redes1 button {
     margin-left: 10px;
     width: 40px;
     height: 40px;
-}
-.redes1 ion-icon {
+  }
+  .redes1 ion-icon {
     width: 20px;
     height: 30px;
-}
-.redes2 {
+  }
+  .redes2 {
     height: 80px;
-    display:grid;
+    display: grid;
     align-items: center;
     justify-content: center;
-
-}
-.redes2 h4 {
+  }
+  .redes2 h4 {
     font-size: 15px;
     text-align: center;
-}
-.redes2 button {
-
+  }
+  .redes2 button {
     margin-left: 10px;
     width: 40px;
     height: 40px;
-}
-.redes2 ion-icon {
+  }
+  .redes2 ion-icon {
     width: 25px;
 
     height: 30px;
-}
-.piepag {
+  }
+  .piepag {
     height: 200px;
     display: block;
     position: relative;
     top: 230px;
     justify-content: center;
     align-items: center;
-}
-.piepag img {
+  }
+  .piepag img {
     top: 8%;
     left: 37%;
     width: 120px;
     height: 120px;
-}
-.piepag h5 {
+  }
+  .piepag h5 {
     text-align: center;
     top: 0;
     right: 0;
-}
+  }
 }
 /*# sourceMappingURL=styleindex.css.map */
 /*# sourceMappingURL=styleindex.css.map */

@@ -69,19 +69,25 @@ ul {
   background-color: rgb(255, 255, 255);
 }
 
+.blackhead {
+  background-color: #000000;
+  position: relative;
+  bottom: 5px;
+}
+
 .blackhead h1 {
   cursor: pointer;
   color: #ffffff;
   position: relative;
   padding-bottom: 7px;
   letter-spacing: 1px;
-  font-size: 2em;
-  bottom: 8px;
+  font-size: 1.1em;
+  top: 5px;
 }
 
 .blackhead h1:hover {
-  color: rgb(255, 255, 255);
-  background-color: black;
+  color: rgb(0, 0, 0);
+  background-color: #FBCA1F;
   font-weight: 900;
 }
 
@@ -750,7 +756,7 @@ ul {
 .bg-model {
   width: 100%;
   height: 100%;
-  background-color: black;
+  background: transparent;
   background-size: cover;
   border-radius: 1px;
   top: 0%;
@@ -768,8 +774,10 @@ ul {
   border-radius: 4px;
   text-align: center;
   box-shadow: 5px 5px 5px;
-  border: 0.5px solid;
-  background-color: rgba(0, 0, 0, 0.97);
+  border-left: 2.5px rgba(255, 255, 255, 0.9) solid;
+  border-top: 2px rgba(255, 255, 255, 0.9) solid;
+  background-color: rgba(255, 255, 255, 0.15);
+  background-size: 500px;
 }
 
 .tosuscribe {
@@ -784,11 +792,13 @@ ul {
 }
 
 .model_content h1 {
-  color: #ffffff;
+  background-color: #FBCA1F;
+  color: #000000;
   font-size: 4em;
   position: relative;
-  top: 145px;
+  top: 155px;
   padding: auto 100px;
+  font-family: "school";
 }
 
 .model_content {
@@ -856,7 +866,7 @@ ul {
   display: flex;
   margin: 20px;
   margin-left: 15.3%;
-  border-color: #ffffff;
+  border-color: violet 4px;
 }
 
 .botons {
@@ -1036,8 +1046,9 @@ ul {
 }
 
 .footer {
-  background: linear-gradient(to bottom right, rgb(255, 105, 205), rgb(105, 105, 221), rgb(68, 255, 130), rgb(255, 105, 205));
+  background: black;
   width: 100%;
+  color: white;
   height: 400px;
   align-items: center;
   justify-content: center;
@@ -1060,15 +1071,12 @@ ul {
   text-align: center;
   justify-content: center;
   align-items: center;
-  color: #000000;
+  color: #ffffff;
   font-size: 38px;
 }
 
 .nav-menufooter a:hover {
-  color: white;
-  font-size: 20px;
-  box-shadow: 1px 3px 12px black;
-  border-radius: 9px;
+  color: violet;
 }
 
 .piepag {
@@ -1113,8 +1121,19 @@ ul {
     border-radius: 50%;
   }
 
+  .blackhead {
+    bottom: 6px;
+    background-color: #000000;
+    height: 25px;
+  }
+
+  .blackhead:hover {
+    background-color: #FBCA1F;
+    color: black;
+  }
+
   .blackhead h1 {
-    top: 10px;
+    top: 2px;
     font-size: 3em;
     position: relative;
   }
@@ -1122,10 +1141,6 @@ ul {
   .blackhead h1 {
     cursor: pointer;
     color: #ffffff;
-    position: relative;
-    padding-bottom: 7px;
-    letter-spacing: 1px;
-    font-size: 2em;
   }
 
   .container {
@@ -1358,6 +1373,22 @@ ul {
     position: relative;
   }
 
+  .bg-model {
+    background-size: 1100px;
+  }
+
+  .model_content input {
+    position: relative;
+    top: 80px;
+    width: 70%;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    margin: 20px;
+    margin-left: 15.3%;
+    border: solid black 2px;
+  }
+
   #send {
     cursor: pointer;
     display: flex;
@@ -1394,19 +1425,21 @@ ul {
 
   .tosuscribe {
     position: relative;
-    bottom: 100px;
+    bottom: 70px;
     margin: 10px;
-    margin-left: 30%;
-    width: 40%;
+    margin-left: 10%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .model_content h1 {
-    color: #ffffff;
-    font-size: 2.7em;
+    color: #000000;
+    border: solid black 2px;
+    font-size: 2em;
     padding: auto 100px;
+    font-family: "Oswald", sans-serif;
   }
 
   .model_content input {
@@ -1749,7 +1782,8 @@ ul {
   }
 
   .footer {
-    background: linear-gradient(to bottom right, rgb(255, 105, 205), rgb(105, 105, 221), rgb(68, 255, 130), rgb(255, 105, 205));
+    background-color: black;
+    color: white;
     width: 100%;
     height: 200px;
     align-items: center;
@@ -1773,7 +1807,7 @@ ul {
     text-align: center;
     justify-content: center;
     align-items: center;
-    color: #000000;
+    color: #ffffff;
     font-size: 18px;
   }
 
@@ -3210,6 +3244,22 @@ ul {
     top: 150px;
   }
 
+  #listen:hover {
+    color: black;
+    background: #FBCA1F;
+    font-family: inherit;
+    padding: 0.8em 2.5em;
+    font-weight: 900;
+    font-size: 0.3em;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    align-items: center;
+    position: relative;
+    left: 11%;
+    top: 150px;
+  }
+
   .info {
     top: 460px;
     display: block;
@@ -3415,7 +3465,8 @@ ul {
   .nav-menufooter a {
     position: relative;
     top: 40px;
-    font-size: 25px;
+    font-size: 19px;
+    padding: 5px;
   }
 
   .piepag {
